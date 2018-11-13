@@ -1,0 +1,805 @@
+@font-face
+    font-family: "Arial - Bold MT"
+    src: url('fonts/arial_bold.ttf')
+@font-face
+    font-family: "Arial - Black"
+    src: url('../fonts/ariblk.ttf')
+@font-face
+    font-family: "AvenirNextCyr-Bold"
+    src: url('../fonts/AvenirNextCyr-Bold.ttf')
+@font-face
+    font-family: "Avenir Next Cyr"
+    src: url('../fonts/AvenirNextCyr-Regular.ttf')
+@font-face
+    font-family: "Raleway"
+    src: url('../fonts/Raleway-Regular.ttf')
+    
+$title-font: "Avenir Next Cyr"
+$title-font-bold : "AvenirNextCyr-Bold"
+$font: "Raleway"
+
+/// основные стили ////
+.header
+    padding: 10px 15px
+    height: 10vh
+    display: flex
+    justify-content: space-around
+.header-company
+    display: flex
+    align-items: center
+    &__logo
+        position: relative
+        display: block
+        &::after
+            content: ""
+            top: 3px
+            right: -15px
+            position: absolute
+            width: 3px
+            height: 50px
+            background-color: #ff7018
+    &__description
+        margin-left: 30px
+        font-family: $font
+        font-size: 16px
+        font-weight: 500
+        @media (max-width: 1420px)
+            width: 210px
+.header-menu
+    display: flex
+    align-items: center
+    min-width: 450px
+    &-list
+        display: flex
+        &-item
+            margin-right: 30px
+            position: relative
+            z-index: 1011
+            &:last-child
+                margin: 0
+            &-link
+                position: relative
+                z-index: 1011
+                font-family: $font
+                display: flex
+                align-items: center
+                transition: 0.2s
+                &:hover
+                    color: #ff9225
+                .fa
+                    margin-left: 5px
+                    font-size: 16px
+.dropdown-list
+    padding-top: 35px
+    transition: 0.2s ease-in-out
+    opacity: 0
+    min-width: 205px
+    transform: scaleY(0)
+    transform-origin: 0 0
+    z-index: -1000
+    flex-direction: column
+    position: absolute
+    top: 15px
+    left: calc(-205px / 2 + 50%)
+    list-style: none
+    background-color: #fff
+    border-bottom-left-radius: 15px
+    border-bottom-right-radius: 15px
+.dropdown-list-item
+    text-align: center
+    background: #fff
+    border-bottom: 1px solid #efefef
+    padding: 10px 10px
+    &:last-child
+        border: none
+        border-bottom-left-radius: 20px
+        border-bottom-right-radius: 20px
+.dropdown-list-item-link
+    display: block
+    font-family: $font
+    font-size: 14px
+    font-weight: 400
+    transition: 0.2s
+    line-height: 18px
+    &:hover
+        color: #ff9225
+.header-menu-list-item:hover > .dropdown-list
+    opacity: 1
+    transform: scaleY(1)
+    z-index: 1000
+.dropdown-list:hover + .header-menu-list-item-link
+    color: #ff9225
+.header-contacts
+    display: flex
+    align-items: center
+    @media(max-width: 1300px)
+        flex-direction: column
+        justify-content: center
+        align-items: center
+.phone-number
+    display: block
+    font-family: $title-font
+    font-size: 18px
+    font-weight: 500
+    line-height: 21px
+    margin-right: 30px
+    @media(max-width: 1300px)
+        margin: 0
+    
+.call-btn
+    transition: 0.2s
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-family: $title-font
+    font-weight: 500
+    padding: 5px
+    min-width: 150px
+    min-height: 30px
+    border-radius: 4px
+    border: 1px solid #ff9927
+    color: #ff9227
+    cursor: pointer
+    &:hover
+        color: #ffffff
+        background: #ff9927
+.gradient-strip
+    height: 5px
+    background: linear-gradient(90deg, #FF9927 0%, #FF7018 20.99%, #D23738 39.23%, #931646 60.22%, #6A0D4B 79.56%, #4E0950 100%)
+////
+.main-banner
+    height: 90vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background: url('../img/mainpage/Main header.png') no-repeat
+    background-position: center center
+    background-size: cover
+    .row
+        display: flex
+        justify-content: center
+.pagetitle
+    padding-right: 30px
+    margin-top: 50px
+    margin-left: 200px
+    max-width: 950px
+    min-height: 330px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+.pagetitle-text
+    color: #ffffff
+    font-family: $title-font-bold
+    font-size: 60px
+    line-height: 63px
+.pagetitle-buttons
+    display: flex
+    width: 580px
+    justify-content: space-between
+.button
+    width: 265px
+    height: 58px
+    border-radius: 6px
+.button-orange
+    background: #ff9225
+    transition: 0.2s ease-in-out
+    &:hover
+        background: #FF9E3D
+.button-gradient
+    transition: 0.2s ease-in
+    background-image: linear-gradient(104deg, rgb(255, 153, 39) 0%, rgb(255, 112, 24) 12%, rgb(210, 55, 56) 35%, rgb(176, 37, 64) 52%, rgb(147, 22, 70) 62%, rgb(106, 13, 75) 80%, rgb(78, 9, 80) 100%)
+//// sections ////
+.client-profit
+    padding-bottom: 133px
+.client-profit__cards
+    display: flex
+.block__title
+    padding-top: 80px
+    padding-bottom: 40px
+    font-family: $title-font-bold
+    font-size: 36px
+    font-weight: 700
+    line-height: 42px
+.client-card
+    border-radius: 15px
+    height: 575px
+    max-width: 360px
+    margin: 0 auto
+    position: relative
+    background-size: contain
+    background-position: center center
+    @media( max-width: 1450px)
+        height: 475px
+    @media( max-width: 1199px)
+        height: 575px
+    @media( max-width: 991px)
+        height: 475px
+.neste
+    background: url('../img/mainpage/neste.png') no-repeat
+.vkusno
+    background: url('../img/mainpage/Вкуснолюбов.png') no-repeat
+.maxpower
+    background: url('../img/mainpage/maxpowerclub.png') no-repeat
+.pirogi
+    background: url('../img/mainpage//Пироги.png') no-repeat
+.card-inner
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+.card-title
+    padding: 0 15px
+    font-size: 40px
+    color: #fff
+    font-family: $title-font-bold
+    width: 100%
+    text-align: center
+    @media( max-width: 1450px)
+        font-size: 30px
+    @media( max-width: 1199px)
+        font-size: 40px
+    @media( max-width: 991px)
+        font-size: 30px
+.card-text
+    padding: 0 10px
+    text-align: center
+    width: 100%
+    color: #ffffff
+    font-family: $font
+    font-size: 24px
+    font-weight: 500
+    line-height: 28px
+    @media( max-width: 1450px)
+        font-size: 20px
+    @media( max-width: 1199px)
+        font-size: 24px
+    @media( max-width: 991px)
+        font-size: 20px
+/// block-grey ////
+.-grey
+    background-color: #efefef
+.block
+    display: flex
+    align-items: center
+.block-1
+    padding: 50px 0
+.block-2
+    padding: 100px 0
+.block-title
+    color: #000000
+    font-family: $title-font-bold
+    font-size: 48px
+    line-height: 45px
+    margin-bottom: 36px
+.block-text
+    color: #000000
+    font-family: $font
+    font-size: 22px
+    font-weight: 400
+    line-height: 31px
+    margin-bottom: 100px
+.block-btn
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    width: 175px
+    height: 56px
+    border-radius: 4px
+    border: 1px solid #ff9927
+    background-color: #ff9927
+    font-family: $font
+    font-size: 22px
+    font-weight: 500
+    line-height: 31px
+    cursor: pointer
+    transition: 0.2s
+    &:hover
+        background: #FF9E3D
+.service-for
+    background-color: #efefef
+    padding-bottom: 80px
+.block-item
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 30px
+.block-item-icon
+    width: 15%
+    height: 55px
+    display: flex
+    align-items: center
+    justify-content: center
+.block-item-text
+    width: 80%
+    padding-left: 5%
+    color: #000000
+    font-family: $font
+    font-size: 22px
+    font-weight: 400
+    line-height: 26px
+.partners
+    padding-bottom: 80px
+.partners-list
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: nowrap
+    @media (max-width: 1250px)
+        flex-wrap: wrap
+.partners-list-item
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0 15px
+    height: 150px
+    @media (max-width: 1250px)
+        width: 50%
+.feedback
+    background: #efefef
+    padding-top: 40px
+    padding-bottom: 40px
+.feedback-block__title
+    color: #000000
+    font-family: $title-font-bold
+    font-size: 36px
+    line-height: 42px
+.feedback-block__subtitle
+    color: #000000
+    font-family: $font
+    font-size: 18px
+    font-weight: 400
+    line-height: 28px
+    margin-bottom: 40px
+.feedback__input
+    width: 100%
+    height: 65px
+    color: #000000
+    font-family: $font
+    font-size: 20px
+    font-weight: 700
+    border: 1px solid #c5c5c5
+    background-color: #ffffff
+    border-radius: 4px
+.feedback__input-placeholder 
+    height: 100%
+    background-color: #ffffff
+    position: relative
+    color: #000
+    font-family: $font
+    font-size: 20px
+.feedback__input-placeholder input 
+    height: 65px
+    padding: 0 15px
+.feedback__input-placeholder input:valid + .feedback__placeholder
+    display: none
+.feedback__input:focus + .feedback__placeholder
+    display: none
+.feedback__placeholder 
+    padding: 0 15px
+    position: absolute
+    pointer-events: none
+    top: calc(50% - 10px)
+    margin: auto
+    color: #000000
+    font-family: $font
+.feedback__placeholder span 
+    color: #eb6c06
+    font-size: 20px
+.feedback__confidential
+    color: #000000
+    font-family: $font
+    font-size: 16px
+    line-height: 19px
+.confidential-link
+    color: #ff9f40
+    text-decoration: underline!important
+    &:hover
+        color: #ff9f40
+.feedback-btn__submit
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 75px
+    border-radius: 6px
+    background-color: #ff9225
+    color: #ffffff
+    font-family: $font
+    font-size: 24px
+    cursor: pointer
+    transition: 0.2s
+    &:hover
+        background: #ff9f40
+.feedback-form__action
+    margin-top: 60px
+/// footer ///
+.footer
+    padding-top: 40px
+    padding-bottom: 15px
+.footer-menu-wrapper
+    padding: 0 15px    
+    display: flex
+    justify-content: space-between
+.footer-menu
+    &__title
+        color: #000000
+        font-family: $title-font
+        font-size: 18px
+        font-weight: 400
+        line-height: 21px
+        margin-bottom: 10px
+    &__item
+        color: #505050
+        font-family: $font
+        font-size: 12px
+        font-weight: 400
+        line-height: 25px
+.footer-contacts-wrapper
+.footer-contacts
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 40px
+.contacts-link,.contacts-text
+    color: #000000
+    font-family: $title-font
+    font-weight: 500
+    font-size: 18px
+    line-height: 20px
+.contacts-text
+    font-size: 14px!important
+.contacts-btn
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: #ffffff!important
+    font-family: $title-font
+    font-size: 14px
+    width: 170px
+    height: 30px
+    border-radius: 6px
+    background-image: linear-gradient(to right, rgb(255, 153, 39) 0%, rgb(255, 112, 24) 21%, rgb(210, 55, 56) 39%, rgb(147, 22, 70) 60%, rgb(106, 13, 75) 80%, rgb(78, 9, 80) 100%)
+.social-icon
+    font-size: 22px
+.politic-conf
+    color: #000000
+    font-family: $font
+    font-size: 12px
+    font-weight: 400
+    line-height: 14px
+    margin-bottom: 10px
+.copyright
+    font-family: $font
+    font-size: 12px
+    font-weight: 400
+    line-height: 14px
+/// вспомогательные стили ////
+button
+    border: none
+    outline: none
+.justify-center
+    display: flex
+    justify-content: center
+.center
+    display: flex
+    align-items: center
+.mb-lg
+    margin-bottom: 30px
+.button
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 18px
+    font-family: $font
+    color: #fff
+    cursor: pointer
+.mb-sm
+    margin-bottom: 10px
+.p-none
+    padding: 0
+.pl-none
+    padding-left: 0!important
+.pr-none
+    padding-right: 0!important
+.pl-35px
+    padding-left: 35px
+.uppercase
+    text-transform: uppercase
+.text-bold
+  font-weight: 700
+.container
+    @media(min-width: 1200px)
+        max-width: 1590px
+
+/////////// modal //////////////
+////
+#modal_form
+    background-color: #6a0d4b
+    width: 350px
+    height: 450px
+    border-radius: 2px
+    position: fixed
+    top: 40%
+    //oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт
+    left: calc(50% - 350px / 2)
+    //пoлoвинa экрaнa слевa
+    margin-top: -150px
+    //тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =)
+    display: none
+    //в oбычнoм сoстoянии oкнa не дoлжнo быть
+    opacity: 0
+    //пoлнoстью прoзрaчнo для aнимирoвaния
+    z-index: 5
+    //oкнo дoлжнo быть нaибoлее бoльшем слoе
+    padding: 20px 40px
+#modal_close
+    position: absolute
+    top: -15px
+    right: -15px
+    cursor: pointer
+    display: block
+    background: #000
+    border-radius: 50%
+    color: #ffffff
+    width: 32px
+    height: 32px
+    opacity: 1
+
+#modal_close:before, #modal_close:after 
+    position: absolute
+    top: calc(50% - 9px)
+    left: 15px
+    content: ' '
+    height: 18px
+    width: 2px
+    background-color: #fff
+
+#modal_close:before 
+    transform: rotate(45deg)
+
+#modal_close:after 
+    transform: rotate(-45deg)
+
+// Кнoпкa зaкрыть для тех ктo в тaнке)
+
+//Пoдлoжкa
+
+#overlay
+  z-index: 3
+  //пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa
+  position: fixed
+  //всегдa перекрывaет весь сaйт
+  background-color: #000
+  //чернaя
+  opacity: 0.8
+  //нo немнoгo прoзрaчнa
+  -moz-opacity: 0.8
+  //фикс прозрачности для старых браузеров
+  filter: alpha(opacity = 80)
+  width: 100%
+  height: 100%
+  //рaзмерoм вo весь экрaн
+  top: 0
+  //сверху и слевa 0, oбязaтельные свoйствa!
+  left: 0
+  cursor: pointer
+  display: none
+  // в oбычнoм сoстoянии её нет)
+.modal-title
+    font-family: Arial
+    font-size: 25px
+    font-weight: 400
+    color: #ffffff
+    text-align: center
+    margin-bottom: 20px
+.feedback-modal__input-placeholder 
+    width: 100%
+    height: 40px
+    background-color: #fcfcfd
+    position: relative
+    line-height: 40px
+    color: #000
+    font-family: "Arial"
+    font-size: 16px
+    margin-bottom: 11px
+.feedback-modal__input-placeholder input 
+    height: 30px
+    padding: 0 14px
+.feedback-modal__input-placeholder input:valid + .feedback-modal__placeholder 
+    display: none
+.feedback-modal__input:focus + .feedback-modal__placeholder
+    display: none
+.feedback-modal__placeholder 
+    padding: 0 10px
+    position: absolute
+    pointer-events: none
+    top: calc(50% - 20px)
+    bottom: 2px
+    left: 3px
+    margin: auto
+    color: #000000
+.feedback-modal__placeholder span 
+    color: #eb6c06
+
+.modal__radio
+    height: 30px
+    color: #fff
+    width: 100%
+    display: flex
+    align-items: center
+    label
+        font-size: 14px
+        margin-right: 15px
+        cursor: pointer
+    input
+        margin-right: 5px
+        cursor: pointer
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) 
+    position: absolute
+    left: -9999px
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+
+    position: relative
+    padding-left: 28px
+    cursor: pointer
+    line-height: 20px
+    display: inline-block
+    color: #fff
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before 
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 18px
+    height: 18px
+    border: 1px solid #ddd
+    border-radius: 100%
+    background: #fff
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after 
+    content: ''
+    width: 8px
+    height: 8px
+    background: #6a0d4b
+    position: absolute
+    top: 5px
+    left: 5px
+    border-radius: 100%
+    -webkit-transition: all 0.2s ease
+    transition: all 0.2s ease
+
+[type="radio"]:not(:checked) + label:after 
+    opacity: 0
+    -webkit-transform: scale(0)
+    transform: scale(0)
+
+[type="radio"]:checked + label:after 
+    opacity: 1
+    -webkit-transform: scale(1)
+    transform: scale(1)
+
+.confidencial
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    height: 50px
+    font-size: 12px
+    color: #fff
+    input[type="checkbox"]
+        display: none
+    label
+        display: flex
+        flex-direction: row
+        flex-wrap: no-wrap
+        cursor: pointer
+        color: #fff
+        font-family: Arial, Helvetica, sans-serif
+        font-size: 10px
+        font-weight: 400
+        line-height: 16px
+    label::before
+        content: ''
+        display: block
+        min-width: 18px
+        height: 18px
+        border: 1px solid #767e82
+        background-color: #fff
+        margin-right: 10px
+    input[type="checkbox"]:checked + label::before
+        background: #fff url('img/check.png') no-repeat center center
+.feedback__modal-btn
+    width: 100%
+    height: 50px
+    line-height: 50px
+    border-radius: 5px
+    font-size: 20px
+    text-transform: uppercase
+    color: #ffffff
+    background-color: #d23738
+    cursor: pointer
+    transition: 0.5s ease
+    font-family: "Arial"
+    text-align: center
+    &:hover
+        background-color: #ff9927
+        color: #fff
+/// authorization ////
+.breadcrumb
+  background-color: transparent
+  font-family: "Raleway"
+  font-size: 12px
+  padding: 0.5rem 0
+  a
+    color: #fff
+.breadcrumb-item.active
+  color: #fff
+.breadcrumb-item+.breadcrumb-item::before
+  content: ('\2192')
+  color: #fff
+.breadcrumb-wrapper
+  background-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%)
+
+.authorization-content
+  margin-top: 55px
+////sidebar////
+.sidebar-menu
+  position: sticky
+  top: 10px
+.sidebar-menu__item
+  outline: 1px solid #f4e7ec
+  margin-bottom: 1px
+  border: 3px solid transparent
+  transition: 0.2s
+  &:hover
+    color: #ff7b00
+.sidebar-menu__item.active
+    outline: none
+    border-width: 3px
+    border-style: solid
+    border-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%)
+    border-image-slice: 1
+    border-image-repeat: round
+    .sidebar-menu__item-link
+      color: #ff7b00
+.sidebar-menu__item-link
+    padding: 25px 20px
+    font-family: "Raleway"
+    color: #5d1f63
+    font-size: 14px
+    font-weight: 700
+////
+.item-text,.item-icon
+  justify-content: center
+  align-items: center
+  display: flex
+  width: 100%
+  justify-content: center
+  text-align: center
+.content-title
+  font-size: 48px
+  font-family: "Avenir Next Cyr"
+  font-weight: 600
+  margin-bottom: 40px
+.paragraph
+  font-family: "Arial"
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  &:first-letter
+    margin-left: 5px
+///////////////

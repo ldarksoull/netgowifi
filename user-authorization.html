@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сервис идентификации пользователей Wi-Fi, организуем доступ к Wi-Fi с авторизацией</title>
+    <meta name="Keywords" content="сервис wifi авторизации, внедрение wifi, установка wifi, доступ, организовать, идентификация пользователей">
+    <meta name="Description" content="Внедряем и устанавливаем сети Wi-Fi с идентификацией пользователей по смс. Реализация самых сложных сетей Wi-Fi.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/user-authorization.css">
+</head>
+
+<body>
+    <header id="top" class="header container">
+        <div class="topline row">
+            <div class="col-md-5 topline-left">
+                <div class="topline__wifi">
+                    <img src="img/logo-wifi.png" alt="wifi">
+                    <span>WiFi теперь законно!</span>
+                </div>
+                <div class="topline__dwnload">
+                    <img src="img/logo-present.png" alt="presentation">
+                    <a href="#">Скачать презентацию</a>
+                </div>
+            </div>
+            <div class="topline-right col-md-7">
+                <div class="topline__phone">
+                    <div>Бесплатный номер</div>
+                    <a href="tel:+88003339686">8 (800) 333-96-86</a>
+                </div>
+                <div class="topline__call-btn">
+                    <a id="go" href="#">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu row">
+            <div class="col-md-12 header__menu-wrapper">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="list-item">
+                            <a class="list-item__link" href="#">О КОМПАНИИ</a>
+                        </li>
+                        <li class="list-item">
+                                <ul class="dropdown__products">
+                                    <li>
+                                        <ul class="dropdown__wifi-auth">
+                                            <li><a href="zakon.html">Соответствие закону</a></li>
+                                            <li><a href="user-authorization.html">Авторизация пользователей</a></li>
+                                            <li><a href="#">Личный кабинет</a></li>
+                                            <li><a href="#">Статистика и Аналитика</a></li>
+                                            <li><a href="#">Продвижение в Социальных сетях</a></li>
+                                            <li><a href="#">Дни рождения</a></li>
+                                            <li><a href="#">Отзывы и Опросы</a></li>
+                                            <li><a href="#">Брендирование страницы авторизации</a></li>
+                                            <li><a href="#">Переадресация на сайт</a></li>
+                                            <li><a href="#">Рекламные баннеры и видеоролики</a></li>
+                                            <li><a href="#">Программа лояльности</a></li>
+                                        </ul>
+                                        <a href="authorization.html">Wi-Fi Авторизация</a> 
+                                    </li>
+                                    <li><a href="WiFi-Target.html">Wi-Fi Таrget</a></li>
+                                    <li><a href="WiFi-transport.html">Wi-Fi в Транспорте</a></li>
+                                    <li><a href="commerce-wifi.html">Коммерческий Wi-Fi</a></li>
+                                </ul>
+                            <a class="list-item__link" href="#">ПРОДУКТЫ</a>
+                            
+                        </li>
+                        <li class="list-item"> 
+                            <a class="list-item__link" href="partners.html">СТАТЬ ПАРТНЕРОМ</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="#">КЛИЕНТЫ</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="#">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumbs">
+        <div class="container-fluid breadcrumb-wrapper">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Продукты</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Продукт WiFi Авторизация</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="authorization-content container">
+        <div class="row">
+            <aside class="sidebar col-md-3">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu__item active">
+                        <a class="sidebar-menu__item-link" href="#">Продукт WiFi Авторизация</a>
+                    </li>
+                    <li class="sidebar-menu__item"> 
+                        <a class="sidebar-menu__item-link" href="zakon.html">Соответствие закону</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Авторизация пользователей</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Личный кабинет</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Статистика и Аналитика</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Социальные сети</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Переадресация на сайт</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Дни Рождения</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Отзывы, опросы и оценка</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Брендирование страницы</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Рекламные Баннеры и видео</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a class="sidebar-menu__item-link" href="#">Программа лояльности</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content col-md-9">
+                <div class="container">
+                    <div class="row content-title">
+                        WiFI авторизация
+                    </div>
+                    <div class="row content-inner">
+                      <p class="paragraph">
+                          Авторизация для гостей очень проста и доступна, так как она интуитивно понятна и предлагает клиенту  доступ в интернет по настроенным (выбранным) Вами способом(и)
+                      </p>
+                      <div class="col">
+                        <div class="container">
+                          <div class="row user-auth">
+                            <div class="col user-auth__item">
+                              <div class="user-auth__item-icon item-icon">
+                                <img src="/img/authorization/sms.png" alt="sms">
+                              </div>
+                              <div class="user-auth__item-text item-text">По SMS</div>
+                            </div>
+                            <div class="col user-auth__icons">
+                                <div class="user-auth__item-icon item-icon">
+                                  <img src="/img/authorization/call.png" alt="call">
+                                </div>
+                                <div class="user-auth__item-text item-text">По звонку. 
+                                  <br>
+                                    «Входящий звонок» 
+                                    <br>
+                                    и  «Исходящий звонок» 
+                                    <br>
+                                    (бесплатный)</div>
+                            </div>
+                            <div class="col user-auth__icons">
+                                <div class="user-auth__item-icon item-icon">
+                                  <img src="/img/authorization/gosuslugi.png" alt="gosuslugi">
+                                </div>
+                                <div class="user-auth__item-text item-text">Через портал 
+                                    ГосУслуг</div>
+                            </div>
+                            <div class="col user-auth__icons">
+                                <div class="user-auth__item-icon item-icon">
+                                  <img src="/img/authorization/socseti.png" alt="socseti">
+                                </div>
+                                <div class="user-auth__item-text item-text">
+                                    Через социальные сети 
+                                    (Вконтакте, Facebook, 
+                                    Одноклассники, Instagram, 
+                                    Twitter)
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="paragraph">
+                          В нашей системе, Ваш гость, пройдя идентификацию один раз, в последующие посещения Вашего заведения или Сети заведений - будет идентифицирован автоматически. 
+                      </p>
+                      <div class="user-auth__howItWork container">
+                        <div class="row user-auth__howItWork-title">
+                            <div class="col"> Как это работает?  </div>
+                        </div>
+                        <div class="row user-auth__howItWork-content">
+                          <div class="col user-auth__howItWork-item">
+                            <div class="user-auth__howItWork-image">
+                              <img src="/img/authorization/howItwork-phone1.png" alt="phone1">
+                            </div>
+                            <div class="user-auth__howItWork-text">
+                              <div class="howItWork-text__number">1</div>
+                                Гости подключаются к wifi сети
+                            </div>
+                          </div>
+                          <div class="col user-auth__howItWork-item">
+                            <div class="user-auth__howItWork-image">
+                                <img src="/img/authorization/howItwork-phone2.png" alt="phone2">
+                            </div>
+                            <div class="user-auth__howItWork-text">
+                              <div class="howItWork-text__number">2</div>
+                                Выбирают авторизацию.
+                                <br>
+                                Через Соц. Сети или звонок
+                            </div>
+                          </div>
+                          <div class="col user-auth__howItWork-item">
+                            <div class="user-auth__howItWork-image">
+                                <img src="/img/authorization/howItwork-phone3.png" alt="phone3">
+                            </div>
+                            <div class="user-auth__howItWork-text">
+                                <div class="howItWork-text__number">3</div> Получают Интернет
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 footer-menu-wrapper">
+                            <ul class="footer-menu">
+                                <li class="footer-menu__title"><a href="index.html">Главная</a></li>
+                                <li class="footer-menu__item"><a href="#">О компании</a></li>
+                                <li class="footer-menu__item"><a href="#">Новости</a></li>
+                            </ul>
+                            <ul class="footer-menu">
+                                <li class="footer-menu__title"><a href="#">Продукты</a></li>
+                                <li class="footer-menu__item"><a href="#">Wi-Fi Авторизация</a></li>
+                                <li class="footer-menu__item"><a href="#">Wi-Fi Таrget</a></li>
+                                <li class="footer-menu__item"><a href="#">Wi-Fi в Транспорте</a></li>
+                                <li class="footer-menu__item"><a href="#">Коммерческий Wi-Fi</a></li>
+                            </ul>
+                            <ul class="footer-menu">
+                                <li class="footer-menu__title"><a href="#">Сотрудничество </a></li>
+                                <li class="footer-menu__item"><a href="#">Клиенты</a></li>
+                                <li class="footer-menu__item"><a href="partners.html">Стать партнером</a></li>
+                            </ul>
+                            <ul class="footer-menu">
+                                <li class="footer-menu__title"><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    
+                    <div class="col-lg-4 footer-contacts-wrapper">
+                        <div class="footer-contacts">
+                            <div class="contacts-content">
+                                <a class="contacts-link" href="tel:88003339686">8 (800) 333-96-86</a>
+                                <p class="contacts-text">Звонок бесплатный</p>
+                            </div>
+                            <a class="contacts-btn">Заказать звонок</a>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="contacts-content">
+                                <a class="contacts-link" href="mailto:info@netgo.ru">info@netgo.ru</a>
+                            </div>
+                            <a class="contacts-btn">Написать нам</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- modal window -->
+        <div id="modal_form"><!-- Сaмo oкнo --> 
+            <span id="modal_close"></span> <!-- Кнoпкa зaкрыть --> 
+            <div class="modal-title">ЗАКАЗАТЬ ЗВОНОК</div>
+            <form class="feedback-modal__form" action="">
+                <div class="feedback-modal__input-placeholder">
+                    <input class="feedback-modal__input" type="text" required>
+                    <div class="feedback-modal__placeholder">
+                        Имя<span>*</span>
+                    </div>
+                </div>
+                <div class="feedback-modal__input-placeholder">
+                    <input class="feedback-modal__input" type="text" required>
+                    <div class="feedback-modal__placeholder">
+                        Телефон<span>*</span>
+                    </div>
+                </div>
+                <div class="feedback-modal__input-placeholder">
+                    <input class="feedback-modal__input" type="text" required>
+                    <div class="feedback-modal__placeholder">
+                        E-mail<span>*</span>
+                    </div>
+                </div>
+                <div class="feedback-modal__input-placeholder">
+                    <input class="feedback-modal__input" type="text" required>
+                    <div class="feedback-modal__placeholder">
+                        Город<span>*</span>
+                    </div>
+                </div>
+                <div class="modal__radio">
+                    <input id="radio1" name="radio" type="radio">
+                    <label for="radio1">Стать клиентом</label>
+                    <input id="radio2" name="radio" type="radio">
+                    <label for="radio2">Стать дилером</label>
+                </div>
+                <div class="confidencial">
+                    <input id="conf-chkbox" type="checkbox">
+                    <label for="conf-chkbox">Я соглашаюсь с "Политикой конфиденциальности и обработки персональных данных</label>
+                </div>
+                <a href="#" class="feedback__modal-btn">Заказать</a>
+            </form>
+      </div>
+      <div id="overlay"></div><!-- Пoдлoжкa -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>

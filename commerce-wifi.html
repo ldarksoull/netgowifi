@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сервис идентификации пользователей Wi-Fi, организуем доступ к Wi-Fi с авторизацией</title>
+    <meta name="Keywords" content="сервис wifi авторизации, внедрение wifi, установка wifi, доступ, организовать, идентификация пользователей">
+    <meta name="Description" content="Внедряем и устанавливаем сети Wi-Fi с идентификацией пользователей по смс. Реализация самых сложных сетей Wi-Fi.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/commerce-wifi.css">
+</head>
+
+<body>
+        <header id="top" class="header container">
+            <div class="topline row">
+                <div class="col-md-5 topline-left">
+                    <div class="topline__wifi">
+                        <img src="img/logo-wifi.png" alt="wifi">
+                        <span>WiFi теперь законно!</span>
+                    </div>
+                    <div class="topline__dwnload">
+                        <img src="img/logo-present.png" alt="presentation">
+                        <a href="#">Скачать презентацию</a>
+                    </div>
+                </div>
+                <div class="topline-right col-md-7">
+                    <div class="topline__phone">
+                        <div>Бесплатный номер</div>
+                        <a href="tel:+88003339686">8 (800) 333-96-86</a>
+                    </div>
+                    <div class="topline__call-btn">
+                        <a id="go" href="#">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu row">
+                <div class="main-logo col-md-3">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="menu col-md-9">
+                    <ul class="menu__list">
+                        <li class="list-item">
+                            <a class="list-item__link" href="#">О КОМПАНИИ</a>
+                        </li>
+                        <li class="list-item">
+                                <ul class="dropdown__products">
+                                        <li>
+                                            <ul class="dropdown__wifi-auth">
+                                                <li><a href="#">Соответствие закону</a></li>
+                                                <li><a href="#">Авторизация пользователей</a></li>
+                                                <li><a href="#">Личный кабинет</a></li>
+                                                <li><a href="#">Статистика и Аналитика</a></li>
+                                                <li><a href="#">Продвижение в Социальных сетях</a></li>
+                                                <li><a href="#">Дни рождения</a></li>
+                                                <li><a href="#">Отзывы и Опросы</a></li>
+                                                <li><a href="#">Брендирование страницы авторизации</a></li>
+                                                <li><a href="#">Переадресация на сайт</a></li>
+                                                <li><a href="#">Рекламные баннеры и видеоролики</a></li>
+                                                <li><a href="#">Программа лояльности</a></li>
+                                            </ul>
+                                            <a href="#">Wi-Fi Авторизация</a> 
+                                        </li>
+                                        <li><a href="#">Wi-Fi Таrget</a></li>
+                                        <li><a href="WiFi-transport.html">Wi-Fi в Транспорте</a></li>
+                                        <li><a href="commerce-wifi.html">Коммерческий Wi-Fi</a></li>
+                                    </ul>
+                            <a class="list-item__link" href="#">ПРОДУКТЫ</a>
+                            
+                        </li>
+                        <li class="list-item"> 
+                            <a class="list-item__link" href="partners.html">СТАТЬ ПАРТНЕРОМ</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="#">КЛИЕНТЫ</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item__link" href="#">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="page-name">
+            <div class="container">
+                <div class="row">
+                    <h2 class="col-md-12 page-name__title">Коммерческий WI-FI</h2>
+                </div>
+                <div class="row">
+                    <h3 class="col-md-12 page-name__subtitle">Заработок на WiFi – это необычный вариант получать пассивный доход. Сегодня доступ в интернет для многих становится поводом провести время в кафе, 
+                        парке или зоне отдыха, но далеко не всегда качество бесплатных сетей является приемлемым и доставляет пользователям дискомфорт низкой скоростью и обилием рекламы.
+                        Мы разработали решение, которое позволит Вам привлечь дополнительную прибыль, а пользователям даст качественный доступ в интернет. 
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="demand">
+            <div class="container">
+                <div class="row demand-title">
+                   <div class="col-md-12 demand-title__text">Где пользуется спросом:</div> 
+                </div>
+                <div class="row demand-content">
+                    <div class="col-md-2 demand__item">
+                        <div class="demand__item-icon">
+                            <img src="img/commercial/icon-1.png" alt="">
+                        </div>
+                        <div class="demand__item-text">пляжи</div>
+                    </div>
+                    <div class="col-md-2 demand__item">
+                        <div class="demand__item-icon">
+                            <img src="img/commercial/icon-2.png" alt="">
+                        </div>
+                        <div class="demand__item-text">парки</div>
+                    </div>
+                    <div class="col-md-2 demand__item">
+                        <div class="demand__item-icon">
+                            <img src="img/commercial/icon-3.png" alt="">
+                        </div>
+                        <div class="demand__item-text">вокзалы</div>
+                    </div>
+                    <div class="col-md-2 demand__item">
+                        <div class="demand__item-icon">
+                            <img src="img/commercial/icon-4.png" alt="">
+                        </div>
+                        <div class="demand__item-text">туристические достопримечательности</div>
+                    </div>
+                    <div class="col-md-2 demand__item">
+                        <div class="demand__item-icon">
+                            <img src="img/commercial/icon-5.png" alt="">
+                        </div>
+                        <div class="demand__item-text">пассажирский транспорт</div>
+                    </div>
+                    <div class="col-md-2 demand__item">
+                        <div class="demand__item-icon">
+                            <img src="img/commercial/icon-6.png" alt="">
+                        </div>
+                        <div class="demand__item-text">где пользователь готов оплатить доступ в 
+                            Wi-Fi сеть</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="system-option">
+            <div class="container">
+                <div class="row system-option__title">
+                    <div class="col-md-12 system-option__title-text">
+                        С помощью системы можно настроить:
+                    </div>
+                </div>
+                <div class="row system-option__content">
+                    <div class="col-md-3 system-option__item">
+                        <div class="system-option__item-icon">
+                            <img src="img/commercial/icon-7.png" alt="icon">
+                        </div>
+                        <div class="system-option__item-text">
+                            Дизайн приветственной страницы
+                        </div>
+                    </div>
+                    <div class="col-md-3 system-option__item">
+                        <div class="system-option__item-icon">
+                            <img src="img/commercial/icon-8.png" alt="icon">
+                        </div>
+                        <div class="system-option__item-text">
+                            Время сессии
+                        </div>
+                    </div>
+                    <div class="col-md-3 system-option__item">
+                        <div class="system-option__item-icon">
+                            <img src="img/commercial/icon-9.png" alt="icon">
+                        </div>
+                        <div class="system-option__item-text">
+                            Стоимость тарифов
+                        </div>
+                    </div>
+                    <div class="col-md-3 system-option__item">
+                        <div class="system-option__item-icon">
+                            <img src="img/commercial/icon-10.png" alt="icon">
+                        </div>
+                        <div class="system-option__item-text">
+                            Сбор данных
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work-scheme">
+            <div class="container">
+                <div class="row work-scheme__title">
+                    <div class="col-md-12 title-text">Как это работает:</div> 
+                </div>
+                <div class="row work-scheme__row">
+                    <div class="col-md-4 work-scheme__row-item">
+                        <div class="work-scheme__image">
+                            <img src="img/commercial/iphone-1.png" alt="connect">
+                        </div>
+                        <div class="work-scheme__desc">Гости подключаются к wifi сети</div>
+                    </div>
+                    <div class="col-md-4 work-scheme__row-item">
+                        <div class="work-scheme__image">
+                            <img src="img/commercial/iphone-2.png" alt="select time">
+                        </div>
+                        <div class="work-scheme__desc">Выбирают период пользования интернета</div>
+                    </div>
+                    <div class="col-md-4 work-scheme__row-item">
+                        <div class="work-scheme__image">
+                            <img src="img/commercial/iphone-3.png" alt="payment method">
+                        </div>
+                        <div class="work-scheme__desc"><p>Выбирают способ оплаты:</p>
+                            через телефон или банковской картой.</div>
+                    </div>
+                </div>
+                <div class="row work-scheme__row">
+                    <div class="col-md-4 work-scheme__row-item">
+                        <div class="work-scheme__image">
+                            <img src="img/commercial/iphone-4.png" alt="pay">
+                        </div>
+                        <div class="work-scheme__desc">Производят оплату</div>
+                    </div>
+                    <div class="col-md-4 work-scheme__row-item">
+                        <div class="work-scheme__image">
+                            <img src="img/commercial/iphone-5.png" alt="pay access">
+                        </div>
+                        <div class="work-scheme__desc">Подтверждают оплату</div>
+                    </div>
+                    <div class="col-md-4 work-scheme__row-item">
+                        <div class="work-scheme__image">
+                            <img src="img/commercial/iphone-6.png" alt="use i-net">
+                        </div>
+                        <div class="work-scheme__desc">Пользуются интернетом.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="more-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 more-info__item">
+                        <div class="more-info__item-icon">
+                            <img src="img/commercial/icon-wifi.png" alt="">
+                        </div>
+                        <div class="more-info__item-text">
+                            <p>Сервис запускается на базе любой</p> модели WiFi роутера марки Mikrotik
+                        </div>
+                    </div>
+                    <div class="col-md-6 more-info__item ml">
+                        <div class="more-info__item-icon">
+                            <img src="img/commercial/icon-devices.png" alt="">
+                        </div>
+                        <div class="more-info__item-text">
+                            Все необходимые настройки выполняются с помощью личного кабинета, доступного на смартфоне, планшете или ПК.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="request">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 request-btn">
+                        <a id="go" href="#" class="btn-gradient btn--big">Отправить заявку</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cost">
+            <div class="container">
+                <div class="row cost-title">
+                    <div class="col-md-12 cost-title__text">Стоимость</div>
+                </div>
+                <div class="row cost-text">
+                    <p class="col-md-12">Стоимость услуг определяется в зависимости от особенностей использования Вами данной услуги (место локации) и является предметом переговоров. Одними из основных вариантов оплаты услуги - это фиксированная оплата в месяц или % распределение дохода.  % распредения дохода устанавливается в личном кабинете и система проводит расчёты в автоматическом режиме.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-title">О компании</li>
+                            <li class="footer__menu-item">
+                                <a href="#">- новости</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-title">Продукты</li>
+                            <li class="footer__menu-item">
+                                <a href="#">- Wi-Fi Авторизация</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">- Wi-Fi Target</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="WiFi-transport.html">- Wi-Fi в Транспорте</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="commerce-wifi.html">- Коммерческий Wi-Fi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 pl-none">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-title">Стать партнером</li>
+                            <li class="footer__menu-item">
+                                <a href="#">- сотрудничество</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 pl-35px">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-title">Клиенты</li>
+                            <li class="footer__menu-item">
+                                <a href="#">- сотрудничество</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__menu mt">
+                            <li class="footer__menu-title">Контакты</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 justify-end">
+                        <div>
+                            <div class="footer__phone">
+                                <a href="tel:+88003339686">8 (800) 333-96-86</a>
+                                <p>Бесплатный номер</p>
+                            </div>
+                            <div class="footer__email">info@netgo.ru</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer__call-request">
+                            <a href="" id="go" class="btn-gradient">Заказать звонок</a>
+                        </div>
+                        <div class="footer__email-request">
+                            <a href="mailto:info@netgo.ru" id="" class="btn-gradient">Написать нам</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer__bottom">
+                    <div class="col-md-9 footer__confidencial">
+                        <a href="#">"Политика конфиденциальности</a> и <a href="#">обработки персональных данных" </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer__social-icons">
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer__copyright">
+                    <div class="col-md-12">2018 NETGO. Все права защищены.</div>
+                </div>
+            </div>
+        </footer>
+
+         <!-- modal window -->
+         <div id="modal_form"><!-- Сaмo oкнo --> 
+            <span id="modal_close"></span> <!-- Кнoпкa зaкрыть --> 
+            <div class="modal-title">ЗАКАЗАТЬ ЗВОНОК</div>
+            <form class="feedback-modal__form" action="">
+                <div class="feedback-modal__input-placeholder">
+                    <input class="feedback-modal__input" type="text" required>
+                    <div class="feedback-modal__placeholder">
+                        Имя<span>*</span>
+                    </div>
+                </div>
+                <div class="feedback-modal__input-placeholder">
+                    <input class="feedback-modal__input" type="text" required>
+                    <div class="feedback-modal__placeholder">
+                        Телефон<span>*</span>
+                    </div>
+                </div>
+                <div class="feedback-modal__input-placeholder">
+                    <input class="feedback-modal__input" type="text" required>
+                    <div class="feedback-modal__placeholder">
+                        E-mail<span>*</span>
+                    </div>
+                </div>
+                <div class="feedback-modal__input-placeholder">
+                    <input class="feedback-modal__input" type="text" required>
+                    <div class="feedback-modal__placeholder">
+                        Город<span>*</span>
+                    </div>
+                </div>
+                <div class="modal__radio">
+                    <input id="radio1" name="radio" type="radio">
+                    <label for="radio1">Стать клиентом</label>
+                    <input id="radio2" name="radio" type="radio">
+                    <label for="radio2">Стать дилером</label>
+                </div>
+                <div class="confidencial">
+                    <input id="conf-chkbox" type="checkbox">
+                    <label for="conf-chkbox">Я соглашаюсь с "Политикой конфиденциальности и обработки персональных данных</label>
+                </div>
+                <a href="#" class="feedback__modal-btn">Заказать</a>
+            </form>
+      </div>
+      <div id="overlay"></div><!-- Пoдлoжкa -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>

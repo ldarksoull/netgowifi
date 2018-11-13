@@ -1,0 +1,288 @@
+@charset "UTF-8";
+.padding-none {
+  padding-left: 0;
+}
+
+.padding {
+  padding: 5px;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  font-family: "Raleway";
+  font-size: 12px;
+  padding: 0.5rem 0;
+}
+
+.breadcrumb a {
+  color: #fff;
+}
+
+.breadcrumb-item.active {
+  color: #fff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "→";
+  color: #fff;
+}
+
+.breadcrumb-wrapper {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff7b00), color-stop(34%, #df2537), color-stop(65%, #80044a), to(#680450));
+  background-image: -webkit-linear-gradient(left, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
+  background-image: -o-linear-gradient(left, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
+  background-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
+}
+
+.authorization-content {
+  margin-top: 55px;
+}
+
+.sidebar-menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+
+.sidebar-menu__item {
+  outline: 1px solid #f4e7ec;
+  margin-bottom: 1px;
+  border: 3px solid transparent;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.sidebar-menu__item:hover {
+  color: #ff7b00;
+}
+
+.sidebar-menu__item.active {
+  outline: none;
+  border-width: 3px;
+  border-style: solid;
+  -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#ff7b00), color-stop(34%, #df2537), color-stop(65%, #80044a), to(#680450));
+  -webkit-border-image: -webkit-linear-gradient(left, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
+  -o-border-image: -o-linear-gradient(left, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
+  border-image: -webkit-gradient(linear, left top, right top, from(#ff7b00), color-stop(34%, #df2537), color-stop(65%, #80044a), to(#680450));
+  border-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
+  border-image-slice: 1;
+  border-image-repeat: round;
+}
+
+.sidebar-menu__item.active .sidebar-menu__item-link {
+  color: #ff7b00;
+}
+
+.sidebar-menu__item-link {
+  padding: 25px 20px;
+  font-family: "Raleway";
+  color: #5d1f63;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.zakon-first-row {
+  font-family: Arial;
+  line-height: 26px;
+  font-size: 14px;
+}
+
+.violet-text {
+  color: #6a0d4b;
+  font-family: "Avenir Next Cyr";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.zakon-first-row .zakon-paragraph:first-letter {
+  margin-left: 15px;
+}
+
+.zakon-paragraph-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.zakon-list li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.zakon-list li:first-letter {
+  padding-left: 20px;
+}
+
+.identification-banner {
+  background-color: #d23738;
+  padding-bottom: 10px;
+}
+
+.banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.banner-title {
+  font-size: 24px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "Avenir Next Cyr";
+  padding-top: 30px;
+  padding-bottom: 49px;
+}
+
+.banner-item {
+  margin-bottom: 15px;
+}
+
+.banner-item-icon {
+  margin-bottom: 22px;
+}
+
+.banner-item-text {
+  color: #fff;
+  font-family: "Avenir Next Cyr";
+}
+
+.strong-red {
+  color: #d23738;
+  font-family: "Arial";
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.zakon-scheme {
+  margin-top: 45px;
+}
+
+.zakon-scheme-item-icon {
+  margin-bottom: 15px;
+}
+
+.zakon-scheme-item-text {
+  font-family: "Arial";
+  font-weight: 500;
+}
+
+.zakon-moreinfo-scheme-wrapper {
+  margin-top: 70px;
+}
+
+.zakon-moreinfo-scheme-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Arial";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.zakon-moreinfo-scheme-content {
+  border: 2px solid #8c8b8b;
+  border-radius: 5px;
+}
+
+.zakon-moreinfo-scheme-item {
+  position: relative;
+}
+
+.zakon-moreinfo-scheme-item::after {
+  content: '';
+  position: absolute;
+  background: url("/img/authorization/Layer_118.png") no-repeat;
+  background-size: contain;
+  height: 100%;
+  right: -80px;
+  top: 0px;
+  width: 100px;
+}
+
+.zakon-moreinfo-scheme-item:last-child::after {
+  display: none;
+}
+
+.zakon-moreinfo-scheme-item-icon {
+  padding: 16px 0;
+}
+
+.zakon-moreinfo-scheme-item-text {
+  font-size: 12px;
+  font-family: "Arial";
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.zakon-moreinfo-scheme-morecontent {
+  margin-top: 10px;
+}
+
+.morecontent-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.morecontent-text {
+  font-size: 12px;
+}
+
+.margin {
+  margin-right: 10px;
+}
+
+.morecontent {
+  margin-bottom: 10px;
+}
+
+.morecontent-inner {
+  background-color: #f6f5f5;
+  padding: 3px;
+}
+
+.zakon-table {
+  width: 100%;
+}
+
+.zakon-table th, .zakon-table td {
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #d1d1d1;
+  border-collapse: collapse;
+}
+
+.zakon-table thead {
+  background: #f4f4f4;
+}
+
+.zakon-table-wrapper {
+  margin-top: 10px;
+  margin-bottom: 120px;
+}
+
+.zakon-table-title {
+  margin-top: 50px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.vertical-text {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.bgcolor-grey {
+  background: #f4f4f4;
+}

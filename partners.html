@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сервис идентификации пользователей Wi-Fi, организуем доступ к Wi-Fi с авторизацией</title>
+    <meta name="Keywords" content="сервис wifi авторизации, внедрение wifi, установка wifi, доступ, организовать, идентификация пользователей">
+    <meta name="Description" content="Внедряем и устанавливаем сети Wi-Fi с идентификацией пользователей по смс. Реализация самых сложных сетей Wi-Fi.">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.1/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/partners.css">
+</head>
+
+<body>
+<header id="top" class="header container">
+    <div class="topline row">
+        <div class="col-md-5 topline-left">
+            <div class="topline__wifi">
+                <img src="img/logo-wifi.png" alt="wifi">
+                <span>WiFi теперь законно!</span>
+            </div>
+            <div class="topline__dwnload">
+                <img src="img/logo-present.png" alt="presentation">
+                <a href="#">Скачать презентацию</a>
+            </div>
+        </div>
+        <div class="topline-right col-md-7">
+            <div class="topline__phone">
+                <div>Бесплатный номер</div>
+                <a href="tel:+88003339686">8 (800) 333-96-86</a>
+            </div>
+            <div class="topline__call-btn">
+                <a id="go" href="#">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu row">
+        <div class="main-logo col-md-3">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav class="menu col-md-9">
+            <ul class="menu__list">
+                <li class="list-item">
+                    <a class="list-item__link" href="#">О КОМПАНИИ</a>
+                </li>
+                <li class="list-item">
+                        <ul class="dropdown__products">
+                                <li>
+                                    <ul class="dropdown__wifi-auth">
+                                        <li><a href="#">Соответствие закону</a></li>
+                                        <li><a href="#">Авторизация пользователей</a></li>
+                                        <li><a href="#">Личный кабинет</a></li>
+                                        <li><a href="#">Статистика и Аналитика</a></li>
+                                        <li><a href="#">Продвижение в Социальных сетях</a></li>
+                                        <li><a href="#">Дни рождения</a></li>
+                                        <li><a href="#">Отзывы и Опросы</a></li>
+                                        <li><a href="#">Брендирование страницы авторизации</a></li>
+                                        <li><a href="#">Переадресация на сайт</a></li>
+                                        <li><a href="#">Рекламные баннеры и видеоролики</a></li>
+                                        <li><a href="#">Программа лояльности</a></li>
+                                    </ul>
+                                    <a href="#">Wi-Fi Авторизация</a> 
+                                </li>
+                                <li><a href="#">Wi-Fi Таrget</a></li>
+                                <li><a href="WiFi-transport.html">Wi-Fi в Транспорте</a></li>
+                                <li><a href="commerce-wifi.html">Коммерческий Wi-Fi</a></li>
+                            </ul>
+                    <a class="list-item__link" href="#">ПРОДУКТЫ</a>
+                    
+                </li>
+                <li class="list-item"> 
+                    <a class="list-item__link" href="#">СТАТЬ ПАРТНЕРОМ</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-item__link" href="#">КЛИЕНТЫ</a>
+                </li>
+                <li class="list-item">
+                    <a class="list-item__link" href="#">КОНТАКТЫ</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 page-title__sub">
+                <p>СОВРЕМЕННЫЙ И ВЫСОКОМАРЖИНАЛЬНЫЙ</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 page-title__main">
+                <h2>
+                    БИЗНЕС ПО ОРГАНИЗАЦИИ РЕКЛАМЫ 
+                    НА БАЗЕ WI-FI СЕТЕЙ
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 about-video">
+                <iframe width="100%" height="403" src="https://www.youtube.com/embed/KAZbSFlioUE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 about-text">
+                <p class="about-text__title">NetGoWiFi</p>
+                <p class="about-text__description">– это облачный сервис на основе Wi-Fi сетей общего доступа, дающий широкие возможности продвижения товаров и услуг.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 main-products__title">
+                СОСТОИТ ИЗ 4 ОСНОВНЫХ ПРОДУКТОВ
+            </div>
+        </div>
+        <div class="row main-products__items">
+            <div class="col-md-3 main-products__item">
+                <div class="product-icon">
+                    <img src="img/partner/wifi-auth.png" alt="authorization">
+                </div>
+                <div class="product-name">
+                    Wi-Fi Авторизация
+                </div>
+            </div>
+            <div class="col-md-3 main-products__item">
+                <div class="product-icon">
+                    <img src="img/partner/wifi-target.png" alt="wifi target">
+                </div>
+                <div class="product-name">
+                    Wi-Fi Таргет
+                </div>
+            </div>
+            <div class="col-md-3 main-products__item">
+                <div class="product-icon">
+                    <img src="img/partner/wifi-transport.png" alt="wifi-transport">
+                </div>
+                <div class="product-name">
+                    Wi-Fi Транспорт
+                </div>
+            </div>
+            <div class="col-md-3 main-products__item">
+                <div class="product-icon">
+                    <img src="img/partner/wifi-commerce.png" alt="wifi-commerce">
+                </div>
+                <div class="product-name">
+                    Коммерческий Wi-Fi
+                </div>
+            </div>
+        </div>
+        <div class="row main-products__description">
+            <div class="col-md-12 description-title">
+                На сегодняшний день интернет это самая большая площадка для рекламы и поиска клиентов
+            </div>
+            <div class="col-md-12 description-content">
+                <ul class="content-list">
+                    <li class="content-list__item">Благодаря развертыванию своей сети, Вы <span class="bold">откроете собственную рекламную площадку</span>.</li>
+                    <li class="content-list__item">С помощью автоматизированных технологий сбора данных, Вы <span class="bold">накопите базу клиентов и оптимизируете бизнес</span>.</li>
+                    <li class="content-list__item">С помощью автоматической системы лояльности, дадите клиентам <span class="bold">повод вернуться к Вам повторно</span>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="you-get">
+    <div class="container">
+        <div class="row you-get__title">
+            <div class="col-md-12">Работая с вами вы получаете:</div>
+        </div>
+        <div class="row you-get__content">
+            <div class="row ">
+                <div class="col-md-6 content-center">
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-1.png" alt="icon"></div>
+                        <div class="item-text">Возможность получать доход от 1 400 000 рублей в год</div>
+                    </div>
+                </div>
+                <div class="col-md-6 content-center">
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-6.png" alt="icon"></div>
+                        <div class="item-text">Рекламно-информационные материалы (коммерческие предложения, Бренд-бук, презентации, фирменные бланки, скрипты продаж и механики взаимодействия с клиентами)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 content-center">
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-2.png" alt="icon"></div>
+                        <div class="item-text">Возможность открыть бизнес в одном из самых перспективных направлений рынка</div>
+                    </div>
+                </div>
+                <div class="col-md-6 content-center">
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-7.png" alt="icon"></div>
+                        <div class="item-text">Формы договоров</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 content-center" >
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-3.png" alt="icon"></div>
+                        <div class="item-text">Полностью автоматизированную систему управления сервисом</div>
+                    </div>
+                </div>
+                <div class="col-md-6 content-center">
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-8.png" alt="icon"></div>
+                        <div class="item-text">Обучающие вэбинары и видеомануалы по каждому из продуктов</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 content-center">
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-4.png" alt="icon"></div>
+                        <div class="item-text">Торговые бизнес модели</div>
+                    </div>
+                </div>
+                <div class="col-md-6 content-center">
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-9.png" alt="icon"></div>
+                        <div class="item-text">Корпоративная почта и личный кабинет для контроля состояния бизнеса</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 content-center">
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-5.png" alt="icon"></div>
+                        <div class="item-text">Эксклюзивное право на освоение региона</div>
+                    </div>
+                </div>
+                <div class="col-md-6 content-center">
+                    <div class="you-get__content-item">
+                        <div class="item-icon"><img src="img/partner/icon-10.png" alt="icon"></div>
+                        <div class="item-text">Техподдержку от специалистов головной компании</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row btn-wrapper">
+            <div class="col-md-12 btn-center-wrapper">
+                <a class="btn-consultation" href="#">Получить консультацию</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="it-business">
+    <div class="container">
+        <div class="row it-business__content">
+            <div class="col-md-4">
+                <div class="it-business__title">IT-БИЗНЕС</div>
+                <div class="it-business__subtitle">ОДНО ИЗ САМЫХ АКТУАЛЬНЫХ НАПРАВЛЕНИЙ 
+                    БИЗНЕСА В 2018 ГОДУ</div>
+                <div class="presentation-link">
+                    <div class="presentation-icon"><img src="img/partner/present-icon.png" alt="icon"></div>
+                    <div class="presentation-text">Скачать презентацию</div>
+                </div>
+            </div>
+            <div class="col-md-8 it-business__bg">
+                <img src="img/partner/bg-it.png" alt="bg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 about-business">
+                О бизнесе
+            </div>
+            <div class="col-md-12 about-business__text">
+                Ваша задача как представителя “NetGo” заключается в поиске заведений, установке в них оборудования и подключения их к системе. Вы будете получать доход в виде ежемесячной абонентской платы от подключенных заведений, размер которой определяете самостоятельно. Система работает автоматически. 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="howWeWork">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 howWeWork__title">Как мы работаем</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 howWeWork__content">
+                <div class="howWeWork__content-item">
+                    <div class="howWeWork-icon">1</div>
+                    <div class="howWeWork-text">Вы находите клиента</div>
+                </div>
+                <div class="howWeWork__content-item">
+                    <div class="howWeWork-icon">2</div>
+                    <div class="howWeWork-text">Заключаете договор </div>
+                </div>
+                <div class="howWeWork__content-item">
+                    <div class="howWeWork-icon">3</div>
+                    <div class="howWeWork-text">Вы, через свой ЛК заводите заведение в системе и активируете выбраные клиентом услуги.</div>
+                </div>
+                <div class="howWeWork__content-item">
+                    <div class="howWeWork-icon">4</div>
+                    <div class="howWeWork-text">Вы устанавливаете сервис (на старте вместе со специалистом техподдержки 10-15 мин.)</div>
+                </div>
+                <div class="howWeWork__content-item">
+                    <div class="howWeWork-icon">5</div>
+                    <div class="howWeWork-text">Далее всё работает автоматически. Вы только контролируете ежемесячную оплату.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clients">
+    <div class="container">
+        <div class="row clients__title">Этот инструмент уже выбрали:</div>
+        <div class="row clients__logos">
+            <div class="clients__logos-item">
+                <img src="img/mainpage/icon-partner-1.png" alt="logo">
+            </div>
+            <div class="clients__logos-item">
+                <img src="img/mainpage/icon-partner-2.png" alt="logo">
+            </div>
+            <div class="clients__logos-item">
+                <img src="img/mainpage/icon-partner-3.png" alt="logo">
+            </div>
+            <div class="clients__logos-item">
+                <img src="img/mainpage/icon-partner-4.png" alt="logo">
+            </div>
+            <div class="clients__logos-item">
+                <img src="img/mainpage/icon-partner-5.png" alt="logo">
+            </div>
+            <div class="clients__logos-item">
+                <img src="img/mainpage/icon-partner-6.png" alt="logo">
+            </div>
+            <div class="clients__logos-item">
+                <img src="img/mainpage/icon-partner-7.png" alt="logo">
+            </div>
+            <div class="clients__logos-item">
+                <img src="img/mainpage/icon-partner-8.png" alt="logo">
+            </div>
+            <div class="clients__logos-item">
+                <img src="img/mainpage/icon-partner-9.png" alt="logo">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pClients">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pClients__title">Ваши потенциальные клиенты</div>
+        </div>
+        <div class="row pClients__content">
+            <div class="col-lg-6 col-md-12 pClients__list">
+                <div class="pClients__item">
+                    <div class="pClients__item-icon "><img style="width: 60%" src="img/partner/car.png" alt="icon"></div>
+                    <div class="pClients__item-text">Автомойки и СТО</div>
+                </div>
+                <div class="pClients__item">
+                    <div class="pClients__item-icon"><img src="img/partner/icon-clients-3.png" alt="icon"></div>
+                    <div class="pClients__item-text">Кафе</div>
+                </div>
+                <div class="pClients__item">
+                    <div class="pClients__item-icon"><img src="img/partner/icon-clients-4.png" alt="icon"></div>
+                    <div class="pClients__item-text">Кинотеатры</div>
+                </div>
+                <div class="pClients__item">
+                    <div class="pClients__item-icon"><img src="img/partner/icon-clients-5.png" alt="icon"></div>
+                    <div class="pClients__item-text">Торговые 
+                        центры</div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 pClients__list">
+                <div class="pClients__item">
+                    <div class="pClients__item-icon"><img src="img/partner/icon-clients-6.png" alt="icon"></div>
+                    <div class="pClients__item-text">Больницы</div>
+                </div>
+                <div class="pClients__item">
+                    <div class="pClients__item-icon"><img src="img/partner/icon-clients-7.png" alt="icon"></div>
+                    <div class="pClients__item-text">Салоны
+                        красоты</div>
+                </div>
+                <div class="pClients__item">
+                    <div class="pClients__item-icon"><img src="img/partner/icon-clients-8.png" alt="icon"></div>
+                    <div class="pClients__item-text">Гостиницы</div>
+                </div>
+                <div class="pClients__item">
+                    <div class="pClients__item-icon"><img src="img/partner/icon-clients-9.png" alt="icon"></div>
+                    <div class="pClients__item-text">Общественный
+                        транспорт</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-12 pClients__text">
+                Под понятие общественные точки попадают любые места, которые имеют высокую проходимость людей, такие как «парк, больница, Вуз, общественный транспорт, торговый центр, остановка и т.д.» прибыль с общественных точек также можно получать за счет размещения сторонних рекламодателей, причем их количество не ограниченно.
+            </div>
+        </div>
+    </div>
+</section>
+<section class="calcProfit">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 calcProfit__title">РАСЧЁТ ПРИБЫЛИ</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 calcProfit__text">В месяц можно подключать около 20 заведений. Для расчёта возьмём в 2 раза меньше, т.е. 10 заведений. В среднем абонентская плата составляет 2500 руб, (авторизация+маркетинг). Таким образом, за 4 месяца у Вас может быть подключено 40 заведений. Суммарный доход в конце четвертого месяца составит 250 000 руб. При вычете затрат отчислений в Управляющую компанию которые за 4 месяца составят 57 500 рублей и 6% налога (при работе по упрощённой системе налогообложения) чистая прибыль составит 177 500 рублей. Затрат на офис и его содержания не требуется, т.к. переговоры (на практике) проводятся на территории клиента. В итоге, к концу года чистая прибыль составит более 1 400 000 рублей с ежемесячным доходом 300 000 рублей.</div>
+        </div>
+        <div class="row tables-connections">
+            <div class="col-md-6 connections">
+                <div class="block-connections">
+                    <div class="connections-wrapper">
+                        <div class="connections__text">Среднее ежемес. кол-во подкл. заведений</div>
+                        <div class="connections__number">10</div>
+                    </div>
+                    <div class="connections-wrapper">
+                        <div class="connections__text">Средняя стоимость 1 подкл.</div>
+                        <div class="connections__number">2500 <span>р</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <table class="deductions">
+                    <thead>
+                        <th colspan="2">Отчисления в УК</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>до 10 заведений вкл.</td>
+                            <td>750 руб</td>
+                        </tr>
+                        <tr>
+                            <td>От 11 - 20 заведений вкл.</td>
+                            <td>700 руб</td>
+                        </tr>
+                        <tr>
+                            <td>От 21 - 30 заведений вкл.</td>
+                            <td>650 руб</td>
+                        </tr>
+                        <tr>
+                            <td>От 31 - 40 заведений вкл.</td>
+                            <td>600 руб</td>
+                        </tr>
+                        <tr>
+                            <td>От 41 - 50 заведений вкл.</td>
+                            <td>550 руб</td>
+                        </tr>
+                        <tr>
+                            <td>50 и более заведений</td>
+                            <td>500 руб</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row" class="bookkeeping">
+            <div class="col-md-12">
+                <table class="bookkeeping-table">
+                    <thead>
+                        <th></th>
+                        <th>1-й мес.</th>
+                        <th>3-й мес.</th>
+                        <th>6-й мес.</th>
+                        <th>9-й мес.</th>
+                        <th>12-й мес.</th>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-grey">
+                            <td class="align-left">Доход</td>
+                            <td>25 000 р.</td>
+                            <td>75 000 р.</td>
+                            <td>150 000 р.</td>
+                            <td>225 000 р.</td>
+                            <td>300 000 р.</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Отчисления</td>
+                            <td></td>
+                            <td>19 500 р.</td>
+                            <td>30 000 р.</td>
+                            <td>45 000 р.</td>
+                            <td>60 000 р.</td>
+                        </tr>
+                        <tr class="bg-grey">
+                            <td class="align-left">Налог 6% <span class="small">+ пенс. и мед. страхование</span></td>
+                            <td>4 199 р.</td>
+                            <td>7 199 р.</td>
+                            <td>11 699 р.</td>
+                            <td>16 199 р.</td>
+                            <td>20 699 р.</td>
+                        </tr>
+                        <tr class="row-bold">
+                            <td class="align-left">Прибыль в мес.</td>
+                            <td>20 801 р.</td>
+                            <td>48 301 р.</td>
+                            <td>108 301 р.</td>
+                            <td>163 801 р.</td>
+                            <td>219 301 р.</td>
+                        </tr>
+                        <tr class="last-row">
+                            <td class="align-left">Суммарная прибыль</td>
+                            <td>20 801 р.</td>
+                            <td>99 404 р.</td>
+                            <td>362 308 р.</td>
+                            <td>768 211 р.</td>
+                            <td>1 400 615 р.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="col-md-12 table-remark">
+                    <span class="bold">Прибыль рассчитывалась</span> &nbsp;по опыту в городе с населением 500 тыс. человек
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="calculator">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 block-title">
+                Калькулятор
+            </div>
+        </div>
+        <div class="row calculator-content">
+            <div class="col-md-7 calculator-text">
+                <p>Заработок от подключенных ранее заведений является пассивным и не требует никаких дополнительных вложений, кроме Вашего внимания.</p>
+                <p class="m-top">Абонентскую плату для полученных заведений Вы устанавливаете сами, в регионах она обычно составляет от 2000 до 7000 в месяц. Количество подключаемых заведений не ограниченно, все зависит от Вашей работы.</p>
+                <p class="text-strong"><strong>Таким образом, учитывая период раскрутки около 3 месяцев, первоначальные вложения могут окупиться через 4 месяца.</strong></p>
+                <p>Показатель окупаемости является предположительным и основаны на субъективных расчетах. 
+                    Они не являются обещанием успешности бизнеса. Успешность бизнеса всегда зависит только от Вас самих!
+                </p>
+            </div>
+            <div class="col-md-5">
+                <div class="calculator-wrapper">
+                <div class="calc-header">
+                    <p class="calc-header__text">Ваша чистая прибыль</p>
+                    <p id="result" class="calc-header__sum">295000 рублей.</p>
+                    <p class="calc-header__text">За <span id="total-month">12 месяцев</span></p>
+                </div>
+                <div class="calc-body">
+                    <div class="calc-input__item">
+                        <label for="range-cost">Расходы, тыс. р</label>
+                        <input name="cost" id="range-cost" type="text" data-slider-handle="custom" data-slider-value="5000" >
+                        <div class="num-from-to">
+                            <p>0</p>
+                            <p class="color-violet">70000</p>
+                        </div>
+                    </div>
+                    <div class="calc-input__item">
+                        <label for="range-connections">Количество подключений в месяц</label>
+                        <input type="text" name="connections" id="range-connections" data-slider-handle="custom" data-slider-value="10">
+                        <div class="num-from-to">
+                            <p>10</p>
+                            <p class="color-violet">40</p>
+                        </div>
+                    </div>
+                    <div class="calc-input__item">
+                        <label for="range-month">Период в месяцах</label>
+                        <input type="text" name="month" id="range-month" data-slider-handle="custom" data-slider-value="12">
+                        <div class="num-from-to">
+                            <p>1</p>
+                            <p class="color-violet">12</p>
+                        </div>
+                    </div>
+                    <div class="calc-input__item">
+                        <label for="range-price">Цена подключения</label>
+                        <input type="text" name="price" id="range-price" data-slider-handle="custom" data-slider-value="2500" >
+                        <div class="num-from-to">
+                            <p>1000</p>
+                            <p class="color-violet">5000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="faq">
+    <div class="container">
+        <div class="row block-title faq-title">
+            <div class="col-md-12">Часто задаваемые вопросы:</div>
+        </div>
+        <div class="row faq-content">
+            <div class="col-md-12 faq-content__item">
+                <div class="item-question">
+                    Сколько нужно вложить в открытие?
+                </div>
+                <div class="item-answer">
+                    Если у Вас есть ИП или ООО и Вы планируете вести переговоры с клиентами самостоятельно, то можно начать без вложений Так как встречи 
+                    с клиентами происходят на их территории, то на начальном этапе офис тоже не потребуется.
+                </div>
+            </div>
+            <div class="col-md-12 faq-content__item">
+                <div class="item-question">Нужно ли иметь it-образование?</div>
+                <div class="item-answer">Нет не потребуется, система полностью автоматизирована, а для управления настройками достаточно базовых знаний пользования компьютером и интернетом.
+                </div>
+            </div>
+            <div class="col-md-12 faq-content__item">
+                <div class="item-question">Куда можно продавать?</div>
+                <div class="item-answer">Продавать сервис можно в любые организации где есть общественная Wi-Fi сеть, например рестораны, гостиницы, кафе, клубы, спорткомплексы, торговые центры, поликлиники, парки, вокзалы и пр.</div>
+            </div>
+            <div class="col-md-12 faq-content__item">
+                <div class="item-question">Сколько в городе должно быть населения, чтобы был смысл открывать бизнес?</div>
+                <div class="item-answer">От 200000 человек.</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="request">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 request-btn-wrapper">
+                <a id="go" href="#" class="request-btn">Отправить заявку</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="footer__menu">
+                    <li class="footer__menu-title"><a href="#">О компании</a></li>
+                    <li class="footer__menu-item">
+                        <a href="#">- новости</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="footer__menu">
+                    <li class="footer__menu-title"><a href="#">Продукты</a></li>
+                    <li class="footer__menu-item">
+                        <a href="#">- Wi-Fi Авторизация</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#">- Wi-Fi Target</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="WiFi-transport.html">- Wi-Fi в Транспорте</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="commerce-wifi.html">- Коммерческий Wi-Fi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 pl-none">
+                <ul class="footer__menu">
+                    <li class="footer__menu-title"><a href="#">Стать партнером</a></li>
+                    <li class="footer__menu-item">
+                        <a href="#">- сотрудничество</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 pl-35px">
+                <ul class="footer__menu">
+                    <li class="footer__menu-title"><a href="#">Клиенты</a></li>
+                    <li class="footer__menu-item">
+                        <a href="#">- сотрудничество</a>
+                    </li>
+                </ul>
+                <ul class="footer__menu footer-mt">
+                    <li class="footer__menu-title"><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 justify-end">
+                <div>
+                    <div class="footer__phone">
+                        <a href="tel:+88003339686">8 (800) 333-96-86</a>
+                        <p>Бесплатный номер</p>
+                    </div>
+                    <div class="footer__email">info@netgo.ru</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="footer__call-request">
+                    <a href="" id="go" class="btn-gradient">Заказать звонок</a>
+                </div>
+                <div class="footer__email-request">
+                    <a href="mailto:info@netgo.ru" id="" class="btn-gradient">Написать нам</a>
+                </div>
+            </div>
+        </div>
+        <div class="row footer__bottom">
+            <div class="col-md-9 footer__confidencial">
+                <a href="#">"Политика конфиденциальности</a> и <a href="#">обработки персональных данных" </a>
+            </div>
+            <div class="col-md-3">
+                <div class="footer__social-icons">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row footer__copyright">
+            <div class="col-md-12">2018 NETGO. Все права защищены.</div>
+        </div>
+    </div>
+</footer>
+
+<!-- modal window -->
+<div id="modal_form"><!-- Сaмo oкнo --> 
+    <span id="modal_close"></span> <!-- Кнoпкa зaкрыть --> 
+    <div class="modal-title">ЗАКАЗАТЬ ЗВОНОК</div>
+    <form class="feedback-modal__form" action="">
+        <div class="feedback-modal__input-placeholder">
+            <input class="feedback-modal__input" type="text" required>
+            <div class="feedback-modal__placeholder">
+                Имя<span>*</span>
+            </div>
+        </div>
+        <div class="feedback-modal__input-placeholder">
+            <input class="feedback-modal__input" type="text" required>
+            <div class="feedback-modal__placeholder">
+                Телефон<span>*</span>
+            </div>
+        </div>
+        <div class="feedback-modal__input-placeholder">
+            <input class="feedback-modal__input" type="text" required>
+            <div class="feedback-modal__placeholder">
+                E-mail<span>*</span>
+            </div>
+        </div>
+        <div class="feedback-modal__input-placeholder">
+            <input class="feedback-modal__input" type="text" required>
+            <div class="feedback-modal__placeholder">
+                Город<span>*</span>
+            </div>
+        </div>
+        <div class="modal__radio">
+            <input id="radio1" name="radio" type="radio">
+            <label for="radio1">Стать клиентом</label>
+            <input id="radio2" name="radio" type="radio">
+            <label for="radio2">Стать дилером</label>
+        </div>
+        <div class="confidencial">
+            <input id="conf-chkbox" type="checkbox">
+            <label for="conf-chkbox">Я соглашаюсь с "Политикой конфиденциальности и обработки персональных данных</label>
+        </div>
+        <a href="#" class="feedback__modal-btn">Заказать</a>
+    </form>
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.1/bootstrap-slider.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

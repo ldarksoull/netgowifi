@@ -1,0 +1,223 @@
+$title-font: "Avenir Next Cyr"
+$font: "Raleway"
+
+a
+    display: inline-block
+.btn-standart
+    width: 225px
+    height: 58px
+    line-height: 58px
+    text-align: center
+    cursor: pointer
+    background-color: #d23738
+    color: #fff
+    font-family: Tahoma
+    font-size: 16px
+    font-weight: 400
+    border-radius: 5px
+    text-transform: uppercase
+    transition: 0.5s ease
+    &:hover
+        background-color: #ff9927
+        color: #ffffff
+    ////////////////
+.page-name__title
+    margin-top: 40px
+    color: #000000
+    font-family: $title-font
+    font-size: 48px
+    font-weight: 400
+    line-height: 60px
+.page-name__subtitle
+    margin-top: 21px
+    margin-bottom: 60px
+    color: #000000
+    font-family: $font
+    font-size: 14px
+    font-weight: 400
+    line-height: 26px
+////// demand //////
+.demand
+    background-color: #6b0d4b
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &-icon
+            height: 60px
+            align-items: baseline
+        &-text
+            width: 100%
+            margin-top: 10px
+            color: #ffffff
+            font-family: $font
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            min-height: 110px
+            text-align: center
+.demand-title
+    display: flex
+    justify-content: center
+    text-align: center
+    height: 80px
+    &__text
+        color: #ffffff
+        font-family: $title-font
+        font-size: 30px
+        font-weight: 400
+        line-height: 34px
+        display: flex
+        align-items: flex-end
+        justify-content: center
+.demand-content
+    margin-top: 55px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: $font
+//// system-option ////
+.system-option__title
+    display: flex
+    justify-content: center
+    margin-top: 70px
+    align-items: center
+    &-text
+        text-align: center
+        font-family: $font
+        font-size: 30px
+        font-weight: 400
+        line-height: 34px
+.system-option__content
+    margin-top: 53px
+    margin-bottom: 40px
+.system-option
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &-icon
+            height: 60px
+            align-items: baseline
+        &-text
+            margin-top: 20px
+            font-family: $font
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            min-height: 60px
+            text-align: center
+//// work-scheme /////
+.work-scheme
+    margin-top: 70px
+.work-scheme__title
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 43px
+.title-text
+    text-align: center
+    color: #000000
+    font-family: $title-font
+    font-size: 30px
+    font-weight: 400
+    line-height: 34px
+.work-scheme__row
+    margin-bottom: 10px
+    position: relative
+    &-item
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            top: 35%
+            right: -50px
+            background: url('/img/commercial/angle-right.png') no-repeat center
+            height: 100px
+            width: 100px
+        &:last-child::after
+            display: none
+
+.work-scheme__image
+    margin-bottom: 20px
+    height: 451px
+.work-scheme__desc
+    min-height: 70px
+    text-align: center
+    color: #000000
+    font-family: $font
+    font-size: 14px
+    font-weight: 500
+    line-height: 22px
+//// more-info /////
+.more-info
+    margin-top: 50px
+    &__item
+        padding: 0 30px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        &-icon
+            margin-right: 80px
+        &-text
+            color: #000000
+            font-family: $font
+            font-size: 18px
+            font-weight: 400
+            line-height: 28px
+//// btn--big ////
+.request
+    height: 200px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 25px
+    margin-bottom: 8px
+.request-btn
+    display: flex
+    justify-content: center
+    align-items: center
+.btn--big
+    text-align: center
+    border-radius: 10px
+    color: #ffffff
+    font-family: $font
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 400
+    line-height: 73px
+    width: 360px
+    height: 73px
+    background-color: #d23738
+    background-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%)
+    &:hover
+        color: #ffffff
+/// cost ///
+.cost
+    margin-bottom: 120px
+.cost-title
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 18px
+.cost-title__text
+    text-align: center
+    color: #000000
+    font-family: "Arial"
+    font-size: 30px
+    font-weight: 400
+    line-height: 34px
+.cost-text
+    p
+        text-align: left
+        color: #000000
+        font-family: "Arial"
+        font-size: 14px
+        font-weight: 400
+        line-height: 26px
