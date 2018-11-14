@@ -260,6 +260,23 @@ $font: "Raleway"
     @media( max-width: 991px)
         font-size: 20px
 /// block-grey ////
+.third-block
+    @media(max-width: 1440px)
+        margin-left: 0!important
+.block-col-4
+    @media(max-width: 1410px)
+        margin-left: 8.333333%
+        padding-right: 8.333333%
+.block-content
+    max-width: 500px
+    @media(max-width: 1199px)
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        max-width: 100%
+        text-align: center
+        margin-top: 40px
 .-grey
     background-color: #efefef
 .block
@@ -269,6 +286,8 @@ $font: "Raleway"
     padding: 50px 0
 .block-2
     padding: 100px 0
+    @media( max-width: 1199px)
+        padding: 50px 0
 .block-title
     color: #000000
     font-family: $title-font-bold
