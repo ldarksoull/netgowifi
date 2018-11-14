@@ -33,13 +33,20 @@
 }
 
 .user-auth__howItWork-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
 .howItWork-text__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#680450), color-stop(35%, #80044a), color-stop(66%, #df2537), to(#ff7b00));
+  background: -webkit-linear-gradient(bottom, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
+  background: -o-linear-gradient(bottom, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
   background: linear-gradient(to top, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
   background-clip: text;
   font-family: Impact;

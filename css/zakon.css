@@ -28,6 +28,9 @@
 }
 
 .breadcrumb-wrapper {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff7b00), color-stop(34%, #df2537), color-stop(65%, #80044a), to(#680450));
+  background-image: -webkit-linear-gradient(left, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
+  background-image: -o-linear-gradient(left, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
   background-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
 }
 
@@ -36,6 +39,7 @@
 }
 
 .sidebar-menu {
+  position: -webkit-sticky;
   position: sticky;
   top: 10px;
 }
@@ -44,6 +48,8 @@
   outline: 1px solid #f4e7ec;
   margin-bottom: 1px;
   border: 3px solid transparent;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -55,6 +61,10 @@
   outline: none;
   border-width: 3px;
   border-style: solid;
+  -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#ff7b00), color-stop(34%, #df2537), color-stop(65%, #80044a), to(#680450));
+  -webkit-border-image: -webkit-linear-gradient(left, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
+  -o-border-image: -o-linear-gradient(left, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
+  border-image: -webkit-gradient(linear, left top, right top, from(#ff7b00), color-stop(34%, #df2537), color-stop(65%, #80044a), to(#680450));
   border-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%);
   border-image-slice: 1;
   border-image-repeat: round;
@@ -109,14 +119,22 @@
 }
 
 .banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .banner-title {
   font-size: 24px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: #ffffff;
   font-family: "Avenir Next Cyr";
@@ -258,6 +276,8 @@
 }
 
 .vertical-text {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   text-align: center;
   vertical-align: middle;
