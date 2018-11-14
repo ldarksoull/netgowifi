@@ -23,6 +23,7 @@ $font: "Raleway"
     padding: 10px 15px
     height: 10vh
     display: flex
+    background: #fff
     justify-content: space-around
 .header-company
     display: flex
@@ -508,6 +509,10 @@ button
     align-items: center
 .mb-lg
     margin-bottom: 30px
+.mb-xl
+    margin-bottom: 50px
+.mb-100px
+    margin-bottom: 100px
 .button
     display: flex
     justify-content: center
@@ -757,48 +762,59 @@ button
 /// authorization ////
 .breadcrumb
   background-color: transparent
-  font-family: "Raleway"
+  font-family: $font
   font-size: 12px
-  padding: 0.5rem 0
-  a
-    color: #fff
-.breadcrumb-item.active
-  color: #fff
-.breadcrumb-item+.breadcrumb-item::before
-  content: ('\2192')
-  color: #fff
-.breadcrumb-wrapper
-  background-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%)
+  padding: 0
+  padding-top: 3px
 
 .authorization-content
   margin-top: 55px
 ////sidebar////
 .sidebar-menu
-  position: sticky
-  top: 10px
+    position: sticky
+    top: 55px
 .sidebar-menu__item
-  outline: 1px solid #f4e7ec
-  margin-bottom: 1px
-  border: 3px solid transparent
   transition: 0.2s
-  &:hover
-    color: #ff7b00
-.sidebar-menu__item.active
-    outline: none
-    border-width: 3px
-    border-style: solid
-    border-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%)
-    border-image-slice: 1
-    border-image-repeat: round
-    .sidebar-menu__item-link
-      color: #ff7b00
+  display: flex
+  align-items: center
+.sidebar-menu__item-link::before
+    display: block
+    margin-right: 10px
+    content: ""
+    border-radius: 50%
+    width: 8px
+    height: 8px
+    background: #e7e7e7
+    transition: 0.2s
+
+.sidebar-menu__item-link:hover::before
+    background: #ff9927
 .sidebar-menu__item-link
-    padding: 25px 20px
-    font-family: "Raleway"
-    color: #5d1f63
-    font-size: 14px
+    display: flex
+    align-items: center
+    transition: 0.2s
+    &:hover
+        color: #ff9927
+.sidebar-menu__item-link.active
+    color: #4e0950
+    font-family: $font
     font-weight: 700
-////
+    &:before
+        display: block
+        margin-right: 10px
+        content: ""
+        border-radius: 50%
+        width: 25px
+        height: 8px
+        border-radius: 8px
+        background: #4e0950
+.sidebar-menu__item-link
+    color: #000000
+    font-family: $font
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 35px
+
 .item-text,.item-icon
   justify-content: center
   align-items: center
@@ -806,16 +822,52 @@ button
   width: 100%
   justify-content: center
   text-align: center
+.scrollable
+    max-height: 100vh
+    overflow-y: auto
+    &::-webkit-scrollbar
+        width: 0
 .content-title
   font-size: 48px
-  font-family: "Avenir Next Cyr"
+  font-family: $title-font-bold
   font-weight: 600
   margin-bottom: 40px
+.content-subtitle
+    color: #000000
+    font-family: $title-font-bold
+    font-size: 30px
+    font-weight: 700
+    line-height: 35px
+.content-item
+    display: flex
+    align-items: center
+    color: #000000
+    font-family: $font
+    font-size: 16px
+    font-weight: 400
+    &::before
+        content: ""
+        width: 8px
+        height: 8px
+        border: 2px solid #4e0950
+        margin-right: 10px
+.content-list
+    li
+        line-height: 42px
+        list-style-image: url('/img/authorization/Rectangle 3.10.png')
+        list-style-position: inside
 .paragraph
-  font-family: "Arial"
-  font-size: 14px
-  font-weight: 400
-  line-height: 26px
-  &:first-letter
-    margin-left: 5px
+    color: #000000
+    font-family: $font
+    font-size: 16px
+    font-weight: 500
+    line-height: 32px
+    &:first-letter
+        margin-left: 15px
+.text
+    color: #000000
+    font-family: $font
+    font-size: 16px
+    font-weight: 500
+    line-height: 32px
 ///////////////
