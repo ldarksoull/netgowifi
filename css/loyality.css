@@ -179,6 +179,8 @@
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 20px 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .about-code__image-wrapper {
@@ -252,7 +254,7 @@
   margin-bottom: 30px;
 }
 
-.block-item {
+.block-item-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,12 +267,12 @@
   align-items: center;
 }
 
-.block-item__icon {
+.block-item-2__icon {
   padding: 20px 0;
   height: 96px;
 }
 
-.block-item__text {
+.block-item-2__text {
   text-align: center;
   font-family: "Arial";
   font-size: 14px;
@@ -287,4 +289,8 @@
   font-family: "Arial";
   font-size: 14px;
   line-height: 24px;
+}
+
+.img-fluid {
+  background: url("../img/authorization/oborot.jpg");
 }
