@@ -544,7 +544,7 @@
   content: "";
   display: block;
   position: absolute;
-  background: url("/img/partner/angle-border-top.png") no-repeat;
+  background: url("../img/partner/angle-border-top.png") no-repeat;
 }
 
 .block-connections::after {
@@ -555,7 +555,7 @@
   content: "";
   display: block;
   position: absolute;
-  background: url("/img/partner/angle-border-bot.png") no-repeat;
+  background: url("../img/partner/angle-border-bot.png") no-repeat;
 }
 
 .connections {
@@ -879,7 +879,7 @@
   display: inline-block;
   width: 33px;
   height: 33px;
-  background: url("/img/partner/slider-toggler.png") no-repeat center;
+  background: url("../img/partner/slider-toggler.png") no-repeat center;
 }
 
 .slider.slider-horizontal .slider-tick, .slider.slider-horizontal .slider-handle {
