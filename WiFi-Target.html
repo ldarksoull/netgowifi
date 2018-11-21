@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,84 +9,121 @@
     <meta name="Keywords" content="сервис wifi авторизации, внедрение wifi, установка wifi, доступ, организовать, идентификация пользователей">
     <meta name="Description" content="Внедряем и устанавливаем сети Wi-Fi с идентификацией пользователей по смс. Реализация самых сложных сетей Wi-Fi.">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <header id="top" class="header container">
-    <div class="topline row">
-        <div class="col-md-5 topline-left">
-            <div class="topline__wifi">
-                <img src="img/logo-wifi.png" alt="wifi">
-                <span>WiFi теперь законно!</span>
+    <header id="top" class="header">
+        <div class="header-company">
+            <div class="header-company__logo">
+                <a href="index.html"><img src="img/mainpage/Лого.png" alt="Логотип компании"></a>
             </div>
-            <div class="topline__dwnload">
-                <img src="img/logo-present.png" alt="presentation">
-                <a href="#">Скачать презентацию</a>
-            </div>
+            <div class="header-company__description">Сервис Wi-Fi авторизации пользователя</div>
         </div>
-        <div class="topline-right col-md-7">
-            <div class="topline__phone">
-                <div>Бесплатный номер</div>
-                <a href="tel:+88003339686">8 (800) 333-96-86</a>
-            </div>
-            <div class="topline__call-btn">
-                <a id="go" href="#">Заказать звонок</a>
-            </div>
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-list-item">
+                    <ul class="dropdown-list">
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-list-item-link" href="#">Контакты</a>
+                        </li>
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-list-item-link" href="#">Новости</a>
+                        </li>
+                    </ul>
+                    <a class="header-menu-list-item-link" href="#">О нас <i class="fa fa-angle-down"></i></a>
+                </li>
+                <li class="header-menu-list-item">
+                    <ul class="dropdown-list">
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-list-item-link" href="authorization.html">Wi-Fi авторизация</a>
+                        </li>
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-list-item-link" href="#">WiFi target</a>
+                        </li>
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-list-item-link" href="#">WiFi в транспорте</a>
+                        </li>
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-list-item-link" href="lk.html">Комерческий WiFi</a>
+                        </li>
+                    </ul>
+                    <a class="header-menu-list-item-link" href="#">Продукты <i class="fa fa-angle-down"></i></a>
+                </li>
+                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="partners.html">Стать
+                        партнером</a></li>
+                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#">Тарифы</a></li>
+            </ul>
+        </nav>
+        <div class="header-contacts">
+            <a class="phone-number" href="tel:+88003339686">8 (800) 333-96-86</a>
+            <a id="go" href="#" class="call-btn">Заказать звонок</a>
         </div>
+    </header>
+    <div class="container-fluid">
+        <div class="gradient-strip row"></div>
     </div>
-    <div class="header__menu row">
-        <div class="col-md-12 header__menu-wrapper">
-            <div class="main-logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="logo">
-                </a>
-            </div>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="list-item">
-                        <a class="list-item__link" href="#">О КОМПАНИИ</a>
-                    </li>
-                    <li class="list-item">
-                            <ul class="dropdown__products">
-                                <li>
-                                    <ul class="dropdown__wifi-auth">
-                                        <li><a href="#">Соответствие закону</a></li>
-                                        <li><a href="#">Авторизация пользователей</a></li>
-                                        <li><a href="#">Личный кабинет</a></li>
-                                        <li><a href="#">Статистика и Аналитика</a></li>
-                                        <li><a href="#">Продвижение в Социальных сетях</a></li>
-                                        <li><a href="#">Дни рождения</a></li>
-                                        <li><a href="#">Отзывы и Опросы</a></li>
-                                        <li><a href="#">Брендирование страницы авторизации</a></li>
-                                        <li><a href="#">Переадресация на сайт</a></li>
-                                        <li><a href="#">Рекламные баннеры и видеоролики</a></li>
-                                        <li><a href="#">Программа лояльности</a></li>
-                                    </ul>
-                                    <a href="#">Wi-Fi Авторизация</a> 
-                                </li>
-                                <li><a href="#">Wi-Fi Таrget</a></li>
-                                <li><a href="WiFi-transport.html">Wi-Fi в Транспорте</a></li>
-                                <li><a href="commerce-wifi.html">Коммерческий Wi-Fi</a></li>
-                            </ul>
-                        <a class="list-item__link" href="#">ПРОДУКТЫ</a>
-                        
-                    </li>
-                    <li class="list-item"> 
-                        <a class="list-item__link" href="partners.html">СТАТЬ ПАРТНЕРОМ</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-item__link" href="#">КЛИЕНТЫ</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-item__link" href="#">КОНТАКТЫ</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <div class="container-fluid">
+        <div class="gradient-strip row"></div>
     </div>
-</header>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7 footer-menu-wrapper">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__title"><a href="index.html">Главная</a></li>
+                        <li class="footer-menu__item"><a href="#">О компании</a></li>
+                        <li class="footer-menu__item"><a href="#">Новости</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__title"><a href="#">Продукты</a></li>
+                        <li class="footer-menu__item"><a href="#">Wi-Fi Авторизация</a></li>
+                        <li class="footer-menu__item"><a href="#">Wi-Fi Таrget</a></li>
+                        <li class="footer-menu__item"><a href="#">Wi-Fi в Транспорте</a></li>
+                        <li class="footer-menu__item"><a href="#">Коммерческий Wi-Fi</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__title"><a href="#">Сотрудничество </a></li>
+                        <li class="footer-menu__item"><a href="#">Клиенты</a></li>
+                        <li class="footer-menu__item"><a href="partners.html">Стать партнером</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__title"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-5 col-md-7 offset-xl-1 footer-contacts-wrapper mt-md-4 mt-sm-4">
+                    <div class="footer-contacts">
+                        <div class="contacts-content">
+                            <a class="contacts-link" href="tel:88003339686">8 (800) 333-96-86</a>
+                            <p class="contacts-text">Звонок бесплатный</p>
+                        </div>
+                        <a class="contacts-btn">Заказать звонок</a>
+                    </div>
+                    <div class="footer-contacts">
+                        <div class="contacts-content">
+                            <a class="contacts-link" href="mailto:info@netgo.ru">info@netgo.ru</a>
+                        </div>
+                        <a class="contacts-btn">Написать нам</a>
+                    </div>
+                    <div class="footer-contacts">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-odnoklassniki"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 politic-conf">Политика конфиденциальности и обработки персональных данных </div>
+                <div class="col-12 copyright">2018 NETGO. Все права защищены.</div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

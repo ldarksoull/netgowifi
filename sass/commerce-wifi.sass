@@ -1,5 +1,6 @@
 $title-font: "Avenir Next Cyr"
 $font: "Raleway"
+$title-font-bold: "AvenirNextCyr-Bold"
 
 a
     display: inline-block
@@ -21,67 +22,86 @@ a
         background-color: #ff9927
         color: #ffffff
     ////////////////
+.page-name
+    padding-top: 75px
 .page-name__title
-    margin-top: 40px
     color: #000000
-    font-family: $title-font
+    font-family: $title-font-bold
     font-size: 48px
     font-weight: 400
     line-height: 60px
+.page-slogan
+    color: #8a8a8a
+    font-family: $title-font
+    font-size: 14px
+    font-weight: 300
+    line-height: 16px
 .page-name__subtitle
     margin-top: 21px
-    margin-bottom: 60px
     color: #000000
     font-family: $font
     font-size: 14px
     font-weight: 400
     line-height: 26px
-////// demand //////
-.demand
-    background-color: #6b0d4b
-    &__item
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        &-icon
-            height: 60px
-            align-items: baseline
-        &-text
-            width: 100%
-            margin-top: 10px
-            color: #ffffff
-            font-family: $font
-            font-size: 16px
-            font-weight: 400
-            line-height: 26px
-            min-height: 110px
-            text-align: center
-.demand-title
+.com-item
     display: flex
-    justify-content: center
-    text-align: center
-    height: 80px
-    &__text
-        color: #ffffff
-        font-family: $title-font
-        font-size: 30px
-        font-weight: 400
-        line-height: 34px
-        display: flex
-        align-items: flex-end
-        justify-content: center
-.demand-content
-    margin-top: 55px
-    display: flex
-    justify-content: center
+    flex-direction: column
     align-items: center
+.com-item-image
+    display: flex
+    flex-direction: column
+    height: 90px
+    width: 90px
+    align-items: center
+    justify-content: center
+.com-item-text
+    text-align: center
     font-family: $font
+.work-scheme-item
+    display: flex
+    flex-direction: column
+    align-items: center
+.work-scheme-image
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    &::after
+        content: ""
+        position: absolute
+        background: url('/img/commercial/arrow-point-to-right.png') no-repeat
+        background-size: cover
+        height: 57px
+        width: 57px
+        top: calc( 50% - 57px / 2)
+        right: -67px
+        @media (max-width: 1199px)
+            right: -43px
+            width: 50px
+            height: 50px
+        @media (max-width: 991px)
+            right: -100px
+        @media( max-width: 767px)
+            right: -57px
+    img
+        @media (max-width: 1199px)
+            width: 80%
+.work-scheme-text
+    text-align: center
+    color: #000000
+    font-family: $font
+    font-size: 12px
+    font-weight: 400
+    line-height: 14px
+.work-scheme-item:last-child .work-scheme-image::after
+    display: none
+.work-scheme-item:nth-child(2) .work-scheme-image::after
+    @media (max-width: 991px)
+        display: none
 //// system-option ////
 .system-option__title
     display: flex
     justify-content: center
-    margin-top: 70px
     align-items: center
     &-text
         text-align: center
@@ -89,9 +109,6 @@ a
         font-size: 30px
         font-weight: 400
         line-height: 34px
-.system-option__content
-    margin-top: 53px
-    margin-bottom: 40px
 .system-option
     &__item
         display: flex
@@ -109,115 +126,47 @@ a
             line-height: 26px
             min-height: 60px
             text-align: center
-//// work-scheme /////
-.work-scheme
-    margin-top: 70px
-.work-scheme__title
-    display: flex
-    justify-content: center
-    align-items: center
-    margin-bottom: 43px
-.title-text
-    text-align: center
-    color: #000000
-    font-family: $title-font
-    font-size: 30px
-    font-weight: 400
-    line-height: 34px
-.work-scheme__row
-    margin-bottom: 10px
-    position: relative
-    &-item
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: center
-        &::after
-            content: ''
-            display: block
-            position: absolute
-            top: 35%
-            right: -50px
-            background: url('/img/commercial/angle-right.png') no-repeat center
-            height: 100px
-            width: 100px
-        &:last-child::after
-            display: none
-
-.work-scheme__image
-    margin-bottom: 20px
-    height: 451px
-.work-scheme__desc
-    min-height: 70px
-    text-align: center
-    color: #000000
-    font-family: $font
-    font-size: 14px
-    font-weight: 500
-    line-height: 22px
 //// more-info /////
 .more-info
-    margin-top: 50px
     &__item
-        padding: 0 30px
         display: flex
         justify-content: flex-start
         align-items: center
         &-icon
-            margin-right: 80px
+            margin-right: 30px
         &-text
             color: #000000
             font-family: $font
-            font-size: 18px
+            font-size: 16px
             font-weight: 400
-            line-height: 28px
+            line-height: 21px
 //// btn--big ////
 .request
     height: 200px
     display: flex
     justify-content: center
     align-items: center
-    margin-top: 25px
-    margin-bottom: 8px
 .request-btn
     display: flex
     justify-content: center
     align-items: center
-.btn--big
-    text-align: center
-    border-radius: 10px
-    color: #ffffff
-    font-family: $font
-    text-transform: uppercase
-    font-size: 18px
-    font-weight: 400
-    line-height: 73px
+.com-btn
     width: 360px
-    height: 73px
-    background-color: #d23738
-    background-image: linear-gradient(to right, #ff7b00 0%, #df2537 34%, #80044a 65%, #680450 100%)
-    &:hover
-        color: #ffffff
-/// cost ///
-.cost
-    margin-bottom: 120px
-.cost-title
+    height: 80px
+    border-radius: 6px
+    background: #ff9927
+    transition: 0.2s
     display: flex
     justify-content: center
     align-items: center
-    margin-bottom: 18px
-.cost-title__text
     text-align: center
-    color: #000000
-    font-family: "Arial"
-    font-size: 30px
+    color: #ffffff
+    font-family: $font
+    font-size: 22px
     font-weight: 400
-    line-height: 34px
-.cost-text
-    p
-        text-align: left
-        color: #000000
-        font-family: "Arial"
-        font-size: 14px
-        font-weight: 400
-        line-height: 26px
+    line-height: 26px
+    &:hover
+        background: #FF9E3D
+        color: #fff
+/// cost ///
+

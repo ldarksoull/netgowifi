@@ -17,86 +17,60 @@
 </head>
 
 <body>
-        <header id="top" class="header container">
-            <div class="topline row">
-                <div class="col-md-5 topline-left">
-                    <div class="topline__wifi">
-                        <img src="img/logo-wifi.png" alt="wifi">
-                        <span>WiFi теперь законно!</span>
+        <header id="top" class="header">
+                <div class="header-company">
+                    <div class="header-company__logo">
+                        <a href="index.html"><img src="img/mainpage/Лого.png" alt="Логотип компании"></a>
                     </div>
-                    <div class="topline__dwnload">
-                        <img src="img/logo-present.png" alt="presentation">
-                        <a href="#">Скачать презентацию</a>
-                    </div>
+                    <div class="header-company__description">Сервис Wi-Fi авторизации пользователя</div>
                 </div>
-                <div class="topline-right col-md-7">
-                    <div class="topline__phone">
-                        <div>Бесплатный номер</div>
-                        <a href="tel:+88003339686">8 (800) 333-96-86</a>
-                    </div>
-                    <div class="topline__call-btn">
-                        <a id="go" href="#">Заказать звонок</a>
-                    </div>
-                </div>
-            </div>
-            <div class="header__menu row">
-                <div class="main-logo col-md-3">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="logo">
-                    </a>
-                </div>
-                <nav class="menu col-md-9">
-                    <ul class="menu__list">
-                        <li class="list-item">
-                            <a class="list-item__link" href="#">О КОМПАНИИ</a>
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-list-item">
+                            <ul class="dropdown-list">
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-list-item-link" href="#">Контакты</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-list-item-link" href="#">Новости</a>
+                                </li>
+                            </ul>
+                            <a class="header-menu-list-item-link" href="#">О нас <i class="fa fa-angle-down"></i></a>
                         </li>
-                        <li class="list-item">
-                                <ul class="dropdown__products">
-                                        <li>
-                                            <ul class="dropdown__wifi-auth">
-                                                <li><a href="#">Соответствие закону</a></li>
-                                                <li><a href="#">Авторизация пользователей</a></li>
-                                                <li><a href="#">Личный кабинет</a></li>
-                                                <li><a href="#">Статистика и Аналитика</a></li>
-                                                <li><a href="#">Продвижение в Социальных сетях</a></li>
-                                                <li><a href="#">Дни рождения</a></li>
-                                                <li><a href="#">Отзывы и Опросы</a></li>
-                                                <li><a href="#">Брендирование страницы авторизации</a></li>
-                                                <li><a href="#">Переадресация на сайт</a></li>
-                                                <li><a href="#">Рекламные баннеры и видеоролики</a></li>
-                                                <li><a href="#">Программа лояльности</a></li>
-                                            </ul>
-                                            <a href="#">Wi-Fi Авторизация</a> 
-                                        </li>
-                                        <li><a href="WiFi-transport.html">Wi-Fi Таrget</a></li>
-                                        <li><a href="#">Wi-Fi в Транспорте</a></li>
-                                        <li><a href="commerce-wifi.html">Коммерческий Wi-Fi</a></li>
-                                    </ul>
-                            <a class="list-item__link" href="#">ПРОДУКТЫ</a>
-                            
+                        <li class="header-menu-list-item">
+                            <ul class="dropdown-list">
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-list-item-link" href="authorization.html">Wi-Fi авторизация</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-list-item-link" href="#">WiFi target</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-list-item-link" href="#">WiFi в транспорте</a>
+                                </li>
+                                <li class="dropdown-list-item">
+                                    <a class="dropdown-list-item-link" href="lk.html">Комерческий WiFi</a>
+                                </li>
+                            </ul>
+                            <a class="header-menu-list-item-link" href="#">Продукты <i class="fa fa-angle-down"></i></a>
                         </li>
-                        <li class="list-item"> 
-                            <a class="list-item__link" href="#">СТАТЬ ПАРТНЕРОМ</a>
-                        </li>
-                        <li class="list-item">
-                            <a class="list-item__link" href="#">КЛИЕНТЫ</a>
-                        </li>
-                        <li class="list-item">
-                            <a class="list-item__link" href="#">КОНТАКТЫ</a>
-                        </li>
+                        <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="partners.html">Стать
+                                партнером</a></li>
+                        <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#">Тарифы</a></li>
                     </ul>
                 </nav>
-            </div>
-        </header>
-        <section class="page-name">
-            <div class="container-fluid full-width-wrapper">
-                <div class="row">
-                    <div class="col-md-12"><img src="img/wifi-transport/bg-header.png" alt="title-image"></div>
+                <div class="header-contacts">
+                    <a class="phone-number" href="tel:+88003339686">8 (800) 333-96-86</a>
+                    <a id="go" href="#" class="call-btn">Заказать звонок</a>
                 </div>
+            </header>
+            <div class="container-fluid">
+                <div class="gradient-strip row"></div>
             </div>
+        <section class="page-name">
             <div class="container">
-                <div class="row page-name__title">
-                    <h2 class="col-md-12">Wi-Fi в общественном транспорте</h2>
+                <div class="row">
+                    <h2 class="col-md-12 content-title">Wi-Fi в общественном транспорте</h2>
                 </div>
                 <div class="row page-name__subtitle">
                     <div class="col-md-12">
@@ -237,30 +211,30 @@
         </section>
         <section class="options-list">
             <div class="container">
-                <div class="row options-list__title">
-                    <div class="col-md-12 options-list__title-text">
+                <div class="row options-list__title mb-sm">
+                    <div class="col-md-12 content-subtitle">
                         Почему большинство крупных пассажирских и Грузовых перевозчиков выбирают NetGoWiFi для установки в Автобусы, Грузового и Железнодорожного транспорта.
                     </div>
                 </div>
                 <div class="row options-list__content">
                     <div class="col-md-12">
                         <ul class="content-list">
-                            <li class="content-list-item main-text">Поддержка всех операторов сотовой связи на территории стран СНГ стандарта GSM, UMTS, HSDPA+, 3G, 4G LTE в одном устройстве (Мегафон, МТС, Yota, Билайн, Tele2;)</li>
-                            <li class="content-list-item main-text">Два слота под SIM - карты</li>
-                            <li class="content-list-item main-text">Автоматическое переключение на сим карту с наиболее быстрым доступом в Интернет, </li>
-                            <li class="content-list-item main-text">Беспребойный доступ в сеть даже при высокой скорости поездки (до 100 МБит/с)</li>
-                            <li class="content-list-item main-text">Устойчивость оборудования к вибрациям, температурам (от -40 до +70°C протестировано)</li>
-                            <li class="content-list-item main-text">Одновременный доступ в интернет могут получить до 100 человек</li>
-                            <li class="content-list-item main-text">Ограничение скорости подключения каждого пассажира.</li>
-                            <li class="content-list-item main-text">Три способа питания: по технологии Passive PoE 10-57 В и 802.3af/at; посредством разъёма microUSB; через гнездо для постоянного тока</li>
-                            <li class="content-list-item main-text">Питание для транспорта 12 - 24В</li>
-                            <li class="content-list-item main-text">Встроенная Антена</li>
-                            <li class="content-list-item main-text">Встроенный модем</li>
-                            <li class="content-list-item main-text">Встроенный GPS-приёмник (для последующего отслеживания маршрута)</li>
-                            <li class="content-list-item main-text">Гибкая система настроек доступа в сеть WiFi</li>
-                            <li class="content-list-item main-text">Контроль и управление точкой доступа через личный кабинет.</li>
-                            <li class="content-list-item main-text">Компактность (139 x 77 x 28.5 мм)</li>
-                            <li class="last-item main-text">Оборудование выгодно отличается от обычных роутеров и модемов высокой надежностью, постоянством предоставления доступа в сеть, возможностью использования нескольких операторов сотовой связи, возможностью обслужить до 100 одновременных подключений на высокой скорости. 
+                            <li class="content-list-item p">Поддержка всех операторов сотовой связи на территории стран СНГ стандарта GSM, UMTS, HSDPA+, 3G, 4G LTE в одном устройстве (Мегафон, МТС, Yota, Билайн, Tele2;)</li>
+                            <li class="content-list-item p">Два слота под SIM - карты</li>
+                            <li class="content-list-item p">Автоматическое переключение на сим карту с наиболее быстрым доступом в Интернет, </li>
+                            <li class="content-list-item p">Беспребойный доступ в сеть даже при высокой скорости поездки (до 100 МБит/с)</li>
+                            <li class="content-list-item p">Устойчивость оборудования к вибрациям, температурам (от -40 до +70°C протестировано)</li>
+                            <li class="content-list-item p">Одновременный доступ в интернет могут получить до 100 человек</li>
+                            <li class="content-list-item p">Ограничение скорости подключения каждого пассажира.</li>
+                            <li class="content-list-item p">Три способа питания: по технологии Passive PoE 10-57 В и 802.3af/at; посредством разъёма microUSB; через гнездо для постоянного тока</li>
+                            <li class="content-list-item p">Питание для транспорта 12 - 24В</li>
+                            <li class="content-list-item p">Встроенная Антена</li>
+                            <li class="content-list-item p">Встроенный модем</li>
+                            <li class="content-list-item p">Встроенный GPS-приёмник (для последующего отслеживания маршрута)</li>
+                            <li class="content-list-item p">Гибкая система настроек доступа в сеть WiFi</li>
+                            <li class="content-list-item p">Контроль и управление точкой доступа через личный кабинет.</li>
+                            <li class="content-list-item p">Компактность (139 x 77 x 28.5 мм)</li>
+                            <li class="content-list-item p">Оборудование выгодно отличается от обычных роутеров и модемов высокой надежностью, постоянством предоставления доступа в сеть, возможностью использования нескольких операторов сотовой связи, возможностью обслужить до 100 одновременных подключений на высокой скорости. 
                                 Сделав выбор в пользу нашего решения, Вы предоставите сервис для своих клиентов на высшем уровне!</li>
                         </ul>
                     </div>
@@ -418,89 +392,62 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2">
-                        <ul class="footer__menu">
-                            <li class="footer__menu-title"><a href="#">О компании</a></li>
-                            <li class="footer__menu-item">
-                                <a href="#">- новости</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <ul class="footer__menu">
-                            <li class="footer__menu-title"><a href="#">Продукты</a></li>
-                            <li class="footer__menu-item">
-                                <a href="#">- Wi-Fi Авторизация</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="#">- Wi-Fi Target</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="WiFi-transport.html">- Wi-Fi в Транспорте</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="commerce-wifi.html">- Коммерческий Wi-Fi</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 pl-none">
-                        <ul class="footer__menu">
-                            <li class="footer__menu-title"><a href="#">Стать партнером</a></li>
-                            <li class="footer__menu-item">
-                                <a href="#">- сотрудничество</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 pl-35px">
-                        <ul class="footer__menu">
-                            <li class="footer__menu-title"><a href="#">Клиенты</a></li>
-                            <li class="footer__menu-item">
-                                <a href="#">- сотрудничество</a>
-                            </li>
-                        </ul>
-                        <ul class="footer__menu footer-mt">
-                            <li class="footer__menu-title"><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 justify-end">
-                        <div>
-                            <div class="footer__phone">
-                                <a href="tel:+88003339686">8 (800) 333-96-86</a>
-                                <p>Бесплатный номер</p>
-                            </div>
-                            <div class="footer__email">info@netgo.ru</div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="footer__call-request">
-                            <a href="" id="go" class="btn-gradient">Заказать звонок</a>
-                        </div>
-                        <div class="footer__email-request">
-                            <a href="mailto:info@netgo.ru" id="" class="btn-gradient">Написать нам</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer__bottom">
-                    <div class="col-md-9 footer__confidencial">
-                        <a href="#">"Политика конфиденциальности</a> и <a href="#">обработки персональных данных" </a>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer__social-icons">
-                            <a href="#"><i class="fab fa-vk"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-odnoklassniki"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer__copyright">
-                    <div class="col-md-12">2018 NETGO. Все права защищены.</div>
-                </div>
+        <div class="container-fluid">
+                <div class="gradient-strip row"></div>
             </div>
-        </footer>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7 footer-menu-wrapper">
+                            <ul class="footer-menu">
+                                <li class="footer-menu__title"><a href="index.html">Главная</a></li>
+                                <li class="footer-menu__item"><a href="#">О компании</a></li>
+                                <li class="footer-menu__item"><a href="#">Новости</a></li>
+                            </ul>
+                            <ul class="footer-menu">
+                                <li class="footer-menu__title"><a href="#">Продукты</a></li>
+                                <li class="footer-menu__item"><a href="#">Wi-Fi Авторизация</a></li>
+                                <li class="footer-menu__item"><a href="#">Wi-Fi Таrget</a></li>
+                                <li class="footer-menu__item"><a href="#">Wi-Fi в Транспорте</a></li>
+                                <li class="footer-menu__item"><a href="#">Коммерческий Wi-Fi</a></li>
+                            </ul>
+                            <ul class="footer-menu">
+                                <li class="footer-menu__title"><a href="#">Сотрудничество </a></li>
+                                <li class="footer-menu__item"><a href="#">Клиенты</a></li>
+                                <li class="footer-menu__item"><a href="partners.html">Стать партнером</a></li>
+                            </ul>
+                            <ul class="footer-menu">
+                                <li class="footer-menu__title"><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-7 offset-xl-1 footer-contacts-wrapper mt-md-4 mt-sm-4">
+                            <div class="footer-contacts">
+                                <div class="contacts-content">
+                                    <a class="contacts-link" href="tel:88003339686">8 (800) 333-96-86</a>
+                                    <p class="contacts-text">Звонок бесплатный</p>
+                                </div>
+                                <a class="contacts-btn">Заказать звонок</a>
+                            </div>
+                            <div class="footer-contacts">
+                                <div class="contacts-content">
+                                    <a class="contacts-link" href="mailto:info@netgo.ru">info@netgo.ru</a>
+                                </div>
+                                <a class="contacts-btn">Написать нам</a>
+                            </div>
+                            <div class="footer-contacts">
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-odnoklassniki"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 politic-conf">Политика конфиденциальности и обработки персональных данных </div>
+                        <div class="col-12 copyright">2018 NETGO. Все права защищены.</div>
+                    </div>
+                </div>
+            </footer>
 
         <!-- modal window -->
         <div id="modal_form"><!-- Сaмo oкнo --> 

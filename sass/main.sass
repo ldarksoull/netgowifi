@@ -1,9 +1,4 @@
-@font-face
-    font-family: "Arial - Bold MT"
-    src: url('fonts/arial_bold.ttf')
-@font-face
-    font-family: "Arial - Black"
-    src: url('../fonts/ariblk.ttf')
+
 @font-face
     font-family: "AvenirNextCyr-Bold"
     src: url('../fonts/AvenirNextCyr-Bold.ttf')
@@ -205,47 +200,35 @@ $font: "Raleway"
     line-height: 42px
 .client-card
     border-radius: 15px
-    height: 575px
-    max-width: 360px
+    height: 417px
+    max-width: 262px
     margin: 0 auto
     position: relative
     background-size: contain
     background-position: center center
-    @media( max-width: 1450px)
-        height: 475px
-    @media( max-width: 1199px)
-        height: 575px
-    @media( max-width: 991px)
-        height: 475px
 .neste
-    background: url('../img/mainpage/neste.png') no-repeat
+    background: url('../img/mainpage/Group 16.png') no-repeat
 .vkusno
-    background: url('../img/mainpage/Вкуснолюбов.png') no-repeat
+    background: url('../img/mainpage/Group 18.png') no-repeat
 .maxpower
-    background: url('../img/mainpage/maxpowerclub.png') no-repeat
+    background: url('../img/mainpage/Group 2.png') no-repeat
 .pirogi
-    background: url('../img/mainpage//Пироги.png') no-repeat
+    background: url('../img/mainpage/Group 2.1.png') no-repeat
 .card-inner
-    height: 100%
-    width: 100%
     position: absolute
-    top: 0
+    top: 45%
     display: flex
-    flex-direction: column
     justify-content: center
+    flex-direction: column
+    cursor: pointer
+    width: 100%
 .card-title
     padding: 0 15px
-    font-size: 40px
+    font-size: 30px
     color: #fff
     font-family: $title-font-bold
     width: 100%
     text-align: center
-    @media( max-width: 1450px)
-        font-size: 30px
-    @media( max-width: 1199px)
-        font-size: 40px
-    @media( max-width: 991px)
-        font-size: 30px
 .card-text
     padding: 0 10px
     text-align: center
@@ -255,12 +238,6 @@ $font: "Raleway"
     font-size: 24px
     font-weight: 500
     line-height: 28px
-    @media( max-width: 1450px)
-        font-size: 20px
-    @media( max-width: 1199px)
-        font-size: 24px
-    @media( max-width: 991px)
-        font-size: 20px
 /// block-grey ////
 .block-col-4
     @media(max-width: 1410px)
@@ -290,13 +267,13 @@ $font: "Raleway"
 .block-title
     color: #000000
     font-family: $title-font-bold
-    font-size: 48px
+    font-size: 40px
     line-height: 45px
     margin-bottom: 36px
 .block-text
     color: #000000
     font-family: $font
-    font-size: 22px
+    font-size: 18px
     font-weight: 400
     line-height: 31px
     margin-bottom: 100px
@@ -311,7 +288,7 @@ $font: "Raleway"
     border: 1px solid #ff9927
     background-color: #ff9927
     font-family: $font
-    font-size: 22px
+    font-size: 18px
     font-weight: 500
     line-height: 31px
     cursor: pointer
@@ -329,9 +306,7 @@ $font: "Raleway"
 .block-item
     display: flex
     width: 100%
-    justify-content: space-between
     align-items: center
-    margin-bottom: 30px
     @media (max-width: 991px)
         width: 50%
     @media (max-width: 767px)
@@ -339,7 +314,7 @@ $font: "Raleway"
     @media (max-width: 570px)
         width: 100%
 .block-item-icon
-    width: 15%
+    width: 60px
     height: 55px
     display: flex
     align-items: center
@@ -349,7 +324,7 @@ $font: "Raleway"
     padding-left: 5%
     color: #000000
     font-family: $font
-    font-size: 22px
+    font-size: 16px
     font-weight: 400
     line-height: 26px
 .partners
@@ -368,13 +343,13 @@ $font: "Raleway"
     padding: 0 15px
     height: 150px
     @media (max-width: 1250px)
-        width: 50%
+        width: 33%
     @media (max-width: 767px)
         width: 100%
 .feedback
     background: #efefef
     padding-top: 40px
-    padding-bottom: 40px
+    padding-bottom: 90px
 .feedback-block__title
     color: #000000
     font-family: $title-font-bold
@@ -389,10 +364,10 @@ $font: "Raleway"
     margin-bottom: 40px
 .feedback__input
     width: 100%
-    height: 65px
+    height: 50px
     color: #000000
     font-family: $font
-    font-size: 20px
+    font-size: 16px
     font-weight: 700
     border: 1px solid #c5c5c5
     background-color: #ffffff
@@ -403,9 +378,9 @@ $font: "Raleway"
     position: relative
     color: #000
     font-family: $font
-    font-size: 20px
+    font-size: 16px
 .feedback__input-placeholder input 
-    height: 65px
+    height: 50px
     padding: 0 15px
 .feedback__input-placeholder input:valid + .feedback__placeholder
     display: none
@@ -415,13 +390,13 @@ $font: "Raleway"
     padding: 0 15px
     position: absolute
     pointer-events: none
-    top: calc(50% - 10px)
+    top: calc(50% - 8px)
     margin: auto
     color: #000000
     font-family: $font
 .feedback__placeholder span 
     color: #eb6c06
-    font-size: 20px
+    font-size: 16px
 .feedback__confidential
     color: #000000
     font-family: $font
@@ -437,7 +412,7 @@ $font: "Raleway"
     display: flex
     justify-content: center
     align-items: center
-    height: 75px
+    height: 50px
     border-radius: 6px
     background-color: #ff9225
     color: #ffffff
@@ -448,7 +423,9 @@ $font: "Raleway"
     &:hover
         background: #ff9f40
 .feedback-form__action
-    margin-top: 60px
+    margin-top: 40px
+    display: flex
+    align-items: center
 /// footer ///
 .footer
     padding-top: 40px
@@ -521,6 +498,8 @@ button
 .center
     display: flex
     align-items: center
+.text-center
+    text-align: center
 .mb-lg
     margin-bottom: 30px
 .mb-xl
@@ -550,9 +529,13 @@ button
     text-transform: uppercase
 .text-bold
   font-weight: 700
-.container
-    @media(min-width: 1200px)
-        max-width: 1590px
+.underline
+    border-bottom: 1px solid #000
+.image-center
+    display: flex
+    justify-content: center
+    align-items: center
+    justify-self: center
 
 /////////// modal //////////////
 ////
@@ -780,6 +763,7 @@ button
   font-size: 12px
   padding: 0
   padding-top: 3px
+  margin-bottom: 30px
 
 .authorization-content
   margin-top: 55px
@@ -842,10 +826,10 @@ button
     &::-webkit-scrollbar
         width: 0
 .content-title
-  font-size: 48px
+  font-size: 42px
   font-family: $title-font-bold
   font-weight: 600
-  margin-bottom: 40px
+  margin-bottom: 20px
 .content-subtitle
     color: #000000
     font-family: $title-font-bold
@@ -867,9 +851,17 @@ button
         margin-right: 10px
 .content-list
     li
-        line-height: 42px
-        list-style-image: url('../img/authorization/Rectangle 3.10.png')
         list-style-position: inside
+        &::before
+            margin-right: 10px
+            display: inline-block
+            position: relative
+            top: -1.5px
+            content: ""
+            background: url('../img/authorization/Rectangle 3.10.png')
+            width: 9px
+            height: 8px
+            vertical-align: middle
 .paragraph
     color: #000000
     font-family: $font
@@ -888,4 +880,26 @@ button
     color: #000000
     font-family: $font
     font-size: 16px
+.p
+    color: #000000
+    font-family: $font
+    font-size: 16px
+    line-height: 32px
+.lh-19
+    line-height: 19px!important
+.lh-42
+    line-height: 42px!important
+.lh-23
+    line-height: 23px!important
+.width-100
+    width: 100%!important
+.shadow
+    box-shadow: 0 0 32px rgba(120, 120, 120, 0.33)
+    border-radius: 25px
+.gerb
+  background: url('/img/authorization/Layer 111.png') no-repeat 80% 20%
+.zakon-paragraph-title
+    font-family: $title-font-bold
+    font-size: 20px
+    line-height: 25px
 ///////////////
