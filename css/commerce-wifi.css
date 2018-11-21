@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "AvenirNextCyr-Bold";
+  src: url("../fonts/AvenirNextCyr-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url("../fonts/AvenirNextCyr-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+
 a {
   display: inline-block;
 }
@@ -120,7 +135,7 @@ a {
 .work-scheme-image::after {
   content: "";
   position: absolute;
-  background: url("/img/commercial/arrow-point-to-right.png") no-repeat;
+  background: url("../img/commercial/arrow-point-to-right.png") no-repeat;
   background-size: cover;
   height: 57px;
   width: 57px;
@@ -248,59 +263,4 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-}
-
-.request {
-  height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.request-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.com-btn {
-  width: 360px;
-  height: 80px;
-  border-radius: 6px;
-  background: #ff9927;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  font-family: "Raleway";
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.com-btn:hover {
-  background: #FF9E3D;
-  color: #fff;
 }

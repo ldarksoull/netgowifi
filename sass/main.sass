@@ -1,17 +1,4 @@
-
-@font-face
-    font-family: "AvenirNextCyr-Bold"
-    src: url('../fonts/AvenirNextCyr-Bold.ttf')
-@font-face
-    font-family: "Avenir Next Cyr"
-    src: url('../fonts/AvenirNextCyr-Regular.ttf')
-@font-face
-    font-family: "Raleway"
-    src: url('../fonts/Raleway-Regular.ttf')
-    
-$title-font: "Avenir Next Cyr"
-$title-font-bold : "AvenirNextCyr-Bold"
-$font: "Raleway"
+@import fonts.sass
 
 /// основные стили ////
 .header
@@ -836,6 +823,12 @@ button
     font-size: 30px
     font-weight: 700
     line-height: 35px
+.content-subtitle-sm
+    color: #000000
+    font-family: $title-font-bold
+    font-size: 20px
+    font-weight: 700
+    line-height: 23px
 .content-item
     display: flex
     align-items: center
@@ -902,4 +895,31 @@ button
     font-family: $title-font-bold
     font-size: 20px
     line-height: 25px
+.request
+    height: 200px
+    display: flex
+    justify-content: center
+    align-items: center
+.request-btn
+    display: flex
+    justify-content: center
+    align-items: center
+.com-btn
+    width: 360px
+    height: 80px
+    border-radius: 6px
+    background: #ff9927
+    transition: 0.2s
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: #ffffff
+    font-family: $font
+    font-size: 22px
+    font-weight: 400
+    line-height: 26px
+    &:hover
+        background: #FF9E3D
+        color: #fff
 ///////////////

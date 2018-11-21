@@ -1368,6 +1368,14 @@ button {
   line-height: 35px;
 }
 
+.content-subtitle-sm {
+  color: #000000;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
 .content-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1468,4 +1476,59 @@ button {
   font-family: "AvenirNextCyr-Bold";
   font-size: 20px;
   line-height: 25px;
+}
+
+.request {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.request-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.com-btn {
+  width: 360px;
+  height: 80px;
+  border-radius: 6px;
+  background: #ff9927;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.com-btn:hover {
+  background: #FF9E3D;
+  color: #fff;
 }

@@ -1,0 +1,107 @@
+@import fonts.sass
+.target
+  padding-top: 75px
+.title-description
+  color: #000000
+  font-family: $font
+  font-size: 20px
+  font-weight: 700
+  line-height: 30px
+.client-make
+  margin-top: 75px
+  padding: 70px 0
+  background: #efefef
+.client-make-item
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-top: 45px
+.client-make-item-icon
+  margin-bottom: 15px
+.target-scheme-item
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  padding: 75px 0
+.target-scheme-item-icon
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100px
+  height: 100px
+  background-color: #ff9927
+  color: #ffffff
+  border-radius: 50%
+  font-family: $title-font-bold
+  font-size: 36px
+  z-index: 1
+  position: relative
+  margin-bottom: 15px
+  &::after
+    z-index: -1
+    content: ""
+    position: absolute
+    right: -303px
+    top: calc(50% - 1.5px)
+    width: 310px
+    height: 3px
+    background: url('../img/target/Vector.png')
+    @media (max-width: 991px)
+      width: 150px
+      right: -150px
+    @media (max-width: 767px)
+      display: none
+.target-scheme-item-wrap:last-child .target-scheme-item-icon::after
+    display: none
+.target-scheme-item-text
+    color: #000000
+    font-family: $font
+    font-size: 16px
+    font-weight: 400
+    line-height: 21px
+.target-user-item
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+.target-user-item-icon
+  height: 70px
+  display: flex
+  justify-content: center
+  align-items: center
+.target-cost-item-wrap
+  display: flex
+  flex-direction: column
+  align-items: center
+.width-90
+  width: 90%!important
+.target-cost-item
+  display: flex
+  margin-bottom: 3px
+  width: 90%
+  height: 50px
+.target-cost-item-left,.target-cost-item-right
+  display: flex
+  align-items: center
+  color: #fff!important
+.target-cost-item-left
+  padding-left: 30px
+  height: 100%
+  width: 70%
+  background-color: #4e0950
+  position: relative
+  &::after
+    content: ""
+    right: -60px
+    position: absolute
+    border: 25px solid transparent
+    border-left: 35px solid #4e0950
+.target-cost-item-right
+  justify-content: flex-end
+  padding-right: 30px
+  height: 100%
+  width: 30%
+  background-color: #ff9927
+  
