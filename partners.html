@@ -376,7 +376,7 @@
             <div class="row mb-sm">
                 <div class="col-md-12 content-subtitle">Расчёт прибыли</div>
             </div>
-            <div class="row">
+            <div class="row mb-lg">
                 <div class="col-md-12">
                     <p class="p">В месяц можно подключать около 20 заведений. Для расчёта
                     возьмём в 2 раза меньше, т.е. 10 заведений. В среднем абонентская плата составляет 2500 руб,
@@ -388,7 +388,7 @@
                     концу года чистая прибыль составит более 1 400 000 рублей с ежемесячным доходом 300 000 рублей.</p>
                 </div>
             </div>
-            <div class="row tables-connections">
+            <!-- <div class="row tables-connections">
                 <div class="col-md-6 connections">
                     <div class="block-connections">
                         <div class="connections-wrapper">
@@ -435,7 +435,7 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div> -->
             <div class="row" class="bookkeeping">
                 <div class="col-md-12">
                     <table class="bookkeeping-table">
@@ -449,7 +449,7 @@
                         </thead>
                         <tbody>
                             <tr class="bg-grey">
-                                <td class="align-left">Доход</td>
+                                <td>Доход</td>
                                 <td>25 000 р.</td>
                                 <td>75 000 р.</td>
                                 <td>150 000 р.</td>
@@ -457,31 +457,31 @@
                                 <td>300 000 р.</td>
                             </tr>
                             <tr>
-                                <td class="align-left">Отчисления</td>
+                                <td>Отчисления</td>
                                 <td></td>
                                 <td>19 500 р.</td>
                                 <td>30 000 р.</td>
                                 <td>45 000 р.</td>
                                 <td>60 000 р.</td>
                             </tr>
-                            <tr class="bg-grey">
-                                <td class="align-left">Налог 6% <span class="small">+ пенс. и мед. страхование</span></td>
+                            <tr>
+                                <td>Налог 6% <span class="small">+ пенс. и мед. страхование</span></td>
                                 <td>4 199 р.</td>
                                 <td>7 199 р.</td>
                                 <td>11 699 р.</td>
                                 <td>16 199 р.</td>
                                 <td>20 699 р.</td>
                             </tr>
-                            <tr class="row-bold">
-                                <td class="align-left">Прибыль в мес.</td>
+                            <tr>
+                                <td>Прибыль в мес.</td>
                                 <td>20 801 р.</td>
                                 <td>48 301 р.</td>
                                 <td>108 301 р.</td>
                                 <td>163 801 р.</td>
                                 <td>219 301 р.</td>
                             </tr>
-                            <tr class="last-row">
-                                <td class="align-left">Суммарная прибыль</td>
+                            <tr>
+                                <td>Суммарная прибыль</td>
                                 <td>20 801 р.</td>
                                 <td>99 404 р.</td>
                                 <td>362 308 р.</td>
@@ -500,21 +500,21 @@
     </section>
     <section class="calculator">
         <div class="container">
-            <div class="row">
+            <div class="row mb-lg">
                 <div class="col-md-12 content-subtitle">
                     Калькулятор
                 </div>
             </div>
             <div class="row calculator-content">
                 <div class="col-md-7 calculator-text">
-                    <p>Заработок от подключенных ранее заведений является пассивным и не требует никаких дополнительных
+                    <p class="p mb-lg">Заработок от подключенных ранее заведений является пассивным и не требует никаких дополнительных
                         вложений, кроме Вашего внимания.</p>
-                    <p class="m-top">Абонентскую плату для полученных заведений Вы устанавливаете сами, в регионах она
+                    <p class="p mb-lg">Абонентскую плату для полученных заведений Вы устанавливаете сами, в регионах она
                         обычно составляет от 2000 до 7000 в месяц. Количество подключаемых заведений не ограниченно,
                         все зависит от Вашей работы.</p>
-                    <p class="text-strong"><strong>Таким образом, учитывая период раскрутки около 3 месяцев,
+                    <p class="text-strong mb-lg"><strong>Таким образом, учитывая период раскрутки около 3 месяцев,
                             первоначальные вложения могут окупиться через 4 месяца.</strong></p>
-                    <p>Показатель окупаемости является предположительным и основаны на субъективных расчетах.
+                    <p class="p">Показатель окупаемости является предположительным и основаны на субъективных расчетах.
                         Они не являются обещанием успешности бизнеса. Успешность бизнеса всегда зависит только от Вас
                         самих!
                     </p>
@@ -528,39 +528,52 @@
                         </div>
                         <div class="calc-body">
                             <div class="calc-input__item">
-                                <label for="range-cost">Расходы, тыс. р</label>
+                                <div class="d-flex justify-content-between">
+                                    <label for="range-cost">Расходы, тыс. р</label>
+                                    <div id="cost" class="value">5000</div>
+                                </div>
+                                
                                 <input name="cost" id="range-cost" type="text" data-slider-handle="custom"
                                     data-slider-value="5000">
                                 <div class="num-from-to">
                                     <p>0</p>
-                                    <p class="color-violet">70000</p>
+                                    <p>70000</p>
                                 </div>
                             </div>
                             <div class="calc-input__item">
-                                <label for="range-connections">Количество подключений в месяц</label>
+                                <div class="d-flex justify-content-between">
+                                    <label for="range-connections">Количество подключений в месяц</label>
+                                    <div id="connect" class="value">10</div>
+                                </div>
                                 <input type="text" name="connections" id="range-connections" data-slider-handle="custom"
                                     data-slider-value="10">
                                 <div class="num-from-to">
                                     <p>10</p>
-                                    <p class="color-violet">40</p>
+                                    <p>40</p>
                                 </div>
                             </div>
                             <div class="calc-input__item">
-                                <label for="range-month">Период в месяцах</label>
+                                <div class="d-flex justify-content-between">
+                                    <label for="range-month">Период в месяцах</label>
+                                    <div id="numOfMonth" class="value">12</div>
+                                </div>
                                 <input type="text" name="month" id="range-month" data-slider-handle="custom"
                                     data-slider-value="12">
                                 <div class="num-from-to">
                                     <p>1</p>
-                                    <p class="color-violet">12</p>
+                                    <p>12</p>
                                 </div>
                             </div>
                             <div class="calc-input__item">
-                                <label for="range-price">Цена подключения</label>
+                                <div class="d-flex justify-content-between">
+                                    <label for="range-price">Цена подключения</label>
+                                    <div id="price" class="value">2500</div>
+                                </div>
                                 <input type="text" name="price" id="range-price" data-slider-handle="custom"
                                     data-slider-value="2500">
                                 <div class="num-from-to">
                                     <p>1000</p>
-                                    <p class="color-violet">5000</p>
+                                    <p>5000</p>
                                 </div>
                             </div>
                         </div>

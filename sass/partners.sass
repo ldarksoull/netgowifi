@@ -6,8 +6,8 @@
     padding-left: 7px!important
 .bg-grey
     background-color: #e8e8e8
-    &:first-child
-        border-top: 8px solid #fff
+    // &:first-child
+    //     border-top: 8px solid #fff
 .flex-content-center
     display: flex
     align-items: center
@@ -223,11 +223,11 @@
         padding: 24px 0
         border-right: none
         border-bottom: none
-        font-family: $title-font-bold
+        font-family: $font
     td
         padding: 8px 0
         font-family: $font
-        font-size: 14px
+        font-size: 16px
         color: #353535
 
 .bookkeeping
@@ -236,26 +236,28 @@
         th,td
             text-align: center
             vertical-align: middle
+            height: 50px
+            border: 2px solid #ffffff
         th
             width: calc(100% / 6)
             padding: 13px 0
-            background-color: #4e0950
-            border: 1px solid #ffffff
-            font-family: "Arial"
+            background-color: #7f044a
+            font-family: $font
             font-size: 16px
             color: #fff
         td
             padding: 10px 0
             font-family: $font
-            font-size: 14px
+            font-size: 16px
+            background-color: #ebe1e5
 .row-bold
     td
-        font-family: $title-font-bold
+        font-family: $font
 .last-row
     td
-        font-family: $title-font-bold
-        background: #ff9927
-        color: #ffffff
+        font-family: $font
+        background-color: #ffd29f
+        color: #000000
         padding: 17px 0
         font-size: 18px
         display: table-cell
@@ -270,18 +272,12 @@
 //// calculator ////
 .calculator
     margin-top: 92px
-    &-content
-        margin-top: 42px
     &-text
         font-family: $font
         line-height: 30px
-    .m-top
-        margin-top: 27px
     .text-strong
-        font-size: 24px
+        font-size: 20px
         line-height: 38px
-        padding-top: 60px
-        padding-bottom: 44px
 //// faq ////
 .faq
     margin-top: 20px
@@ -301,20 +297,24 @@
 //// calc ////
 .calculator-wrapper
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    border-radius: 15px
 .calc-header
     display: flex
     justify-content: center
     flex-direction: column
     height: 132px
-    background-image: linear-gradient(to left, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%)
-    color: #fff
+    border-top-left-radius: 15px
+    border-top-right-radius: 15px
+    // background-image: linear-gradient(to left, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%)
+    background: #FFA33C
+    color: #000
     padding-left: 27px
     &__text
         font-family: $font
         font-size: 14px
     &__sum
-        color: #ffffff
-        font-family: $title-font
+        color: #000
+        font-family: $title-font-bold
         font-size: 34px
         font-weight: 400
         line-height: 46px
@@ -327,14 +327,18 @@
         margin-bottom: 0
     label
         display: block
-        color: #4a4a4a
-        font-family: $font
-        font-size: 14px
+        font-family: $title-font
+        font-weight: 700
+        font-size: 16px
     input
         margin: 10px 0
         width: 100%
+.value
+    font-family: $title-font
+    font-size: 14px
+    font-weight: 700
 .num-from-to
-    color: #4a4a4a
+    color: #000
     font-family: $font
     font-size: 14px
     display: flex
@@ -350,12 +354,14 @@
     z-index: 10000
     content: ""
     position: absolute
-    top: -9px
+    top: -5px
     vertical-align: middle
     display: inline-block
-    width: 33px
-    height: 33px
-    background: url('../img/partner/slider-toggler.png') no-repeat center
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    background: #f26020
+    // background: url('../img/partner/slider-toggler.png') no-repeat center
 .slider.slider-horizontal .slider-tick, .slider.slider-horizontal .slider-handle
     margin-left: -15px
 .slider.slider-horizontal
@@ -366,7 +372,7 @@
     background-color: #f26020
     background-image: none
 .slider-track-low, .slider-track-high
-    background-color: #9e33a1
+    background-color: #ccc
 .in
     opacity: 0.7!important
 .tooltip

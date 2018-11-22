@@ -26,26 +26,26 @@ var cost = $("#range-cost").slider({
 		step: 5000,
 		min: 0, 
 		max: 70000,
-		tooltip_position:'bottom'
+		tooltip: 'hide'
 });
 $("#range-connections").slider({
 		step: 1,
 	 	min: 10, 
 		max: 40,
-		tooltip_position:'bottom'
+		tooltip: 'hide'
 		 
 });
 $("#range-month").slider({
 		step: 1,
 	 	min: 1, 
 		max: 12,
-		tooltip_position:'bottom'
+		tooltip: 'hide'
 });
 $("#range-price").slider({
 		step: 500,
 	 	min: 1000, 
 		max: 5000,
-		tooltip_position:'bottom',
+		tooltip: 'hide'
 });
 
 
@@ -55,6 +55,7 @@ $("#range-cost, #range-connections, #range-month, #range-price").on("change", fu
 	var numOfMonth = $('#range-month').val();
 	var price = $('#range-price').val();
 	var month;
+	
 		if(( numOfMonth == '2') || (numOfMonth == '3') || (numOfMonth == '4')){
 			month = 'месяца'
 		}
@@ -67,4 +68,8 @@ $("#range-cost, #range-connections, #range-month, #range-price").on("change", fu
 	var total = connect * price * numOfMonth - cost
 	$('#result').text(total + " " + "рублей.");
 	$('#total-month').text(numOfMonth + " " + month)
+	$('#cost').text(cost)
+	$('#connect').text(connect)
+	$('#numOfMonth').text(numOfMonth)
+	$('#price').text(price)
 });

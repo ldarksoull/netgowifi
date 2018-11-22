@@ -26,10 +26,6 @@
   background-color: #e8e8e8;
 }
 
-.bg-grey:first-child {
-  border-top: 8px solid #fff;
-}
-
 .flex-content-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,13 +388,13 @@
   padding: 24px 0;
   border-right: none;
   border-bottom: none;
-  font-family: "AvenirNextCyr-Bold";
+  font-family: "Raleway";
 }
 
 .deductions td {
   padding: 8px 0;
   font-family: "Raleway";
-  font-size: 14px;
+  font-size: 16px;
   color: #353535;
 }
 
@@ -409,14 +405,15 @@
 .bookkeeping-table th, .bookkeeping-table td {
   text-align: center;
   vertical-align: middle;
+  height: 50px;
+  border: 2px solid #ffffff;
 }
 
 .bookkeeping-table th {
   width: calc(100% / 6);
   padding: 13px 0;
-  background-color: #4e0950;
-  border: 1px solid #ffffff;
-  font-family: "Arial";
+  background-color: #7f044a;
+  font-family: "Raleway";
   font-size: 16px;
   color: #fff;
 }
@@ -424,17 +421,18 @@
 .bookkeeping-table td {
   padding: 10px 0;
   font-family: "Raleway";
-  font-size: 14px;
+  font-size: 16px;
+  background-color: #ebe1e5;
 }
 
 .row-bold td {
-  font-family: "AvenirNextCyr-Bold";
+  font-family: "Raleway";
 }
 
 .last-row td {
-  font-family: "AvenirNextCyr-Bold";
-  background: #ff9927;
-  color: #ffffff;
+  font-family: "Raleway";
+  background-color: #ffd29f;
+  color: #000000;
   padding: 17px 0;
   font-size: 18px;
   display: table-cell;
@@ -457,24 +455,14 @@
   margin-top: 92px;
 }
 
-.calculator-content {
-  margin-top: 42px;
-}
-
 .calculator-text {
   font-family: "Raleway";
   line-height: 30px;
 }
 
-.calculator .m-top {
-  margin-top: 27px;
-}
-
 .calculator .text-strong {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 38px;
-  padding-top: 60px;
-  padding-bottom: 44px;
 }
 
 .faq {
@@ -502,6 +490,7 @@
 .calculator-wrapper {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 
 .calc-header {
@@ -516,11 +505,10 @@
   -ms-flex-direction: column;
   flex-direction: column;
   height: 132px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#680450), color-stop(35%, #80044a), color-stop(66%, #df2537), to(#ff7b00));
-  background-image: -webkit-linear-gradient(right, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
-  background-image: -o-linear-gradient(right, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
-  background-image: linear-gradient(to left, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
-  color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #FFA33C;
+  color: #000;
   padding-left: 27px;
 }
 
@@ -530,8 +518,8 @@
 }
 
 .calc-header__sum {
-  color: #ffffff;
-  font-family: "Avenir Next Cyr";
+  color: #000;
+  font-family: "AvenirNextCyr-Bold";
   font-size: 34px;
   font-weight: 400;
   line-height: 46px;
@@ -551,9 +539,9 @@
 
 .calc-input__item label {
   display: block;
-  color: #4a4a4a;
-  font-family: "Raleway";
-  font-size: 14px;
+  font-family: "Avenir Next Cyr";
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .calc-input__item input {
@@ -561,8 +549,14 @@
   width: 100%;
 }
 
+.value {
+  font-family: "Avenir Next Cyr";
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .num-from-to {
-  color: #4a4a4a;
+  color: #000;
   font-family: "Raleway";
   font-size: 14px;
   display: -webkit-box;
@@ -589,12 +583,13 @@
   z-index: 10000;
   content: "";
   position: absolute;
-  top: -9px;
+  top: -5px;
   vertical-align: middle;
   display: inline-block;
-  width: 33px;
-  height: 33px;
-  background: url("../img/partner/slider-toggler.png") no-repeat center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f26020;
 }
 
 .slider.slider-horizontal .slider-tick, .slider.slider-horizontal .slider-handle {
@@ -615,7 +610,7 @@
 }
 
 .slider-track-low, .slider-track-high {
-  background-color: #9e33a1;
+  background-color: #ccc;
 }
 
 .in {
