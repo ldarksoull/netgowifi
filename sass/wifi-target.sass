@@ -24,6 +24,7 @@
   align-items: center
   justify-content: center
   flex-direction: column
+.target-scheme-content
   padding: 75px 0
 .target-scheme-item-icon
   display: flex
@@ -77,11 +78,15 @@
   align-items: center
 .width-90
   width: 90%!important
+  @media (max-width: 767px)
+    width: 100%!important
 .target-cost-item
   display: flex
   margin-bottom: 3px
   width: 90%
   height: 50px
+  @media (max-width: 767px)
+    width: 100%
 .target-cost-item-left,.target-cost-item-right
   display: flex
   align-items: center
@@ -92,6 +97,8 @@
   width: 70%
   background-color: #4e0950
   position: relative
+  @media (max-width: 767px)
+    padding-left: 15px
   &::after
     content: ""
     right: -60px
@@ -104,4 +111,6 @@
   height: 100%
   width: 30%
   background-color: #ff9927
+  @media (max-width: 767px)
+    padding-right: 15px
   
