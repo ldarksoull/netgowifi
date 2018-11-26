@@ -459,11 +459,6 @@
   line-height: 30px;
 }
 
-.calculator .text-strong {
-  font-size: 20px;
-  line-height: 38px;
-}
-
 .faq {
   margin-top: 20px;
 }
@@ -556,7 +551,7 @@
 
 .num-from-to {
   color: #000;
-  font-family: "Raleway";
+  font-family: "Avenir Next Cyr";
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
