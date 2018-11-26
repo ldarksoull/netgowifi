@@ -148,6 +148,9 @@
     background: url('../img/mainpage/Main header.jpg') no-repeat
     background-position: right center
     background-size: cover
+    @media(max-width: 460px)
+        justify-content: flex-end
+        height: 600px
     .row
         display: flex
         justify-content: center
@@ -165,6 +168,13 @@
         min-height: 100%
         margin: 0
         flex-wrap: wrap
+        padding: 0
+    @media(max-width: 767px)
+        justify-content: center
+        align-items: center
+    @media(max-width: 460px)
+        min-height: 400px
+        justify-content: space-between
 .pagetitle-text
     color: #ffffff
     font-family: $title-font-bold
@@ -175,6 +185,9 @@
         text-align: center
         font-size: 40px
         line-height: 42px
+    @media(max-width: 460px)
+        font-size: 28px
+        line-height: 31px
 .pagetitle-buttons
     display: flex
     width: 580px
@@ -182,14 +195,28 @@
     @media(max-width: 991px)
         flex-wrap: wrap
         width: 100%
+        align-items: center
     @media(max-width: 767px)
         justify-content: center
+        width: 90%
 .button
     width: 265px
     height: 58px
     border-radius: 6px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 18px
+    font-family: $font
+    color: #fff
+    cursor: pointer
     @media(max-width: 991px)
         margin-bottom: 30px
+    @media(max-width: 460px)
+        width: 100%
+        height: 48px
+        font-size: 14px
 .button-orange
     background: #ff9225
     transition: 0.2s ease-in-out
@@ -456,7 +483,19 @@
     padding: 0 15px    
     display: flex
     justify-content: space-between
+    @media(max-width: 767px)
+        display: flex
+        flex-wrap: wrap
 .footer-menu
+    width: 33%
+    @media(max-width: 767px)
+        width: 50%
+        margin-bottom: 20px
+    @media(max-width: 460px)
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
     &__title
         color: #000000
         font-family: $title-font
@@ -476,12 +515,19 @@
     justify-content: space-between
     align-items: center
     margin-bottom: 40px
+    @media (max-width: 400px)
+        justify-content: center
+    &:last-child
+        @media (max-width: 400px)
+            justify-content: space-between
 .contacts-link,.contacts-text
     color: #000000
     font-family: $title-font
     font-weight: 500
     font-size: 18px
     line-height: 20px
+    @media (max-width: 400px)
+        display: none
 .contacts-text
     font-size: 14px!important
 .contacts-btn
@@ -496,6 +542,8 @@
     height: 30px
     border-radius: 6px
     background-image: linear-gradient(to right, rgb(255, 153, 39) 0%, rgb(255, 112, 24) 21%, rgb(210, 55, 56) 39%, rgb(147, 22, 70) 60%, rgb(106, 13, 75) 80%, rgb(78, 9, 80) 100%)
+    @media (max-width: 400px)
+        width: 100%
 .social-icon
     font-size: 22px
 .politic-conf
@@ -528,15 +576,8 @@ button
     margin-bottom: 50px
 .mb-100px
     margin-bottom: 100px
-.button
-    display: flex
-    justify-content: center
-    align-items: center
-    text-align: center
-    font-size: 18px
-    font-family: $font
-    color: #fff
-    cursor: pointer
+
+    
 .mb-sm
     margin-bottom: 10px
 .p-none

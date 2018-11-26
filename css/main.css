@@ -303,6 +303,15 @@
   background-size: cover;
 }
 
+@media (max-width: 460px) {
+  .main-banner {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 600px;
+  }
+}
+
 .main-banner .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,6 +346,27 @@
     margin: 0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .pagetitle {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .pagetitle {
+    min-height: 400px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -356,6 +386,13 @@
   }
 }
 
+@media (max-width: 460px) {
+  .pagetitle-text {
+    font-size: 28px;
+    line-height: 31px;
+  }
+}
+
 .pagetitle-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,6 +408,9 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -379,6 +419,7 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    width: 90%;
   }
 }
 
@@ -386,11 +427,33 @@
   width: 265px;
   height: 58px;
   border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Raleway";
+  color: #fff;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
   .button {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .button {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
   }
 }
 
@@ -858,6 +921,43 @@
   justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  .footer-menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-menu {
+  width: 33%;
+}
+
+@media (max-width: 767px) {
+  .footer-menu {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .footer-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 .footer-menu__title {
   color: #000000;
   font-family: "Avenir Next Cyr";
@@ -888,12 +988,34 @@
   margin-bottom: 40px;
 }
 
+@media (max-width: 400px) {
+  .footer-contacts {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-contacts:last-child {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
 .contacts-link, .contacts-text {
   color: #000000;
   font-family: "Avenir Next Cyr";
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
+}
+
+@media (max-width: 400px) {
+  .contacts-link, .contacts-text {
+    display: none;
+  }
 }
 
 .contacts-text {
@@ -921,6 +1043,12 @@
   background-image: -webkit-linear-gradient(left, #ff9927 0%, #ff7018 21%, #d23738 39%, #931646 60%, #6a0d4b 80%, #4e0950 100%);
   background-image: -o-linear-gradient(left, #ff9927 0%, #ff7018 21%, #d23738 39%, #931646 60%, #6a0d4b 80%, #4e0950 100%);
   background-image: linear-gradient(to right, #ff9927 0%, #ff7018 21%, #d23738 39%, #931646 60%, #6a0d4b 80%, #4e0950 100%);
+}
+
+@media (max-width: 400px) {
+  .contacts-btn {
+    width: 100%;
+  }
 }
 
 .social-icon {
@@ -980,23 +1108,6 @@ button {
 
 .mb-100px {
   margin-bottom: 100px;
-}
-
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  font-family: "Raleway";
-  color: #fff;
-  cursor: pointer;
 }
 
 .mb-sm {
