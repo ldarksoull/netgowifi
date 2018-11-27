@@ -66,16 +66,21 @@ $("#range-cost, #range-connections, #range-month, #range-price").on("change", fu
 			month = 'месяцев'
 		}
 	var total = connect * price * numOfMonth - cost
-	$('#result').text(total + " " + "рублей.");
+	function a(total) {
+		total += "";
+		
+		if(total > 0){
+			total = new Array(4 - total.length % 3).join("U") + total;
+			return total.replace(/([0-9U]{3})/g, "$1 ").replace(/U/g, "");
+		}
+		else{
+			return total
+	}
+}	
+	$('#result').text(a(total) + " " + "рублей.");
 	$('#total-month').text(numOfMonth + " " + month)
 	$('#cost').text(cost)
 	$('#connect').text(connect)
 	$('#numOfMonth').text(numOfMonth)
 	$('#price').text(price)
-	// function abc2(n) {
-	// 			n += "";
-	// 			n = new Array(4 - n.length % 3).join("U") + n;
-	// 			return n.replace(/([0-9U]{3})/g, "$1 ").replace(/U/g, "");
-	// 	}
-		
 });

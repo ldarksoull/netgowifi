@@ -400,6 +400,7 @@
 
 .bookkeeping-table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .bookkeeping-table th, .bookkeeping-table td {

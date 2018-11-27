@@ -976,6 +976,10 @@
   line-height: 25px;
 }
 
+.footer-menu__item.active {
+  color: #000000;
+}
+
 .footer-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2814,6 +2818,7 @@ table td, table th {
 
 .bookkeeping-table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .bookkeeping-table th, .bookkeeping-table td {
