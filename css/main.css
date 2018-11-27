@@ -489,7 +489,7 @@
 }
 
 .block__title {
-  padding-top: 180px;
+  padding-top: 100px;
   padding-bottom: 50px;
   font-family: "AvenirNextCyr-Bold";
   font-size: 36px;
@@ -608,11 +608,11 @@
 }
 
 .block-2 {
-  padding: 230px 0;
+  padding: 100px 0;
 }
 
 .block-1 {
-  padding: 160px 0;
+  padding: 100px 0;
 }
 
 .block-3-img {
@@ -668,7 +668,7 @@
 
 .service-for {
   background-color: #efefef;
-  padding-bottom: 110px;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 767px) {
@@ -1774,4 +1774,137 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.blog {
+  padding-top: 80px;
+}
+
+.blog-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.blog-menu-list-item-link {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  color: #000000;
+  font-family: "Avenir Next Cyr";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 47px;
+  padding: 5px;
+}
+
+.blog-menu-list-item-link:hover {
+  color: #4e0950;
+  border-bottom: 2px solid #4e0950;
+}
+
+.blog-content-subtitle {
+  color: #000000;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 22px;
+  line-height: 45px;
+}
+
+.blog-article-name-wrapper {
+  padding: 25px 0;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.blog-article-name {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: block;
+  color: #000000;
+  font-family: "Avenir Next Cyr";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.blog-article-name:hover {
+  color: #ff9927;
+}
+
+.article-name {
+  color: #000000;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.article-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.article-date {
+  color: #000000;
+  font-family: "Avenir Next Cyr";
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 90px;
+}
+
+.article-date::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background: url("../img/clock.png") no-repeat;
+}
+
+.article-date::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  width: 2px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.article-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.article-tag {
+  padding-right: 10px;
+  color: #000000;
+  font-family: "Avenir Next Cyr";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.article-tag__hashtag {
+  color: #ff9927;
 }
