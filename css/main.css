@@ -1437,7 +1437,7 @@ button {
 }
 
 .about {
-  background: url("/img/Ресурс 2.png") no-repeat;
+  background: url("../img/Ресурс 2.png") no-repeat;
   background-position: 60% 70%;
   padding-top: 80px;
 }
