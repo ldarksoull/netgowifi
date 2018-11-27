@@ -270,7 +270,7 @@
   min-height: 30px;
   border-radius: 4px;
   border: 1px solid #ff9927;
-  color: #ff9227;
+  color: #ff9227 !important;
   cursor: pointer;
 }
 
