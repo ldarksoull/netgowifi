@@ -1034,6 +1034,9 @@ button
 ///// blog ////
 .blog
     padding-top: 80px
+.blog-sidebar
+    position: sticky
+    top: 75px
 .blog-menu-list
     display: flex
     justify-content: space-between
@@ -1067,6 +1070,8 @@ button
     line-height: 21px
     &:hover
         color: #ff9927
+.article-preview
+    margin-bottom: 75px
 .article-name
     color: #000000
     font-family: $title-font-bold
@@ -1076,6 +1081,7 @@ button
 .article-info
     display: flex
     align-items: center
+    margin-bottom: 20px
 .article-date
     color: #000000
     font-family: $title-font
@@ -1085,7 +1091,6 @@ button
     padding-left: 15px
     display: flex
     align-items: center
-    min-width: 90px
     &::before
         content: ""
         left: 0
@@ -1093,23 +1098,35 @@ button
         height: 13px
         width: 13px
         background: url('../img/clock.png') no-repeat
-    &::after
-        content: ""
-        position: absolute
-        right: -10px
-        width: 2px
-        height: 2px
-        background-color: #000000
+.date-dot
+    margin: 0 10px
+    width: 2px
+    height: 2px
+    background-color: #000000
 .article-tags
+    width: 70%
     display: flex
     align-items: center
     flex-wrap: wrap
-    margin-left: 20px
 .article-tag
-    padding-right: 10px
+    transition: 0.2s
+    cursor: pointer
+    margin-right: 10px
     color: #000000
     font-family: $title-font
     font-size: 14px
     font-weight: 300
+    &:hover
+        color: #ff9927
 .article-tag__hashtag
     color: #ff9927
+.read-more
+    transition: 0.2s
+    display: inline-block
+    margin-top: 15px
+    color: #ff9927
+    font-size: 16px
+    font-family: $title-font-bold
+    border-bottom: 1px solid #ff9927
+    &:hover
+        border-bottom: 1px solid #000

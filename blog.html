@@ -2,261 +2,344 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Сервис идентификации пользователей Wi-Fi, организуем доступ к Wi-Fi с авторизацией</title>
-    <meta name="Keywords" content="сервис wifi авторизации, внедрение wifi, установка wifi, доступ, организовать, идентификация пользователей">
-    <meta name="Description" content="Внедряем и устанавливаем сети Wi-Fi с идентификацией пользователей по смс. Реализация самых сложных сетей Wi-Fi.">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сервис идентификации пользователей Wi-Fi, организуем доступ к Wi-Fi с авторизацией</title>
+  <meta name="Keywords" content="сервис wifi авторизации, внедрение wifi, установка wifi, доступ, организовать, идентификация пользователей">
+  <meta name="Description" content="Внедряем и устанавливаем сети Wi-Fi с идентификацией пользователей по смс. Реализация самых сложных сетей Wi-Fi.">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-    <header id="top" class="header">
-        <div class="header-company">
-            <div class="header-company__logo">
-                <a href="index.html"><img src="img/mainpage/Лого.png" alt="Логотип компании"></a>
-            </div>
-            <div class="header-company__description">Сервис Wi-Fi авторизации пользователя</div>
-        </div>
-        <nav class="header-menu">
-            <ul class="header-menu-list">
-                <li class="header-menu-list-item">
-                    <ul class="dropdown-list">
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-list-item-link" href="#">Контакты</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-list-item-link" href="#">Новости</a>
-                        </li>
-                    </ul>
-                    <a class="header-menu-list-item-link" href="about.html">О нас <i class="fa fa-angle-down"></i></a>
-                </li>
-                <li class="header-menu-list-item">
-                    <ul class="dropdown-list">
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-list-item-link" href="authorization.html">Wi-Fi авторизация</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-list-item-link" href="wifitarget.html">WiFi target</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-list-item-link" href="wifi-transport.html">WiFi в транспорте</a>
-                        </li>
-                        <li class="dropdown-list-item">
-                            <a class="dropdown-list-item-link" href="commerce-wifi.html">Комерческий WiFi</a>
-                        </li>
-                    </ul>
-                    <a class="header-menu-list-item-link" href="#">Продукты <i class="fa fa-angle-down"></i></a>
-                </li>
-                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="partners.html">Стать
-                        партнером</a></li>
-                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#">Тарифы</a></li>
-            </ul>
-        </nav>
-        <div class="header-contacts">
-            <a class="phone-number" href="tel:+88003339686">8 (800) 333-96-86</a>
-            <a id="go" href="#" class="call-btn">Заказать звонок</a>
-        </div>
-    </header>
-    <div class="container-fluid">
-        <div class="gradient-strip row"></div>
-    </div>
-    <section class="blog mb-100px">
-      <div class="container">
-          <div class="row mb-sm">
-            <div class="col-lg-12 content-title">Блог компании NetGo Wi-Fi</div>
-          </div>
-          <div class="row">
-            <div class="col-lg-7 blog-content">
-              <nav class="blog-menu mb-lg">
-                <ul class="blog-menu-list">
-                  <li class="blog-menu-list-item">
-                    <a class="blog-menu-list-item-link" href="#">Все подряд</a>
-                  </li>
-                  <li>
-                    <a class="blog-menu-list-item-link" href="#">Технологии</a>
-                  </li>
-                  <li>
-                    <a class="blog-menu-list-item-link" href="#">Новости рынка</a>
-                  </li>
-                  <li>
-                    <a class="blog-menu-list-item-link" href="#">Новости компании</a>
-                  </li>
-                </ul>
-              </nav>
-              <article class="article-preview">
-                <h3 class="article-name">
-                    Wi-Fi в метро Киева: стала известна дальнейшая судьба "беспроводной" подземки
-                </h3>
-                <div class="article-info">
-                  <div class="article-date">33 atdhfkz 2018</div>
-                  <div class="article-tags">
-                    <div class="article-tag">
-                      <span class="article-tag__hashtag">#</span>метро
-                    </div>
-                    <div class="article-tag">
-                        <span class="article-tag__hashtag">#</span>киев
-                    </div>
-                    <div class="article-tag">
-                        <span class="article-tag__hashtag">#</span>метро
-                      </div>
-                      <div class="article-tag">
-                          <span class="article-tag__hashtag">#</span>киев
-                      </div>
-                      <div class="article-tag">
-                          <span class="article-tag__hashtag">#</span>метро
-                        </div>
-                        <div class="article-tag">
-                            <span class="article-tag__hashtag">#</span>киев
-                        </div>
-                        <div class="article-tag">
-                            <span class="article-tag__hashtag">#</span>метро
-                          </div>
-                          <div class="article-tag">
-                              <span class="article-tag__hashtag">#</span>киев
-                          </div>
-                          <div class="article-tag">
-                              <span class="article-tag__hashtag">#</span>метро
-                            </div>
-                            <div class="article-tag">
-                                <span class="article-tag__hashtag">#</span>киев
-                            </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-lg-4 offset-lg-1">
-              <div class="blog-content-subtitle">Лучшее за неделю</div>
-              <div class="blog-article-name-wrapper">
-                <a href="#" class="blog-article-name">Wi-Fi в метро Киева: стала известна дальнейшая судьба "беспроводной" подземки</a>
-              </div>
-              <div class="blog-article-name-wrapper">
-                <a href="#" class="blog-article-name">Как это работает?</a>
-              </div>
-              <div class="blog-article-name-wrapper">
-                <a href="#" class="blog-article-name">Всего одна антенна для Wi-Fi, GPS, Bluetooth, LTE и WiGig         </a>
-              </div>
-              <div class="blog-article-name-wrapper">
-                <a href="#" class="blog-article-name">Wi-Fi всё? В протоколе WPA2 обнаружена серьезная дыра</a>
-              </div>
-            </div>
-          </div>
+  <header id="top" class="header">
+    <div class="header-company">
+      <div class="header-company__logo">
+        <a href="index.html"><img src="img/mainpage/Лого.png" alt="Логотип компании"></a>
       </div>
-    </section>
-
-    <div class="container-fluid">
-        <div class="gradient-strip row"></div>
+      <div class="header-company__description">Сервис Wi-Fi авторизации пользователя</div>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-7 footer-menu-wrapper">
-                    <ul class="footer-menu">
-                        <li class="footer-menu__title"><a href="index.html">Главная</a></li>
-                        <li class="footer-menu__item"><a href="#">О компании</a></li>
-                        <li class="footer-menu__item"><a href="#">Новости</a></li>
-                    </ul>
-                    <ul class="footer-menu">
-                        <li class="footer-menu__title"><a href="#">Продукты</a></li>
-                        <li class="footer-menu__item"><a href="#">Wi-Fi Авторизация</a></li>
-                        <li class="footer-menu__item"><a href="#">Wi-Fi Таrget</a></li>
-                        <li class="footer-menu__item"><a href="#">Wi-Fi в Транспорте</a></li>
-                        <li class="footer-menu__item"><a href="#">Коммерческий Wi-Fi</a></li>
-                    </ul>
-                    <ul class="footer-menu">
-                        <li class="footer-menu__title"><a href="#">Сотрудничество </a></li>
-                        <li class="footer-menu__item"><a href="#">Клиенты</a></li>
-                        <li class="footer-menu__item"><a href="partners.html">Стать партнером</a></li>
-                    </ul>
-                    <ul class="footer-menu">
-                        <li class="footer-menu__title"><a href="#">Контакты</a></li>
-                    </ul>
+    <nav class="header-menu">
+      <ul class="header-menu-list">
+        <li class="header-menu-list-item">
+          <ul class="dropdown-list">
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="#">Контакты</a>
+            </li>
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="#">Новости</a>
+            </li>
+          </ul>
+          <a class="header-menu-list-item-link" href="about.html">О нас <i class="fa fa-angle-down"></i></a>
+        </li>
+        <li class="header-menu-list-item">
+          <ul class="dropdown-list">
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="authorization.html">Wi-Fi авторизация</a>
+            </li>
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="wifitarget.html">WiFi target</a>
+            </li>
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="wifi-transport.html">WiFi в транспорте</a>
+            </li>
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="commerce-wifi.html">Комерческий WiFi</a>
+            </li>
+          </ul>
+          <a class="header-menu-list-item-link" href="#">Продукты <i class="fa fa-angle-down"></i></a>
+        </li>
+        <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="partners.html">Стать
+            партнером</a></li>
+        <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#">Тарифы</a></li>
+      </ul>
+    </nav>
+    <div class="header-contacts">
+      <a class="phone-number" href="tel:+88003339686">8 (800) 333-96-86</a>
+      <a id="go" href="#" class="call-btn">Заказать звонок</a>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="gradient-strip row"></div>
+  </div>
+  <section class="blog mb-100px">
+    <div class="container">
+      <div class="row mb-sm">
+        <div class="col-lg-12 content-title">Блог компании NetGo Wi-Fi</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 blog-content">
+          <nav class="blog-menu mb-lg">
+            <ul class="blog-menu-list">
+              <li class="blog-menu-list-item">
+                <a class="blog-menu-list-item-link" href="#">Все подряд</a>
+              </li>
+              <li>
+                <a class="blog-menu-list-item-link" href="#">Технологии</a>
+              </li>
+              <li>
+                <a class="blog-menu-list-item-link" href="#">Новости рынка</a>
+              </li>
+              <li>
+                <a class="blog-menu-list-item-link" href="#">Новости компании</a>
+              </li>
+            </ul>
+          </nav>
+          <article class="article-preview">
+            <h3 class="article-name">
+              Wi-Fi в метро Киева: стала известна дальнейшая судьба "беспроводной" подземки
+            </h3>
+            <div class="article-info">
+              <div class="article-date">24 ноября 2018</div>
+              <div class="date-dot"></div>
+              <div class="article-tags">
+                <div class="article-tag">
+                  <span class="article-tag__hashtag">#</span>метро
                 </div>
-                <div class="col-lg-4 offset-1 footer-contacts-wrapper">
-                    <div class="footer-contacts">
-                        <div class="contacts-content">
-                            <a class="contacts-link" href="tel:88003339686">8 (800) 333-96-86</a>
-                            <p class="contacts-text">Звонок бесплатный</p>
-                        </div>
-                        <a class="contacts-btn">Заказать звонок</a>
-                    </div>
-                    <div class="footer-contacts">
-                        <div class="contacts-content">
-                            <a class="contacts-link" href="mailto:info@netgo.ru">info@netgo.ru</a>
-                        </div>
-                        <a class="contacts-btn">Написать нам</a>
-                    </div>
-                    <div class="footer-contacts">
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-odnoklassniki"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
-                    </div>
+                <div class="article-tag">
+                  <span class="article-tag__hashtag">#</span>киев
                 </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-12 politic-conf">Политика конфиденциальности и обработки персональных данных </div>
-                <div class="col-12 copyright">2018 NETGO. Все права защищены.</div>
+            <div class="article-image mb-sm">
+              <img src="img/virgin-media-wifi-london-underground-tube.png" alt="article-image">
             </div>
+            <div class="article-text">
+              <p class="p mb-lg">
+                Киевская городская госадминистрация расторгла сделку с компанией Mosquito Mobile, выигравшей тендер на
+                строительство сети Wi-Fi в метрополитене.
+              </p>
+              <p class="p">
+                "В соответствии с решением 19 декабря 2017 года постоянно действующей конкурсной комиссии по
+                привлечению инвесторов к финансированию строительства... с 1 февраля 2018 года фактически прекращен
+                инвестиционный договор от 2 декабря 2014 года "О строительстве WiFi-сети в Киевском метрополитене", -
+                говорится в объявлении КГГА....
+              </p>
+            </div>
+            <a href="" class="read-more">Читать далее...</a>
+
+
+          </article>
+          <article class="article-preview">
+            <h3 class="article-name">
+              Как это работает?
+            </h3>
+            <div class="article-info">
+              <div class="article-date">24 ноября 2018</div>
+              <div class="date-dot"></div>
+              <div class="article-tags">
+                <div class="article-tag">
+                  <span class="article-tag__hashtag">#</span>метро
+                </div>
+                <div class="article-tag">
+                  <span class="article-tag__hashtag">#</span>киев
+                </div>
+              </div>
+            </div>
+            <div class="article-text">
+              <p class="p">
+                Wi-Fi был создан в 1998 году в лаборатории радиоастрономии CSIRO в Австралии. Создателем беспроводного
+                протокола обмена данными является инженер Джон О’Салливан. Термин «Wi-Fi» изначально был придуман как
+                игра слов с «намёком» на Hi-Fi (High Fidelity — высокая точность). Несмотря на то, что поначалу в
+                некоторых пресс-релизах фигурировало словосочетание «Wireless Fidelity» (или «беспроводная точность»),
+                на данный момент такая формулировка не используется, и соответственно термин «Wi-Fi» никак не
+                расшифровывается. Как же работает стандарт беспроводной передачи данных — Wi-Fi? Об этом в сегодняшнем
+                выпуске!
+              </p>
+            </div>
+            <a href="" class="read-more">Читать далее...</a>
+
+
+          </article>
+          <article class="article-preview">
+            <h3 class="article-name">
+              Как это работает?
+            </h3>
+            <div class="article-info">
+              <div class="article-date">21 ноября 2018</div>
+              <div class="date-dot"></div>
+              <div class="article-tags">
+                <div class="article-tag">
+                  <span class="article-tag__hashtag">#</span>вай-фай
+                </div>
+              </div>
+            </div>
+            <div class="article-text">
+              <p class="p">
+                Wi-Fi был создан в 1998 году в лаборатории радиоастрономии CSIRO в Австралии. Создателем беспроводного
+                протокола обмена данными является инженер Джон О’Салливан. Термин «Wi-Fi» изначально был придуман как
+                игра слов с «намёком» на Hi-Fi (High Fidelity — высокая точность). Несмотря на то, что поначалу в
+                некоторых пресс-релизах фигурировало словосочетание «Wireless Fidelity» (или «беспроводная точность»),
+                на данный момент такая формулировка не используется, и соответственно термин «Wi-Fi» никак не
+                расшифровывается. Как же работает стандарт беспроводной передачи данных — Wi-Fi? Об этом в сегодняшнем
+                выпуске!
+              </p>
+            </div>
+            <a href="" class="read-more">Читать далее...</a>
+          </article>
+          <article class="article-preview">
+            <h3 class="article-name">
+                Wi-Fi всё? В протоколе WPA2 обнаружена серьезная дыра
+            </h3>
+            <div class="article-info">
+              <div class="article-date">28 октября 2018</div>
+              <div class="date-dot"></div>
+              <div class="article-tags">
+                <div class="article-tag">
+                  <span class="article-tag__hashtag">#</span>вай-фай
+                </div>
+                <div class="article-tag">
+                  <span class="article-tag__hashtag">#</span>безопасность
+                </div>
+              </div>
+            </div>
+            <div class="article-image mb-sm">
+              <img src="img/статья3.png" alt="article-image">
+            </div>
+            <div class="article-text">
+              <p class="p">
+                В это воскресенье оказались раскрыты уязвимости высокой степени в протоколе Wi-Fi Protected Access II, он же WPA2, которым пользуется большинство пользователей беспроводной сети. Уязвимость позволяет хакерам перехватывать трафик Wi-Fi, проходящий между компьютерами и точками доступа. Атака KRACK позволяет и другие гадости, включая захват соединения и вредоносные инъекции.
+              </p>
+            </div>
+            <a href="" class="read-more">Читать далее...</a>
+
+
+          </article>
         </div>
-    </footer>
-
-    <!-- modal window -->
-    <div id="modal_form">
-        <!-- Сaмo oкнo -->
-        <span id="modal_close"></span> <!-- Кнoпкa зaкрыть -->
-        <div class="modal-title">ЗАКАЗАТЬ ЗВОНОК</div>
-        <form class="feedback-modal__form" action="">
-            <div class="feedback-modal__input-placeholder">
-                <input class="feedback-modal__input" type="text" required>
-                <div class="feedback-modal__placeholder">
-                    Имя<span>*</span>
-                </div>
-            </div>
-            <div class="feedback-modal__input-placeholder">
-                <input class="feedback-modal__input" type="text" required>
-                <div class="feedback-modal__placeholder">
-                    Телефон<span>*</span>
-                </div>
-            </div>
-            <div class="feedback-modal__input-placeholder">
-                <input class="feedback-modal__input" type="text" required>
-                <div class="feedback-modal__placeholder">
-                    E-mail<span>*</span>
-                </div>
-            </div>
-            <div class="feedback-modal__input-placeholder">
-                <input class="feedback-modal__input" type="text" required>
-                <div class="feedback-modal__placeholder">
-                    Город<span>*</span>
-                </div>
-            </div>
-            <div class="modal__radio">
-                <input id="radio1" name="radio" type="radio">
-                <label for="radio1">Стать клиентом</label>
-                <input id="radio2" name="radio" type="radio">
-                <label for="radio2">Стать дилером</label>
-            </div>
-            <div class="confidencial">
-                <input id="conf-chkbox" type="checkbox">
-                <label for="conf-chkbox">Я соглашаюсь с "Политикой конфиденциальности и обработки персональных данных</label>
-            </div>
-            <button href="#" class="feedback__modal-btn">Заказать</button>
-        </form>
+        <div class="col-lg-4 offset-lg-1">
+          <div class="blog-sidebar">
+          <div class="blog-content-subtitle">Лучшее за неделю</div>
+          <div class="blog-article-name-wrapper">
+            <a href="#" class="blog-article-name">Wi-Fi в метро Киева: стала известна дальнейшая судьба "беспроводной"
+              подземки</a>
+          </div>
+          <div class="blog-article-name-wrapper">
+            <a href="#" class="blog-article-name">Как это работает?</a>
+          </div>
+          <div class="blog-article-name-wrapper">
+            <a href="#" class="blog-article-name">Всего одна антенна для Wi-Fi, GPS, Bluetooth, LTE и WiGig </a>
+          </div>
+          <div class="blog-article-name-wrapper">
+            <a href="#" class="blog-article-name">Wi-Fi всё? В протоколе WPA2 обнаружена серьезная дыра</a>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
-    <div id="overlay"></div><!-- Пoдлoжкa -->
+  </section>
+
+  <div class="container-fluid">
+    <div class="gradient-strip row"></div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 footer-menu-wrapper">
+          <ul class="footer-menu">
+            <li class="footer-menu__title"><a href="index.html">Главная</a></li>
+            <li class="footer-menu__item"><a href="#">О компании</a></li>
+            <li class="footer-menu__item"><a href="#">Новости</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li class="footer-menu__title"><a href="#">Продукты</a></li>
+            <li class="footer-menu__item"><a href="#">Wi-Fi Авторизация</a></li>
+            <li class="footer-menu__item"><a href="#">Wi-Fi Таrget</a></li>
+            <li class="footer-menu__item"><a href="#">Wi-Fi в Транспорте</a></li>
+            <li class="footer-menu__item"><a href="#">Коммерческий Wi-Fi</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li class="footer-menu__title"><a href="#">Сотрудничество </a></li>
+            <li class="footer-menu__item"><a href="#">Клиенты</a></li>
+            <li class="footer-menu__item"><a href="partners.html">Стать партнером</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li class="footer-menu__title"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 offset-1 footer-contacts-wrapper">
+          <div class="footer-contacts">
+            <div class="contacts-content">
+              <a class="contacts-link" href="tel:88003339686">8 (800) 333-96-86</a>
+              <p class="contacts-text">Звонок бесплатный</p>
+            </div>
+            <a class="contacts-btn">Заказать звонок</a>
+          </div>
+          <div class="footer-contacts">
+            <div class="contacts-content">
+              <a class="contacts-link" href="mailto:info@netgo.ru">info@netgo.ru</a>
+            </div>
+            <a class="contacts-btn">Написать нам</a>
+          </div>
+          <div class="footer-contacts">
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-odnoklassniki"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 politic-conf">Политика конфиденциальности и обработки персональных данных </div>
+        <div class="col-12 copyright">2018 NETGO. Все права защищены.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- modal window -->
+  <div id="modal_form">
+    <!-- Сaмo oкнo -->
+    <span id="modal_close"></span> <!-- Кнoпкa зaкрыть -->
+    <div class="modal-title">ЗАКАЗАТЬ ЗВОНОК</div>
+    <form class="feedback-modal__form" action="">
+      <div class="feedback-modal__input-placeholder">
+        <input class="feedback-modal__input" type="text" required>
+        <div class="feedback-modal__placeholder">
+          Имя<span>*</span>
+        </div>
+      </div>
+      <div class="feedback-modal__input-placeholder">
+        <input class="feedback-modal__input" type="text" required>
+        <div class="feedback-modal__placeholder">
+          Телефон<span>*</span>
+        </div>
+      </div>
+      <div class="feedback-modal__input-placeholder">
+        <input class="feedback-modal__input" type="text" required>
+        <div class="feedback-modal__placeholder">
+          E-mail<span>*</span>
+        </div>
+      </div>
+      <div class="feedback-modal__input-placeholder">
+        <input class="feedback-modal__input" type="text" required>
+        <div class="feedback-modal__placeholder">
+          Город<span>*</span>
+        </div>
+      </div>
+      <div class="modal__radio">
+        <input id="radio1" name="radio" type="radio">
+        <label for="radio1">Стать клиентом</label>
+        <input id="radio2" name="radio" type="radio">
+        <label for="radio2">Стать дилером</label>
+      </div>
+      <div class="confidencial">
+        <input id="conf-chkbox" type="checkbox">
+        <label for="conf-chkbox">Я соглашаюсь с "Политикой конфиденциальности и обработки персональных данных</label>
+      </div>
+      <button href="#" class="feedback__modal-btn">Заказать</button>
+    </form>
+  </div>
+  <div id="overlay"></div><!-- Пoдлoжкa -->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 
 </html>

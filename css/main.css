@@ -1780,6 +1780,12 @@ button {
   padding-top: 80px;
 }
 
+.blog-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 75px;
+}
+
 .blog-menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1834,6 +1840,10 @@ button {
   color: #ff9927;
 }
 
+.article-preview {
+  margin-bottom: 75px;
+}
+
 .article-name {
   color: #000000;
   font-family: "AvenirNextCyr-Bold";
@@ -1849,6 +1859,7 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .article-date {
@@ -1864,7 +1875,6 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-width: 90px;
 }
 
 .article-date::before {
@@ -1876,16 +1886,15 @@ button {
   background: url("../img/clock.png") no-repeat;
 }
 
-.article-date::after {
-  content: "";
-  position: absolute;
-  right: -10px;
+.date-dot {
+  margin: 0 10px;
   width: 2px;
   height: 2px;
   background-color: #000000;
 }
 
 .article-tags {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1894,17 +1903,40 @@ button {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 20px;
 }
 
 .article-tag {
-  padding-right: 10px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  margin-right: 10px;
   color: #000000;
   font-family: "Avenir Next Cyr";
   font-size: 14px;
   font-weight: 300;
 }
 
+.article-tag:hover {
+  color: #ff9927;
+}
+
 .article-tag__hashtag {
   color: #ff9927;
+}
+
+.read-more {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: inline-block;
+  margin-top: 15px;
+  color: #ff9927;
+  font-size: 16px;
+  font-family: "AvenirNextCyr-Bold";
+  border-bottom: 1px solid #ff9927;
+}
+
+.read-more:hover {
+  border-bottom: 1px solid #000;
 }
