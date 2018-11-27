@@ -1435,6 +1435,18 @@ button {
   margin-top: 55px;
 }
 
+.sidebar {
+  padding-right: 0;
+}
+
+.content {
+  padding-left: 0;
+}
+
+.content > .container {
+  padding: 0;
+}
+
 .sidebar-menu {
   position: -webkit-sticky;
   position: sticky;
@@ -1595,6 +1607,18 @@ button {
   vertical-align: middle;
 }
 
+.color-orange {
+  color: #ff7018;
+}
+
+.page-slogan-text {
+  color: #898989;
+  font-family: "Raleway";
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: -10px;
+}
+
 .paragraph {
   color: #000000;
   font-family: "Raleway";
@@ -1626,6 +1650,10 @@ button {
   font-family: "Raleway";
   font-size: 16px;
   line-height: 32px;
+}
+
+.first-letter:first-letter {
+  margin-left: 5px;
 }
 
 .lh-19 {
