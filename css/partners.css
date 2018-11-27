@@ -513,10 +513,10 @@
 
 .calc-header__sum {
   color: #000;
-  font-family: "AvenirNextCyr-Bold";
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 46px;
+  font-family: "Raleway";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 45px;
 }
 
 .calc-body {
@@ -535,7 +535,7 @@
   display: block;
   font-family: "Avenir Next Cyr";
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .calc-input__item input {
@@ -545,14 +545,14 @@
 
 .value {
   font-family: "Avenir Next Cyr";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
 }
 
 .num-from-to {
   color: #000;
   font-family: "Avenir Next Cyr";
-  font-size: 14px;
+  font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,13 +577,13 @@
   z-index: 10000;
   content: "";
   position: absolute;
-  top: -5px;
+  top: -3px;
   vertical-align: middle;
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: #f26020;
+  background: #FFA33C;
 }
 
 .slider.slider-horizontal .slider-tick, .slider.slider-horizontal .slider-handle {
@@ -595,11 +595,11 @@
 }
 
 .slider.slider-horizontal .slider-track {
-  height: 7px;
+  height: 5px;
 }
 
 .slider-selection {
-  background-color: #f26020;
+  background-color: #FFA33C;
   background-image: none;
 }
 

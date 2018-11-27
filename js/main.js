@@ -72,4 +72,10 @@ $("#range-cost, #range-connections, #range-month, #range-price").on("change", fu
 	$('#connect').text(connect)
 	$('#numOfMonth').text(numOfMonth)
 	$('#price').text(price)
+	// function abc2(n) {
+	// 			n += "";
+	// 			n = new Array(4 - n.length % 3).join("U") + n;
+	// 			return n.replace(/([0-9U]{3})/g, "$1 ").replace(/U/g, "");
+	// 	}
+		
 });
