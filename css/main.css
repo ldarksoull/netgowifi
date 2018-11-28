@@ -774,6 +774,7 @@
   align-items: center;
   padding: 0 30px;
   height: 150px;
+  width: 33%;
 }
 
 @media (max-width: 1250px) {
@@ -1841,7 +1842,7 @@ button {
   color: #000000;
   font-family: "AvenirNextCyr-Bold";
   font-size: 22px;
-  line-height: 45px;
+  line-height: 27px;
 }
 
 .blog-article-name-wrapper {
