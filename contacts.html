@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сервис идентификации пользователей Wi-Fi, организуем доступ к Wi-Fi с авторизацией</title>
+  <meta name="Keywords" content="кассы с wi fi, продажа услуги через wifi, продажа товаров через wifi, общий доступ wi fi, wi fi точка, сеть wi fi, wi fi для кафе, wi fi ресторана кафе, смм маркетинг, wi fi в транспорте, wi fi в общественном транспорте, сеть wi fi, коммерческий вай фай, mikrotik wifi, интеллектуальное распределение wi fi клиентов, авторизация wi fi, авторизация сети wi fi, смс авторизация wifi, авторизация через wifi, авторизация пользователей wi fi, wi fi авторизация по смс, умные сети интернет, умные сети интернет провайдер, таргетинговая реклама, настройка таргетинговой рекламы, таргетинговая реклама стоимость, таргетинговая реклама цена, таргетинговая реклама заказать, wi fi реклама, реклама через wi fi, реклама при входе в wi fi">
+  <meta name="Description" content="Внедряем и устанавливаем сети Wi-Fi с идентификацией пользователей по смс. Реализация самых сложных сетей Wi-Fi.">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+</head>
+
+<body>
+  <header id="top" class="header">
+    <div class="header-company">
+      <div class="header-company__logo">
+        <a href="index.html"><img src="img/mainpage/Лого.png" alt="Логотип компании"></a>
+      </div>
+      <div class="header-company__description">Сервис Wi-Fi авторизации пользователя</div>
+    </div>
+    <nav class="header-menu">
+      <ul class="header-menu-list">
+        <li class="header-menu-list-item">
+          <ul class="dropdown-list">
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="blog.html">Блог</a>
+            </li>
+          </ul>
+          <a class="header-menu-list-item-link" href="#">О нас <i class="fa fa-angle-down"></i></a>
+        </li>
+        <li class="header-menu-list-item">
+          <ul class="dropdown-list">
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="authorization.html">Wi-Fi авторизация</a>
+            </li>
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="wifitarget.html">WiFi target</a>
+            </li>
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="wifi-transport.html">WiFi в транспорте</a>
+            </li>
+            <li class="dropdown-list-item">
+              <a class="dropdown-list-item-link" href="commerce-wifi.html">Коммерческий WiFi</a>
+            </li>
+          </ul>
+          <a class="header-menu-list-item-link" href="#">Продукты <i class="fa fa-angle-down"></i></a>
+        </li>
+        <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="partners.html">Стать
+            партнером</a></li>
+        <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#">Тарифы</a></li>
+      </ul>
+    </nav>
+    <div class="header-contacts">
+      <a class="phone-number" href="tel:+88003339686">8 (800) 333-96-86</a>
+      <a id="go" href="#" class="call-btn">Заказать звонок</a>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="gradient-strip row"></div>
+  </div>
+  <section class="contacts" id='map'>
+    <div class="container-fluid contacts-content">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 contacts-wrapper">
+          <div class="contacts-title mb-lg">Контакты</div>
+          <div class="contacts-row">
+            <div class="contacts-block">
+              <div class="contacts-block-title">Поддержка клиентов</div>
+              <div class="contacts-text">8 800 333-96-86</div>
+              <div class="contacts-text">8 499 700-71-42</div>
+            </div>
+            <div class="contacts-block">
+              <div class="contacts-block-title">Поддержка клиентов</div>
+              <div class="contacts-text">info@netgo.ru</div>
+            </div>
+          </div>
+          <div class="contacts-row">
+            <div class="contacts-block">
+              <div class="contacts-block-title">Почтовый адрес</div>
+              <div class="contacts-text">105082 г.Москва, ул. Бакунинская, 69, стр.1, оф.11</div>
+            </div>
+          </div>
+          <div class="contacts-row">
+            <div class="contacts-block">
+              <div class="contacts-block-title">Режим работы</div>
+              <div class="contacts-text">9:00 - 18:00 без выходных</div>
+            </div>
+          </div>
+          <div class="mb-lg mt-5">
+            <div class="contacts-subtitle">Реквизиты <span class="company-name">ООО «Веб медиа»</span></div>
+          </div>
+          <div class="contacts-row">
+            <div class="contacts-block">
+              <div class="contacts-block-title">Юридический адрес</div>
+              <div class="contacts-text">105082 г.Москва, ул. Бакунинская, 69, стр.1, оф.11
+              </div>
+            </div>
+          </div>
+          <div class="contacts-row">
+            <div class="contacts-block">
+              <div class="contacts-block-title">ИНН</div>
+              <div class="contacts-text">7704866286</div>
+            </div>
+            <div class="contacts-block">
+              <div class="contacts-block-title">КПП</div>
+              <div class="contacts-text">770101001</div>
+            </div>
+            <div class="contacts-block">
+              <div class="contacts-block-title">ОГРН</div>
+              <div class="contacts-text">1147746685624</div>
+            </div>
+          </div>
+          <div class="contacts-row">
+            <div class="contacts-block">
+              <div class="contacts-block-title">Рассчетный счет</div>
+              <div class="contacts-text">40702810438000001254</div>
+            </div>
+            <div class="contacts-block">
+              <div class="contacts-block-title">Банк</div>
+              <div class="contacts-text">ПАО «Сбербанк России» Москва</div>
+            </div>
+          </div>
+          <div class="contacts-row">
+              <div class="contacts-block">
+                <div class="contacts-block-title">БИК</div>
+                <div class="contacts-text">044525225</div>
+              </div>
+              <div class="contacts-block">
+                <div class="contacts-block-title">Корреспондентский счет</div>
+                <div class="contacts-text">30101810400000000225</div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </section>
+  <div class="container-fluid">
+    <div class="gradient-strip row"></div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7 footer-menu-wrapper">
+          <ul class="footer-menu">
+            <li class="footer-menu__title"><a href="index.html">Главная</a></li>
+            <li class="footer-menu__item"><a class="active" href="#">О компании</a></li>
+            <li class="footer-menu__item"><a href="#">Новости</a></li>
+            <li class="footer-menu__item"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li class="footer-menu__title"><a href="#">Продукты</a></li>
+            <li class="footer-menu__item"><a href="authorization.html">Wi-Fi Авторизация</a></li>
+            <li class="footer-menu__item"><a href="wifi-target.html">Wi-Fi Таrget</a></li>
+            <li class="footer-menu__item"><a href="wifi-transport.html">Wi-Fi в Транспорте</a></li>
+            <li class="footer-menu__item"><a href="commerce-wifi.html">Коммерческий Wi-Fi</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li class="footer-menu__title"><a href="#">Сотрудничество </a></li>
+            <li class="footer-menu__item"><a href="#">Клиенты</a></li>
+            <li class="footer-menu__item"><a href="partners.html">Стать партнером</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-7 offset-xl-1 footer-contacts-wrapper mt-md-4 mt-lg-0">
+          <div class="footer-contacts">
+            <div class="footer-contacts-content">
+              <a class="footer-contacts-link" href="tel:88003339686">8 (800) 333-96-86</a>
+              <p class="footer-contacts-text">Звонок бесплатный</p>
+            </div>
+            <button class="footer-contacts-btn" data-toggle="modal" data-target="#call-request">Заказать звонок</button>
+          </div>
+          <div class="footer-contacts">
+            <div class="footer-contacts-content">
+              <a class="footer-contacts-link" href="mailto:info@netgo.ru">info@netgo.ru</a>
+            </div>
+            <button data-toggle="modal" data-target="#text-us" class="footer-contacts-btn">Написать нам</button>
+          </div>
+          <div class="footer-contacts">
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-odnoklassniki"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 politic-conf">Политика конфиденциальности и обработки персональных данных </div>
+        <div class="col-12 copyright">2018 NETGO. Все права защищены.</div>
+      </div>
+    </div>
+    <!-- Modal text-us -->
+    <div class="modal fade" id="text-us" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Написать нам</h5>
+            <button id="modal_close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="feedback-modal__form" action="">
+              <div class="feedback-modal__input-placeholder">
+                <input class="feedback-modal__input" type="text" required>
+                <div class="feedback-modal__placeholder">
+                  Имя<span>*</span>
+                </div>
+              </div>
+              <div class="feedback-modal__input-placeholder">
+                <input class="feedback-modal__input" type="text" required>
+                <div class="feedback-modal__placeholder">
+                  Телефон<span>*</span>
+                </div>
+              </div>
+              <div class="feedback-modal__input-placeholder">
+                <input class="feedback-modal__input" type="text" required>
+                <div class="feedback-modal__placeholder">
+                  E-mail<span>*</span>
+                </div>
+              </div>
+              <div class="feedback-modal__input-placeholder">
+                <input class="feedback-modal__input" type="text" required>
+                <div class="feedback-modal__placeholder">
+                  Город<span>*</span>
+                </div>
+              </div>
+              <div class="feedback-modal__input-placeholder-text">
+                <textarea class="feedback-modal__input-text" name="textarea" id="" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <div class="modal-confidencial">
+                Нажимая кнопку “отправить” вы соглашаетесь с <a class="modal-confidential-link" href="#">
+                  политикой конфиденциальности и обработки персональных данных.</a>
+              </div>
+              <button href="#" class="feedback__modal-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal call-request -->
+    <div class="modal fade" id="call-request" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal_form">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Заказать звонок</h5>
+            <button id="modal_close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="feedback-modal__form" action="">
+              <div class="feedback-modal__input-placeholder">
+                <input class="feedback-modal__input" type="text" required>
+                <div class="feedback-modal__placeholder">
+                  Имя<span>*</span>
+                </div>
+              </div>
+              <div class="feedback-modal__input-placeholder">
+                <input class="feedback-modal__input" type="text" required>
+                <div class="feedback-modal__placeholder">
+                  Телефон<span>*</span>
+                </div>
+              </div>
+              <div class="feedback-modal__input-placeholder">
+                <input class="feedback-modal__input" type="text" required>
+                <div class="feedback-modal__placeholder">
+                  E-mail<span>*</span>
+                </div>
+              </div>
+              <div class="feedback-modal__input-placeholder">
+                <input class="feedback-modal__input" type="text" required>
+                <div class="feedback-modal__placeholder">
+                  Город<span>*</span>
+                </div>
+              </div>
+              <div class="modal__radio">
+                <div class="modal__radio-item">
+                  <input id="radio1" name="radio" type="radio" checked>
+                  <label for="radio1">Стать клиентом</label>
+                </div>
+                <div class="modal__radio-item">
+                  <input id="radio2" name="radio" type="radio">
+                  <label for="radio2">Стать дилером</label>
+                </div>
+              </div>
+              <div class="modal-confidencial">
+                Нажимая кнопку “отправить” вы соглашаетесь с <a class="modal-confidential-link" href="#">
+                  политикой конфиденциальности и обработки персональных данных.</a>
+              </div>
+              <button href="#" class="feedback__modal-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoicXVhZGVuIiwiYSI6ImNqcDExcXh5dDMweGozcWxraHBoMW13aTUifQ.MMIbzqSATkSiKF8uQYGuHg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v10',
+    center: [37.690426, 55.778976], // starting position
+    zoom: 16 // starting zoom
+  });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>

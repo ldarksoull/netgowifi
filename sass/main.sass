@@ -519,9 +519,10 @@
     @media (max-width: 400px)
         justify-content: center
     &:last-child
+        margin-bottom: 0
         @media (max-width: 400px)
             justify-content: space-between
-.contacts-link,.contacts-text
+.footer-contacts-link,.footer-contacts-text
     color: #000000
     font-family: $title-font
     font-weight: 500
@@ -529,9 +530,9 @@
     line-height: 20px
     @media (max-width: 400px)
         display: none
-.contacts-text
+.footer-contacts-text
     font-size: 14px!important
-.contacts-btn
+.footer-contacts-btn
     cursor: pointer
     display: flex
     justify-content: center
@@ -1145,7 +1146,57 @@ button
     background-color: #48729e
     &:hover
         transform: scale(1.1)
-
+.contacts
+    width: 100%
+    height: 900px
+.contacts-content
+    position: absolute
+    z-index: 1000
+.contacts-wrapper
+    height: 900px
+    padding-top: 110px
+    padding-left: 50px
+    background: rgba(255, 255, 255, 0.85)
+    @media (max-width: 767px)
+        padding-top: 50px
+.contacts-title
+    color: #000000
+    font-family: $title-font-bold
+    font-size: 48px
+    line-height: 56px
+.contacts-row
+    display: flex
+    margin-bottom: 20px
+    @media (max-width: 767px)
+        flex-wrap: wrap
+.contacts-block
+    margin-right: 40px
+.contacts-block-title
+    color: #454545
+    font-family: $font
+    font-size: 12px
+    font-weight: 300
+    line-height: 14px
+.contacts-text
+    color: #000000
+    font-family: $title-font
+    font-size: 16px
+    font-weight: 300
+    line-height: 23px
+.contacts-subtitle
+    color: #000000
+    font-family: $title-font-bold
+    font-size: 30px
+    line-height: 35px
+.company-name
+    color: #000000
+    font-family: $font
+    font-size: 16px
+    font-weight: 400
+    line-height: 19px
+    margin-left: 10px
+    @media (max-width: 767px)
+        display: block
 @import wifi-transport.sass
 @import wifi-target.sass
 @import partners.sass
