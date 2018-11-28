@@ -137,6 +137,11 @@
   font-size: 16px;
 }
 
+.header-menu-list-item-link.active {
+  border-bottom: 2px solid #4e0950;
+  color: #4e0950;
+}
+
 .dropdown-list {
   padding-top: 35px;
   -webkit-transition: 0.2s ease-in-out;
