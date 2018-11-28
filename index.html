@@ -76,7 +76,7 @@
                     <div class="pagetitle-text">Поможем увеличить продажи, повторные визиты, собрать клиентскую базу</div>
                     <div class="pagetitle-buttons">
                         <a href="#" class="button button-orange">Попробовать бесплатно</button>
-                        <a href="#" class="button button-gradient">Подробнее</a>
+                            <a href="#" class="button button-gradient">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -390,7 +390,7 @@
                         <div class="row feedback-form__action">
                             <div class="col-xl-9 feedback__confidential">
                                 Оставляя заявку, вы соглашаетесь с <a class="confidential-link" href="#">политикой
-                                конфиденциальности и обработки персональных данных.</a>
+                                    конфиденциальности и обработки персональных данных.</a>
                             </div>
                             <div class="col-xl-3">
                                 <button class="feedback-btn__submit">Отправить</button>
@@ -433,13 +433,13 @@
                             <a class="contacts-link" href="tel:88003339686">8 (800) 333-96-86</a>
                             <p class="contacts-text">Звонок бесплатный</p>
                         </div>
-                        <a id="go" class="contacts-btn">Заказать звонок</a>
+                        <button class="contacts-btn" data-toggle="modal" data-target="#call-request">Заказать звонок</button>
                     </div>
                     <div class="footer-contacts">
                         <div class="contacts-content">
                             <a class="contacts-link" href="mailto:info@netgo.ru">info@netgo.ru</a>
                         </div>
-                        <a href="#" class="contacts-btn">Написать нам</a>
+                        <button data-toggle="modal" data-target="#text-us" class="contacts-btn">Написать нам</button>
                     </div>
                     <div class="footer-contacts">
                         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
@@ -454,52 +454,115 @@
                 <div class="col-12 copyright">2018 NETGO. Все права защищены.</div>
             </div>
         </div>
+        <!-- Modal text-us -->
+        <div class="modal fade" id="text-us" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Написать нам</h5>
+                        <button id="modal_close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="feedback-modal__form" action="">
+                            <div class="feedback-modal__input-placeholder">
+                                <input class="feedback-modal__input" type="text" required>
+                                <div class="feedback-modal__placeholder">
+                                    Имя<span>*</span>
+                                </div>
+                            </div>
+                            <div class="feedback-modal__input-placeholder">
+                                <input class="feedback-modal__input" type="text" required>
+                                <div class="feedback-modal__placeholder">
+                                    Телефон<span>*</span>
+                                </div>
+                            </div>
+                            <div class="feedback-modal__input-placeholder">
+                                <input class="feedback-modal__input" type="text" required>
+                                <div class="feedback-modal__placeholder">
+                                    E-mail<span>*</span>
+                                </div>
+                            </div>
+                            <div class="feedback-modal__input-placeholder">
+                                <input class="feedback-modal__input" type="text" required>
+                                <div class="feedback-modal__placeholder">
+                                    Город<span>*</span>
+                                </div>
+                            </div>
+                            <div class="feedback-modal__input-placeholder-text">
+                                <textarea class="feedback-modal__input-text" name="textarea" id="" placeholder="Ваше сообщение"></textarea>
+                            </div>
+                            <div class="modal-confidencial">
+                                Нажимая кнопку “отправить” вы соглашаетесь с <a class="modal-confidential-link" href="#">
+                                    политикой конфиденциальности и обработки персональных данных.</a>
+                            </div>
+                            <button href="#" class="feedback__modal-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal call-request -->
+        <div class="modal fade" id="call-request" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content modal_form">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Заказать звонок</h5>
+                        <button id="modal_close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="feedback-modal__form" action="">
+                            <div class="feedback-modal__input-placeholder">
+                                <input class="feedback-modal__input" type="text" required>
+                                <div class="feedback-modal__placeholder">
+                                    Имя<span>*</span>
+                                </div>
+                            </div>
+                            <div class="feedback-modal__input-placeholder">
+                                <input class="feedback-modal__input" type="text" required>
+                                <div class="feedback-modal__placeholder">
+                                    Телефон<span>*</span>
+                                </div>
+                            </div>
+                            <div class="feedback-modal__input-placeholder">
+                                <input class="feedback-modal__input" type="text" required>
+                                <div class="feedback-modal__placeholder">
+                                    E-mail<span>*</span>
+                                </div>
+                            </div>
+                            <div class="feedback-modal__input-placeholder">
+                                <input class="feedback-modal__input" type="text" required>
+                                <div class="feedback-modal__placeholder">
+                                    Город<span>*</span>
+                                </div>
+                            </div>
+                            <div class="modal__radio">
+                                <div class="modal__radio-item">
+                                    <input id="radio1" name="radio" type="radio" checked>
+                                    <label for="radio1">Стать клиентом</label>
+                                </div>
+                                <div class="modal__radio-item">
+                                    <input id="radio2" name="radio" type="radio">
+                                    <label for="radio2">Стать дилером</label>
+                                </div>
+                            </div>
+                            <div class="modal-confidencial">
+                                Нажимая кнопку “отправить” вы соглашаетесь с <a class="modal-confidential-link" href="#">
+                                    политикой конфиденциальности и обработки персональных данных.</a>
+                            </div>
+                            <button href="#" class="feedback__modal-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- modal window -->
-    <div id="modal_form">
-        <!-- Сaмo oкнo -->
-        <span id="modal_close"></span> <!-- Кнoпкa зaкрыть -->
-        <div class="modal-title">ЗАКАЗАТЬ ЗВОНОК</div>
-        <form class="feedback-modal__form" action="">
-            <div class="feedback-modal__input-placeholder">
-                <input class="feedback-modal__input" type="text" required>
-                <div class="feedback-modal__placeholder">
-                    Имя<span>*</span>
-                </div>
-            </div>
-            <div class="feedback-modal__input-placeholder">
-                <input class="feedback-modal__input" type="text" required>
-                <div class="feedback-modal__placeholder">
-                    Телефон<span>*</span>
-                </div>
-            </div>
-            <div class="feedback-modal__input-placeholder">
-                <input class="feedback-modal__input" type="text" required>
-                <div class="feedback-modal__placeholder">
-                    E-mail<span>*</span>
-                </div>
-            </div>
-            <div class="feedback-modal__input-placeholder">
-                <input class="feedback-modal__input" type="text" required>
-                <div class="feedback-modal__placeholder">
-                    Город<span>*</span>
-                </div>
-            </div>
-            <div class="modal__radio">
-                <input id="radio1" name="radio" type="radio">
-                <label for="radio1">Стать клиентом</label>
-                <input id="radio2" name="radio" type="radio">
-                <label for="radio2">Стать дилером</label>
-            </div>
-            <div class="confidencial">
-                <input id="conf-chkbox" type="checkbox">
-                <label for="conf-chkbox">Я соглашаюсь с "Политикой конфиденциальности и обработки персональных данных</label>
-            </div>
-            <button href="#" class="feedback__modal-btn">Заказать</button>
-        </form>
-    </div>
-    <div id="overlay"></div><!-- Пoдлoжкa -->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
