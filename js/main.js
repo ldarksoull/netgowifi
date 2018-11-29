@@ -1,6 +1,19 @@
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			$('a[href^="#top"]').show();
+	} else {
+			$('a[href^="#top"]').hide();
+	}
+}
+$(function(){
+	$('a[href^="#top"]').bind('click.smoothscroll', function(){
+		var target = $(this).attr('href'),
+			bl_top = $(target).offset().top;
+		$('body, html').animate({scrollTop: bl_top}, 700);
+		return false;
+	});
+});
 /// slider range ///
 var cost = $("#range-cost").slider({
 		step: 5000,
@@ -56,7 +69,7 @@ $("#range-cost, #range-connections, #range-month, #range-price").on("change", fu
 		else{
 			return total
 	}
-}	
+};
 	$('#result').text(a(total) + " " + "рублей.");
 	$('#total-month').text(numOfMonth + " " + month)
 	$('#cost').text(cost)
@@ -64,3 +77,5 @@ $("#range-cost, #range-connections, #range-month, #range-price").on("change", fu
 	$('#numOfMonth').text(numOfMonth)
 	$('#price').text(price)
 });
+
+

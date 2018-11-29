@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <a href="#top" class="totop" id="scrolltop"><i class="far fa-arrow-alt-circle-up"></i></a>
     <header id="top" class="header">
         <div class="header-company">
             <div class="header-company__logo">
@@ -36,8 +37,11 @@
                         <li class="dropdown-list-item">
                             <a class="dropdown-list-item-link" href="blog.html">Блог</a>
                         </li>
+                        <li class="dropdown-list-item">
+                            <a class="dropdown-list-item-link" href="about.html">О нас</a>
+                        </li>
                     </ul>
-                    <a class="header-menu-list-item-link" href="about.html">О нас <i class="fa fa-angle-down"></i></a>
+                    <a class="header-menu-list-item-link" href="about.html">Компания <i class="fa fa-angle-down"></i></a>
                 </li>
                 <li class="header-menu-list-item">
                     <ul class="dropdown-list">
@@ -58,11 +62,10 @@
                 </li>
                 <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="partners.html">Стать
                         партнером</a></li>
-                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#">Тарифы</a></li>
             </ul>
         </nav>
         <div class="header-contacts">
-            <a class="phone-number" href="tel:+88003339686">8 (800) 333-96-86</a>
+            <a class="phone-number" href="tel:+88003339686"><img src="img/mainpage/phone.svg" alt=""> 8 (800) 333-96-86</a>
             <a data-toggle="modal" data-target="#call-request" class="call-btn">Заказать звонок</a>
         </div>
     </header>
@@ -181,17 +184,15 @@
                 <div class="col-xl-6 order-xl-0 order-1">
                     <div class="block-content">
                         <div class="block-title">Увеличиваем количество постоянных клиентов</div>
-                        <div class="block-text">Комплекс решений помогающий регулярно привлекать гостей в заведение
-                            делая <br>
-                            их
-                            постоянными посетителями</div>
+                        <div class="block-text">Комплекс решений помогающий регулярно привлекать гостей в заведение,
+                            делая их постоянными посетителями</div>
                         <a href="wifitarget.html" class="block-btn">Подробнее</a>
                     </div>
                 </div>
                 <div class="col-xl-6 order-xl-1 order-0">
                     <div class="block-image-wrapper d-lg-flex justify-content-right">
-                        <div class="block-image d-flex align-items-center">
-                            <img class="phone-image img-fluid bradius" src="img/mainpage/block-3.jpg" alt="image">
+                        <div class="block-image d-flex align-items-center justify-content-end">
+                            <img class="phone-image kostyl img-fluid bradius" src="img/mainpage/block-3.jpg" alt="image">
                         </div>
                     </div>
                 </div>
@@ -211,7 +212,7 @@
 
                 <div class="col-xl-6 offset-xl-1 order-2">
                     <div class="block-content">
-                        <div class="block-title">Привлекаем клиентов через социальные <br> сети </div>
+                        <div class="block-title">Привлекаем клиентов через социальные сети </div>
                         <div class="block-text">Социальные сети - один из лучших инструментов <br>
                             для привлечения клиентов. Сервис помогает привлекать <br> подписчиков в группы.</div>
                         <a href="social-networks.html" class="block-btn">Подробнее</a>
@@ -332,13 +333,19 @@
             </div>
             <div class="row partners-list justify-center">
                 <div class="partners-list-item">
+                    <img src="img/mainpage/hookah.png" alt="hookah place">
+                </div>
+                <div class="partners-list-item">
                     <img src="img/mainpage/2.png" alt="land rover">
                 </div>
                 <div class="partners-list-item">
-                    <img src="img/mainpage/3.png" alt="mercedes benz">
+                    <img src="img/mainpage/3.png" alt="mercedes">
                 </div>
                 <div class="partners-list-item">
                     <img src="img/mainpage/9.png" alt="kfc">
+                </div>
+                <div class="partners-list-item">
+                    <img src="img/mainpage/zebra.png" alt="zebra">
                 </div>
             </div>
         </div>
@@ -410,7 +417,7 @@
                     <ul class="footer-menu">
                         <li class="footer-menu__title"><a href="index.html">Главная</a></li>
                         <li class="footer-menu__item"><a class="active" href="#">О компании</a></li>
-                        <li class="footer-menu__item"><a href="#">Новости</a></li>
+                        <li class="footer-menu__item"><a href="#">Блог></a></li>
                         <li class="footer-menu__item"><a href="#">Контакты</a></li>
                     </ul>
                     <ul class="footer-menu">
@@ -422,7 +429,6 @@
                     </ul>
                     <ul class="footer-menu">
                         <li class="footer-menu__title"><a href="#">Сотрудничество </a></li>
-                        <li class="footer-menu__item"><a href="#">Клиенты</a></li>
                         <li class="footer-menu__item"><a href="partners.html">Стать партнером</a></li>
                     </ul>
                 </div>
@@ -531,12 +537,6 @@
                             <div class="feedback-modal__input-placeholder">
                                 <input class="feedback-modal__input" type="text" required>
                                 <div class="feedback-modal__placeholder">
-                                    E-mail<span>*</span>
-                                </div>
-                            </div>
-                            <div class="feedback-modal__input-placeholder">
-                                <input class="feedback-modal__input" type="text" required>
-                                <div class="feedback-modal__placeholder">
                                     Город<span>*</span>
                                 </div>
                             </div>
@@ -554,15 +554,15 @@
                                 Нажимая кнопку “отправить” вы соглашаетесь с <a class="modal-confidential-link" href="#">
                                     политикой конфиденциальности и обработки персональных данных.</a>
                             </div>
-                            <button href="#" class="feedback__modal-btn">Отправить</button>
+                            <button type="submit" class="feedback__modal-btn">Отправить</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>

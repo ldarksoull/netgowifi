@@ -1,4 +1,15 @@
 @import fonts.sass
+.totop
+    position: fixed
+    bottom: 100px
+    font-size: 30px
+    color: #ff7018
+    right: 50px
+    z-index: 2000
+    display: none
+    transition: 0.2s
+    &:hover
+        color: #ff9225
 /// основные стили ////
 .header
     padding: 10px 15px
@@ -35,7 +46,6 @@
 .header-menu
     display: flex
     align-items: center
-    min-width: 450px
     @media(max-width: 991px)
         display: none
     &-list
@@ -60,8 +70,7 @@
                     margin-left: 5px
                     font-size: 16px
 .header-menu-list-item-link.active
-    border-bottom: 2px solid #4e0950
-    color: #4e0950
+    color: #ff9225
 .dropdown-list
     padding-top: 35px
     transition: 0.2s ease-in-out
@@ -118,6 +127,9 @@
     font-weight: 500
     line-height: 21px
     margin-right: 30px
+    img
+        position: relative
+        top: 2px
     @media(max-width: 1300px)
         margin: 0
     
@@ -148,6 +160,7 @@
     display: flex
     flex-direction: column
     justify-content: center
+    align-items: center
     background: url('../img/mainpage/Main header.jpg') no-repeat
     background-position: right center
     background-size: cover
@@ -158,13 +171,11 @@
         display: flex
         justify-content: center
 .pagetitle
-    padding-right: 30px
-    margin-top: 50px
-    margin-left: 200px
-    max-width: 950px
-    min-height: 330px
+    text-align: center
     display: flex
     flex-direction: column
+    align-items: center
+    justify-content: center
     justify-content: space-between
     @media(max-width: 991px)
         max-width: 100%
@@ -193,12 +204,8 @@
         line-height: 31px
 .pagetitle-buttons
     display: flex
-    width: 580px
+    justify-content: center
     justify-content: space-between
-    @media(max-width: 991px)
-        flex-wrap: wrap
-        width: 100%
-        align-items: center
     @media(max-width: 767px)
         justify-content: center
         width: 90%
@@ -225,6 +232,7 @@
     transition: 0.2s ease-in-out
     &:hover
         background: #FF9E3D
+        color: #ff9225
 .button-gradient
     transition: 0.2s ease-in
     background-image: linear-gradient(104deg, rgb(255, 153, 39) 0%, rgb(255, 112, 24) 12%, rgb(210, 55, 56) 35%, rgb(176, 37, 64) 52%, rgb(147, 22, 70) 62%, rgb(106, 13, 75) 80%, rgb(78, 9, 80) 100%)
@@ -350,6 +358,8 @@
 .service-for
     background-color: #efefef
     padding-bottom: 100px
+.kostyl
+    width: 90%
 .phone-image
     @media (max-width: 767px)
         max-width: 100%
@@ -386,7 +396,8 @@
     align-items: center
     justify-content: space-between
     flex-wrap: nowrap
-    @media (max-width: 1250px)
+    @media (max-width: 1200px)
+        justify-content: center
         flex-wrap: wrap
 .partners-list-item
     display: flex
@@ -395,10 +406,14 @@
     padding: 0 30px
     height: 150px
     width: 33%
-    @media (max-width: 1250px)
-        width: 33%
-    @media (max-width: 767px)
-        width: 100%
+    @media (max-width: 1200px)
+        width: 20%
+        img
+            max-width: 70%
+    @media (max-width: 992px)
+        width: 50%
+        img
+            max-width: 80%
 .feedback
     background: #efefef
     padding-top: 40px
@@ -797,7 +812,15 @@ button
     &:hover
         background-color: #ff9927
         color: #fff
+.feedback__modal-btn.success
+    background-color: #d4edda!important
+    color: #155724
 /// authorization ////
+.howitwork-link
+    color: #ff9927!important
+    line-height: 20px
+    font-family: $font
+    border-bottom: 1px solid #ff9927
 .breadcrumb
   background-color: transparent
   font-family: $font
@@ -813,6 +836,7 @@ button
     padding-top: 80px
 ////sidebar////
 .sidebar
+    padding-top: 10px
     padding-right: 0
 .content
     padding-left: 0
