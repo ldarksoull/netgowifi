@@ -14,10 +14,18 @@ $(function(){
 		return false;
 	});
 });
+
 $('.sidebar-btn').on('click', function(){
 	$(this).toggleClass('active')
 	$('.sidebar').toggleClass('active')
+	$('.overlay').toggleClass('active')
 })
+$('.overlay').on('click', function(){
+	$('.overlay').removeClass('active')
+	$('.sidebar').removeClass('active')
+	$('.sidebar-btn').removeClass('active')
+})
+
 /// slider range ///
 var cost = $("#range-cost").slider({
 		step: 5000,
