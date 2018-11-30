@@ -852,6 +852,9 @@ button
     border-radius: 50%
     cursor: pointer
     z-index: 201
+    @media (max-width: 460px)
+        width: 35px
+        height: 35px
 .hamburger
     z-index: 1
     display: block
@@ -862,6 +865,8 @@ button
     outline: none!important
     transition: 0.2s
     transform-origin: 0 0
+    @media (max-width: 460px)
+        width: 20px
     &::before,&::after
         transform-origin: 0 0
         cursor: pointer
@@ -872,10 +877,16 @@ button
         height: 3px
         outline: none
         transition: 0.2s
+        @media (max-width: 460px)
+            width: 20px
     &::before
         transform: translateY(-10px)
+        @media (max-width: 460px)
+            transform: translateY(-7px)
     &::after
         transform: translateY(7px)
+        @media (max-width: 460px)
+            transform: translateY(4px)
 .sidebar-btn.active .hamburger
 .sidebar-btn.active .hamburger::before
     width: 20px

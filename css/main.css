@@ -1536,6 +1536,13 @@ button {
   z-index: 201;
 }
 
+@media (max-width: 460px) {
+  .sidebar-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 .hamburger {
   z-index: 1;
   display: block;
@@ -1550,6 +1557,12 @@ button {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
+}
+
+@media (max-width: 460px) {
+  .hamburger {
+    width: 20px;
+  }
 }
 
 .hamburger::before, .hamburger::after {
@@ -1568,16 +1581,38 @@ button {
   transition: 0.2s;
 }
 
+@media (max-width: 460px) {
+  .hamburger::before, .hamburger::after {
+    width: 20px;
+  }
+}
+
 .hamburger::before {
   -webkit-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   transform: translateY(-10px);
 }
 
+@media (max-width: 460px) {
+  .hamburger::before {
+    -webkit-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    transform: translateY(-7px);
+  }
+}
+
 .hamburger::after {
   -webkit-transform: translateY(7px);
   -ms-transform: translateY(7px);
   transform: translateY(7px);
+}
+
+@media (max-width: 460px) {
+  .hamburger::after {
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: translateY(4px);
+  }
 }
 
 .sidebar-btn.active .hamburger::before {
