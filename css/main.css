@@ -1516,15 +1516,13 @@ button {
 }
 
 .sidebar-btn {
+  display: none;
   position: absolute;
   top: 0;
   left: 100%;
   height: 50px;
   width: 50px;
   background: #FF7018;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1540,6 +1538,14 @@ button {
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
+}
+
+@media (max-width: 1199px) {
+  .sidebar-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (max-width: 460px) {
@@ -1654,6 +1660,7 @@ button {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .overlay.active {

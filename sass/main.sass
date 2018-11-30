@@ -840,13 +840,13 @@ button
 ////sidebar////
 /// burger btn ///
 .sidebar-btn
+    display: none
     position: absolute
     top: 0
     left: 100%
     height: 50px
     width: 50px
     background: #FF7018
-    display: flex
     justify-content: center
     align-items: center
     border-radius: 50%
@@ -854,6 +854,8 @@ button
     z-index: 20000
     transition: 0.5s
     transform: translate(-50%)
+    @media (max-width: 1199px)
+        display: flex
     @media (max-width: 460px)
         width: 35px
         height: 35px
@@ -903,6 +905,7 @@ button
 .overlay
     display: none
     transition: 0.5s
+    cursor: pointer
 .overlay.active
     transition: 0.5s
     display: block
