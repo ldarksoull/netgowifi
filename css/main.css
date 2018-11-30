@@ -1180,6 +1180,10 @@ button {
   padding-right: 0 !important;
 }
 
+.pl-sm {
+  padding-left: 15px !important;
+}
+
 .pl-35px {
   padding-left: 35px;
 }
@@ -1200,9 +1204,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: cente;
-  -ms-flex-pack: cente;
-  justify-content: cente;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1502,6 +1506,7 @@ button {
 
 .authorization-content {
   margin-top: 55px;
+  position: relative;
 }
 
 .about-us {
@@ -1510,13 +1515,133 @@ button {
   padding-top: 80px;
 }
 
+.sidebar-btn {
+  position: fixed;
+  top: 135px;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background: #FF7018;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 201;
+}
+
+.hamburger {
+  z-index: 1;
+  display: block;
+  width: 30px;
+  background: #fff;
+  height: 3px;
+  cursor: pointer;
+  outline: none !important;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.hamburger::before, .hamburger::after {
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  cursor: pointer;
+  content: '';
+  display: block;
+  width: 30px;
+  background: #fff;
+  height: 3px;
+  outline: none;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hamburger::before {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(7px);
+  -ms-transform: translateY(7px);
+  transform: translateY(7px);
+}
+
+.sidebar-btn.active .hamburger::before {
+  width: 20px;
+  -webkit-transform: rotate(45deg) translateY(0px);
+  -ms-transform: rotate(45deg) translateY(0px);
+  transform: rotate(45deg) translateY(0px);
+}
+
+.sidebar-btn.active .hamburger::after {
+  -webkit-transform: rotate(-45deg) translateY(-3px);
+  -ms-transform: rotate(-45deg) translateY(-3px);
+  transform: rotate(-45deg) translateY(-3px);
+  width: 20px;
+}
+
 .sidebar {
   padding-top: 10px;
   padding-right: 0;
 }
 
+@media (max-width: 1199px) {
+  .sidebar {
+    height: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    -webkit-transform: translateX(-150%);
+    -ms-transform: translateX(-150%);
+    transform: translateX(-150%);
+    position: absolute;
+    width: 350px;
+    background: #fff;
+    z-index: 200;
+  }
+}
+
+.sidebar.active {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+@media (max-width: 1199px) {
+  .sidebar.active {
+    position: absolute;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    z-index: 100;
+    background: #fff;
+  }
+}
+
 .content {
   padding-left: 0;
+}
+
+@media (max-width: 1199px) {
+  .content {
+    padding-left: 15px;
+  }
 }
 
 .content > .container {
@@ -1628,6 +1753,14 @@ button {
   font-family: "AvenirNextCyr-Bold";
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+@media (max-width: 460px) {
+  .content-title {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 0 30px;
+  }
 }
 
 .content-subtitle {
@@ -1750,6 +1883,12 @@ button {
 
 .width-90 {
   width: 90% !important;
+}
+
+@media (max-width: 460px) {
+  .width-90 {
+    max-width: 70% !important;
+  }
 }
 
 .shadow {

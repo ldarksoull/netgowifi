@@ -14,6 +14,10 @@ $(function(){
 		return false;
 	});
 });
+$('.sidebar-btn').on('click', function(){
+	$(this).toggleClass('active')
+	$('.sidebar').toggleClass('active')
+})
 /// slider range ///
 var cost = $("#range-cost").slider({
 		step: 5000,

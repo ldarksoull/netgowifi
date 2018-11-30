@@ -611,6 +611,8 @@ button
     padding-left: 0!important
 .pr-none
     padding-right: 0!important
+.pl-sm
+    padding-left: 15px!important
 .pl-35px
     padding-left: 35px
 .uppercase
@@ -621,7 +623,7 @@ button
     border-bottom: 1px solid #000
 .image-center
     display: flex
-    justify-content: cente
+    justify-content: center
     align-items: center
     justify-self: center
 
@@ -830,16 +832,82 @@ button
   margin-bottom: 30px
 .authorization-content
   margin-top: 55px
+  position: relative
 .about-us
     background: url('../img/Ресурс 2.png') no-repeat
     background-position: 60% 70%
     padding-top: 80px
 ////sidebar////
+/// burger btn ///
+.sidebar-btn
+    position: fixed
+    top: 135px
+    left: 0
+    height: 50px
+    width: 50px
+    background: #FF7018
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    cursor: pointer
+    z-index: 201
+.hamburger
+    z-index: 1
+    display: block
+    width: 30px
+    background: #fff
+    height: 3px
+    cursor: pointer
+    outline: none!important
+    transition: 0.2s
+    transform-origin: 0 0
+    &::before,&::after
+        transform-origin: 0 0
+        cursor: pointer
+        content: ''
+        display: block
+        width: 30px
+        background: #fff
+        height: 3px
+        outline: none
+        transition: 0.2s
+    &::before
+        transform: translateY(-10px)
+    &::after
+        transform: translateY(7px)
+.sidebar-btn.active .hamburger
+.sidebar-btn.active .hamburger::before
+    width: 20px
+    transform: rotate(45deg) translateY(0px)
+.sidebar-btn.active .hamburger::after
+    transform: rotate(-45deg) translateY(-3px)
+    width: 20px
+////////
 .sidebar
     padding-top: 10px
     padding-right: 0
+    @media (max-width: 1199px)
+        height: 100%
+        transition: 0.5s
+        opacity: 0
+        transform: translateX(-150%)
+        position: absolute
+        width: 350px
+        background: #fff
+        z-index: 200
+.sidebar.active
+    transition: 0.5s
+    opacity: 1
+    @media (max-width: 1199px)
+        position: absolute
+        transform: translateX(0)
+        z-index: 100
+        background: #fff
 .content
     padding-left: 0
+    @media (max-width: 1199px)
+        padding-left: 15px
 .content > .container
         padding: 0
 .sidebar-menu
@@ -904,6 +972,10 @@ button
   font-family: $title-font-bold
   font-weight: 600
   margin-bottom: 20px
+  @media (max-width: 460px)
+      font-size: 20px
+      line-height: 23px
+      padding: 0 30px
 .content-subtitle
     color: #000000
     font-family: $title-font-bold
@@ -985,6 +1057,8 @@ button
     width: 100%!important
 .width-90
     width: 90%!important
+    @media (max-width: 460px)
+        max-width: 70%!important
 .shadow
     box-shadow: 0 0 32px rgba(120, 120, 120, 0.33)
     border-radius: 25px
