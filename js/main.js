@@ -30,7 +30,7 @@ $('.header-btn').on('click',function(){
 	$('.mobile-menu,.header-btn__menu').toggleClass('active')
 })
 $('.mobile-list-item').on('click',function(){
-	$(this).children().toggle()
+	$(this).children().toggleClass('active')
 })
 
 
