@@ -25,6 +25,10 @@ $('.overlay').on('click', function(){
 	$('.sidebar').removeClass('active')
 	$('.sidebar-btn').removeClass('active')
 })
+$('.header-btn').on('click',function(){
+	$(this).toggleClass('active')
+	$('.header-btn__menu').toggleClass('active')
+})
 
 /// slider range ///
 var cost = $("#range-cost").slider({
