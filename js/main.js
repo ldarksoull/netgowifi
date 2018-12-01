@@ -27,8 +27,12 @@ $('.overlay').on('click', function(){
 })
 $('.header-btn').on('click',function(){
 	$(this).toggleClass('active')
-	$('.header-btn__menu').toggleClass('active')
+	$('.mobile-menu,.header-btn__menu').toggleClass('active')
 })
+$('.mobile-list-item').on('click',function(){
+	$(this).children().toggle()
+})
+
 
 /// slider range ///
 var cost = $("#range-cost").slider({
