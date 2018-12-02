@@ -76,6 +76,12 @@ table td, table th {
   margin-top: 75px;
 }
 
+@media (max-width: 767px) {
+  .tables .container {
+    width: 100%;
+  }
+}
+
 .table__title {
   display: -webkit-box;
   display: -ms-flexbox;

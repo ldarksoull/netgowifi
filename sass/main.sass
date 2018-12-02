@@ -460,6 +460,9 @@
         width: 75%
     @media (max-width: 570px)
         width: 100%
+.d-sm-none
+    @media (max-width: 767px)
+        display: none!important
 .w-md-50
     @media (max-width: 991px)
         width: 50%!important
@@ -726,6 +729,9 @@ button
     margin-bottom: 50px
 .mb-100px
     margin-bottom: 100px
+.mb-xs-40
+    @media (max-width: 575px)
+        margin-bottom: 40px
 .mt-sm
     @media (max-width: 767px)
         margin-top: 10px
@@ -737,6 +743,8 @@ button
     padding-right: 0!important
 .pl-sm
     padding-left: 15px!important
+    @media (max-width: 575px)
+        padding-left: 0!important
 .pl-35px
     padding-left: 35px
 .uppercase
@@ -750,6 +758,12 @@ button
     justify-content: center
     align-items: center
     justify-self: center
+.image-sm-center
+    @media (max-width: 767px)
+        display: flex
+        justify-content: center
+        align-items: center
+        justify-self: center
 
 /////////// modal //////////////
 ////
@@ -815,8 +829,8 @@ button
     position: relative
     padding: 10px 15px
     resize: none
-    &:focus
-        border: 1px solid #eb6c06
+    &::placeholder
+        color: #000
 .feedback-modal__input-placeholder input 
     width: 100%
     height: 38px
@@ -828,8 +842,8 @@ button
     font-size: 16px
     top: -1px
     padding: 0 20px
-.feedback-modal__input:focus
-    border: 1px solid #eb6c06
+.feedback-modal__input-placeholder.error
+    border: 1px solid red
 .feedback-modal__input-placeholder input:valid + .feedback-modal__placeholder 
     display: none
 .feedback-modal__input:focus + .feedback-modal__placeholder
@@ -957,6 +971,7 @@ button
 .authorization-content
   margin-top: 55px
   position: relative
+  min-height: 1000px
 .about-us
     background: url('../img/Ресурс 2.png') no-repeat
     background-position: 60% 70%
@@ -1027,40 +1042,42 @@ button
     width: 20px
 ////////
 .overlay
-    display: none
     transition: 0.5s
     cursor: pointer
+    opacity: 0
+    position: relative
+    z-index: -10
 .overlay.active
     transition: 0.5s
     display: block
     width: 100%
     height: 100%
-    opacity: 0.6
+    opacity: 0.5
     background: #000
     position: fixed
     top: 0
     left: 0
-    z-index: 19
+    z-index: 1000
 .sidebar
     padding-top: 10px
     padding-right: 0
     @media (max-width: 1199px)
         border-top-right-radius: 30px
         transition: 0.5s
-        background: #ffffff
-        height: 720px
+        height: 100%
         width: 350px
         position: absolute
+        background: #fff
         top: 0
         left: 0
-        z-index: 2
+        z-index: 19999
         transform: translate(-100%)
         @media (max-width: 460px)
             width: 100%
 .sidebar.active
     transition: 0.5s
-    opacity: 1
     @media (max-width: 1199px)
+        background: #fff
         z-index: 20000
         transform: translate(0%)
 .content
@@ -1073,7 +1090,6 @@ button
     position: sticky
     top: 55px
     @media (max-width: 1199px)
-        background: #fff
         position: absolute
 .sidebar-menu__item
   transition: 0.2s
@@ -1116,7 +1132,8 @@ button
     font-size: 18px
     font-weight: 500
     margin-bottom: 35px
-
+.item-image
+    width: 100%
 .item-text,.item-icon
   justify-content: center
   align-items: center
@@ -1135,21 +1152,27 @@ button
   font-weight: 600
   margin-bottom: 20px
   @media (max-width: 460px)
-      font-size: 20px
-      line-height: 23px
-      padding: 0 30px
+      font-size: 24px
+      line-height: 26px
 .content-subtitle
     color: #000000
     font-family: $title-font-bold
     font-size: 30px
     font-weight: 700
     line-height: 35px
+    @media (max-width: 460px)
+        font-size: 20px
+        line-height: 22px
 .content-subtitle-sm
     color: #000000
     font-family: $title-font-bold
     font-size: 20px
     font-weight: 700
     line-height: 23px
+    @media (max-width: 575px)
+        font-size: 18px
+        line-height: 20px
+        text-align: center
 .content-item
     display: flex
     align-items: center
@@ -1221,6 +1244,12 @@ button
     width: 90%!important
     @media (max-width: 460px)
         max-width: 70%!important
+.width-sm-50
+    @media (max-width: 575px)
+        width: 50%
+        margin: 0 auto
+    @media (max-width: 460px)
+        width: 100%
 .shadow
     box-shadow: 0 0 32px rgba(120, 120, 120, 0.33)
     border-radius: 25px

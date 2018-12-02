@@ -25,6 +25,12 @@
   line-height: 30px;
 }
 
+@media (max-width: 460px) {
+  .title-description {
+    font-size: 18px;
+  }
+}
+
 .client-make {
   margin-top: 75px;
   padding: 70px 0;
@@ -118,6 +124,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .target-scheme-item-wrap {
+    margin-bottom: 20px;
+  }
+}
+
 .target-scheme-item-wrap:last-child .target-scheme-item-icon::after {
   display: none;
 }
@@ -182,6 +194,29 @@
   }
 }
 
+@media (max-width: 575px) {
+  .users .col {
+    width: 50% !important;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50% !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .users .col {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100% !important;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100% !important;
+  }
+}
+
 .target-cost-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,6 +229,12 @@
 @media (max-width: 767px) {
   .target-cost-item {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .target-cost-item {
+    height: 80px;
   }
 }
 
@@ -221,12 +262,39 @@
   }
 }
 
+@media (max-width: 530px) {
+  .target-cost-item-left {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .target-cost-item-left {
+    padding-left: 10px;
+  }
+}
+
 .target-cost-item-left::after {
   content: "";
   right: -60px;
   position: absolute;
   border: 25px solid transparent;
   border-left: 35px solid #4e0950;
+}
+
+@media (max-width: 530px) {
+  .target-cost-item-left::after {
+    border-left: 20px solid #4e0950;
+    right: -45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .target-cost-item-left::after {
+    right: -65px;
+    border: 40px solid transparent;
+    border-left: 25px solid #4e0950;
+  }
 }
 
 .target-cost-item-right {
@@ -242,5 +310,17 @@
 @media (max-width: 767px) {
   .target-cost-item-right {
     padding-right: 15px;
+  }
+}
+
+@media (max-width: 530px) {
+  .target-cost-item-right {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .target-cost-item-right {
+    padding-right: 10px;
   }
 }

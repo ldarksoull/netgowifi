@@ -7,6 +7,8 @@
   font-size: 20px
   font-weight: 700
   line-height: 30px
+  @media (max-width: 460px)
+    font-size: 18px
 .client-make
   margin-top: 75px
   padding: 70px 0
@@ -54,6 +56,9 @@
       right: -150px
     @media (max-width: 767px)
       display: none
+.target-scheme-item-wrap
+  @media (max-width: 575px)
+    margin-bottom: 20px
 .target-scheme-item-wrap:last-child .target-scheme-item-icon::after
     display: none
 .target-scheme-item-text
@@ -80,6 +85,17 @@
   width: 90%!important
   @media (max-width: 767px)
     width: 100%!important
+.users
+  .col
+    @media (max-width: 575px)
+      width: 50%!important
+      flex: 0 0 50%
+      max-width: 50%!important
+    @media (max-width: 460px)
+      justify-content: center
+      width: 100%!important
+      flex: 0 0 100%
+      max-width: 100%!important
 .target-cost-item
   display: flex
   margin-bottom: 3px
@@ -87,6 +103,8 @@
   height: 50px
   @media (max-width: 767px)
     width: 100%
+  @media (max-width: 480px)
+    height: 80px
 .target-cost-item-left,.target-cost-item-right
   display: flex
   align-items: center
@@ -99,12 +117,23 @@
   position: relative
   @media (max-width: 767px)
     padding-left: 15px
+  @media (max-width: 530px)
+    width: 60%
+  @media (max-width: 480px)
+    padding-left: 10px
   &::after
     content: ""
     right: -60px
     position: absolute
     border: 25px solid transparent
     border-left: 35px solid #4e0950
+    @media (max-width: 530px)
+      border-left: 20px solid #4e0950
+      right: -45px
+    @media (max-width: 480px)
+      right: -65px
+      border: 40px solid transparent
+      border-left: 25px solid #4e0950
 .target-cost-item-right
   justify-content: flex-end
   padding-right: 30px
@@ -113,4 +142,8 @@
   background-color: #ff9927
   @media (max-width: 767px)
     padding-right: 15px
+  @media (max-width: 530px)
+    width: 40%
+  @media (max-width: 480px)
+    padding-right: 10px
   

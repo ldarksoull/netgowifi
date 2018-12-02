@@ -104,7 +104,7 @@
         </nav>
         <div class="header-contacts">
             <a class="phone-number" href="tel:+88003339686"><img src="img/mainpage/phone.svg" alt=""> 8 (800) 333-96-86</a>
-            <a data-toggle="modal" data-target="#call-request" class="call-btn">Заказать звонок</a>
+            <a data-toggle="modal"  data-target="#call-request" class="call-btn">Заказать звонок</a>
         </div>
         <div class="header-btn">
             <button class="header-btn__menu"></button>
@@ -186,7 +186,8 @@
                 <div class="col-lg-5 offset-xl-1 order-md-0 order-lg-1 order-0">
                     <div class="block-image-wrapper d-lg-flex justify-content-lg-center">
                         <div class="block-image d-flex align-items-center justify-content-center">
-                            <img class="img-fluid phone-image" src="img/mainpage/Group_27.png" alt="phone">
+                            <img class="img-fluid phone-image d-sm-none d-md-block" src="img/mainpage/Group_27.png" alt="phone">
+                            <img class="img-fluid phone-image d-md-none" src="img/mainpage/Group 27.4.png" alt="phone">
                         </div>
                     </div>
                 </div>
@@ -246,7 +247,8 @@
                 <div class="col-xl-5 col-lg-6 offset-lg-0 block-col order-1 ">
                     <div class="block-image-wrapper d-lg-flex justify-content-lg-center">
                         <div class="block-image d-flex  justify-content-center">
-                            <img class="phone-image img-fluid" src="img/mainpage/Group_58.png" alt="notebook">
+                            <img class="img-fluid phone-image d-sm-none d-md-block" src="img/mainpage/Group_58.png" alt="phone">
+                            <img class="img-fluid phone-image d-md-none" src="img/mainpage/Group 58.1.png" alt="phone">
                         </div>
                     </div>
                 </div>
@@ -533,7 +535,7 @@
                                     E-mail<span>*</span>
                                 </div>
                             </div>
-                            <div class="feedback-modal__input-placeholder">
+                            <div class="feedback-modal__input-placeholder error">
                                 <input class="feedback-modal__input" type="text" required>
                                 <div class="feedback-modal__placeholder">
                                     Город<span>*</span>
@@ -546,7 +548,7 @@
                                 Нажимая кнопку “отправить” вы соглашаетесь с <a class="modal-confidential-link" href="#">
                                     политикой конфиденциальности и обработки персональных данных.</a>
                             </div>
-                            <button href="#" class="feedback__modal-btn">Отправить</button>
+                            <button class="feedback__modal-btn">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -564,7 +566,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form class="feedback-modal__form" action="">
+                        <form id="ordercall-form" class="feedback-modal__form" action="">
                             <div class="feedback-modal__input-placeholder">
                                 <input class="feedback-modal__input" type="text" required>
                                 <div class="feedback-modal__placeholder">
