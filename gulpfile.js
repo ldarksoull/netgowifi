@@ -24,7 +24,7 @@ gulp.task('mincss', function(){
 gulp.task('css', function () {
     return gulp.src('css/*.css')
         .pipe(autoprefixer({
-            browsers: ['last 4 versions'],
+            browsers: ['last 3 versions'],
             cascade: false
         }))
         .pipe(gulp.dest('css'));

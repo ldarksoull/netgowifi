@@ -40,6 +40,9 @@ a
     font-size: 14px
     font-weight: 400
     line-height: 26px
+.com-item-wrap
+    @media( max-width: 575px)
+        width: 50%
 .com-item
     display: flex
     flex-direction: column
@@ -80,6 +83,8 @@ a
             right: -100px
         @media( max-width: 767px)
             right: -57px
+        @media (max-width: 575px)
+            display: none
     img
         @media (max-width: 1199px)
             width: 80%
@@ -90,6 +95,9 @@ a
     @media (max-width: 991px)
         display: none
 //// system-option ////
+.system-option
+    @media (max-width: 575px)
+        margin-bottom: 50px!important
 .system-option__title
     display: flex
     justify-content: center

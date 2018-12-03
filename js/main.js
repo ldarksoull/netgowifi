@@ -1,3 +1,4 @@
+/// scroll to top ///
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -14,7 +15,7 @@ $(function(){
 		return false;
 	});
 });
-
+/// sidebar ///
 $('.sidebar-btn').on('click', function(){
 	$(this).toggleClass('active')
 	$('.sidebar').toggleClass('active')
@@ -25,15 +26,28 @@ $('.overlay').on('click', function(){
 	$('.sidebar').removeClass('active')
 	$('.sidebar-btn').removeClass('active')
 })
+/// menu ///
+$('.call-btn').on('click',function(){
+	if($('.mobile-menu, .header-btn__menu').hasClass('active')){
+		$('.mobile-menu,.header-btn__menu,.header-btn').toggleClass('active')
+	}
+})
 $('.header-btn').on('click',function(){
 	$(this).toggleClass('active')
-	$('.mobile-menu,.header-btn__menu').toggleClass('active')
-})
-$('.mobile-list-item').on('click',function(){
-	$(this).children().toggleClass('active')
+	$('.mobile-menu, .header-btn__menu').toggleClass('active')
 })
 
 
+	
+
+$('.panel-collapse').on('show.bs.collapse', function () {
+	$(this).siblings('.panel-heading').addClass('active');
+});
+
+$('.panel-collapse').on('hide.bs.collapse', function () {
+	$(this).siblings('.panel-heading').removeClass('active');
+});
+/// calculator ///
 /// slider range ///
 var cost = $("#range-cost").slider({
 		step: 5000,
@@ -60,7 +74,6 @@ $("#range-price").slider({
 		max: 5000,
 		tooltip: 'hide'
 });
-
 
 $("#range-cost, #range-connections, #range-month, #range-price").on("change", function() {
 	var cost = $('#range-cost').val();

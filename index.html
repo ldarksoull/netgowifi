@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Сервис идентификации пользователей Wi-Fi, организуем доступ к Wi-Fi с авторизацией</title>
-    <meta name="Keywords" content="кассы с wi fi, продажа услуги через wifi, продажа товаров через wifi, общий доступ wi fi, wi fi точка, сеть wi fi, wi fi для кафе, wi fi ресторана кафе, смм маркетинг, wi fi в транспорте, wi fi в общественном транспорте, сеть wi fi, коммерческий вай фай, mikrotik wifi, интеллектуальное распределение wi fi клиентов, авторизация wi fi, авторизация сети wi fi, смс авторизация wifi, авторизация через wifi, авторизация пользователей wi fi, wi fi авторизация по смс, умные сети интернет, умные сети интернет провайдер, таргетинговая реклама, настройка таргетинговой рекламы, таргетинговая реклама стоимость, таргетинговая реклама цена, таргетинговая реклама заказать, wi fi реклама, реклама через wi fi, реклама при входе в wi fi">
+    <meta name="Keywords" content="кассы с wi fi, продажа услуги через wifi, продажа товаров через wifi, общий доступ wi fi, wi fi точка, сеть wi fi, wi fi для кафе, wi fi ресторана кафе, смм маркетинг, wi fi в транспорте, wi fi в общественном транспорте, сеть wi fi, коммерческий вай фай, mikrotik wifi, интеллектуальное распределение wi fi клиентов, авторизация wi fi, авторизация сети wi fi, смс авторизация wifi, авторизация через wifi, авторизация пользователей wi fi, wi fi авторизация по смс, умные сети интернет, умные сети интернет провайдер, таргетинговая реклама, настройка таргетинговой рекламы, таргетинговая реклама стоимость, таргетинговая реклама цена, таргетинговая реклама заказать, wi fi реклама, реклама через wi fi, реклама при входе в wi fi, как увеличить продажи, как увеличить продажи в кафе, как увеличить продажи в ресторане, как собрать клиентскую базу с нуля, соберем для вас клиентскую базу, как увеличить количество постоянных гостей в кафе, привлечение клиентов через социальные сети, способом привлечения клиентов через социальные сети является, привлечение клиентов, привлечение новых клиентов, способы привлечения клиентов, привлечение клиентов в кафе, привлечение клиентов гостиницы, привлечение клиентов в клуб, привлечение клиентов в салон красоты, способы привлечения клиентов в салон красоты, автосалон привлечение клиентов">
     <meta name="Description" content="Внедряем и устанавливаем сети Wi-Fi с идентификацией пользователей по смс. Реализация самых сложных сетей Wi-Fi.">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -14,17 +13,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
-    
     <link rel="stylesheet" href="css/main.css">
-
 </head>
-
 <body>
     <a href="#top" class="totop" id="scrolltop"><i class="far fa-arrow-alt-circle-up"></i></a>
     <header id="top" class="header">
         <div class="header-company">
             <div class="header-company__logo">
-                <img src="img/mainpage/Лого.png" alt="Логотип компании">
+                <a href="index.html"><img src="img/mainpage/Лого.png" alt="Логотип компании"></a>
             </div>
             <div class="header-company__description">Сервис Wi-Fi авторизации пользователя</div>
         </div>
@@ -65,46 +61,67 @@
                         партнером</a></li>
             </ul>
         </nav>
-        <nav class="mobile-menu">
-            <ul class="mobile-list">
-                <li class="mobile-list-item">
-                    <ul class="mobile-dropdown">
-                        <li class="mobile-dropdown-item">
-                            <a class="mobile-dropdown-item-link" href="contacts.html">Контакты</a>
+        <nav class="mobile-menu" id="accordionExample">
+            <div class="mobile-menu-item">
+                <div class="mobile-menu-header panel-heading" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="false" aria-controls="collapseOne">
+                        <button class="collapsible-link" type="button">
+                            Компания 
+                        </button>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <ul class="mobile-dropdown-list">
+                            <li class="mobile-dropdown-list-item">
+                                <a class="mobile-dropdown-list-item-link" href="about.html">О компании</a>
+                            </li>
+                            <li class="mobile-dropdown-list-item">
+                                <a class="mobile-dropdown-list-item-link" href="blog.html">Блог</a>
+                            </li>
+                            <li class="mobile-dropdown-list-item">
+                                <a class="mobile-dropdown-list-item-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="mobile-menu-item">
+                <div class="mobile-menu-header panel-heading" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="collapsible-link" type="button" >
+                            Продукты 
+                        </button>
+                        <i class="fa fa-angle-down"></i>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <ul class="mobile-dropdown-list">
+                        <li class="mobile-dropdown-list-item">
+                            <a class="mobile-dropdown-list-item-link" href="authorization.html">Wi-Fi авторизация</a>
                         </li>
-                        <li class="mobile-dropdown-item">
-                            <a class="mobile-dropdown-item-link" href="blog.html">Блог</a>
+                        <li class="mobile-dropdown-list-item">
+                            <a class="mobile-dropdown-list-item-link" href="wifitarget.html">WiFi target</a>
                         </li>
-                        <li class="mobile-dropdown-item">
-                            <a class="mobile-dropdown-item-link" href="about.html">О нас</a>
+                        <li class="mobile-dropdown-list-item">
+                            <a class="mobile-dropdown-list-item-link" href="wifi-transport.html">WiFi в транспорте</a>
+                        </li>
+                        <li class="mobile-dropdown-list-item">
+                            <a class="mobile-dropdown-list-item-link" href="commerce-wifi.html">Коммерческий WiFi</a>
                         </li>
                     </ul>
-                    <div class="mobile-list-item-link">Компания <i class="fa fa-angle-down"></i></div>
-                </li>
-                <li class="mobile-list-item">
-                    <ul class="mobile-dropdown">
-                        <li class="mobile-dropdown-item">
-                            <a class="mobile-dropdown-item-link" href="authorization.html">Wi-Fi авторизация</a>
-                        </li>
-                        <li class="mobile-dropdown-item">
-                            <a class="mobile-dropdown-item-link" href="wifitarget.html">WiFi target</a>
-                        </li>
-                        <li class="mobile-dropdown-item">
-                            <a class="mobile-dropdown-item-link" href="wifi-transport.html">WiFi в транспорте</a>
-                        </li>
-                        <li class="mobile-dropdown-item">
-                            <a class="mobile-dropdown-item-link" href="commerce-wifi.html">Коммерческий WiFi</a>
-                        </li>
-                    </ul>
-                    <div class="mobile-list-item-link">Продукты<i class="fa fa-angle-down"></i></div>
-                </li>
-                <li class="mobile-list-item">
-                    <a class="mobile-list-item-link" href="partners.html">Стать партнером</a></li>
-            </ul>
+                </div>
+            </div>
+            <div class="mobile-menu-item" data-toggle="collapse" data-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+                <div class="mobile-menu-header">
+                    <a class="mobile-menu-link" href="partners.html">Стать партнером</a>
+                </div>
+            </div>
+            <div class="mobile-menu-item mobile-call-request">
+                <a data-toggle="modal" data-target="#call-request" class="call-btn">Заказать звонок</a>
+            </div>
         </nav>
         <div class="header-contacts">
             <a class="phone-number" href="tel:+88003339686"><img src="img/mainpage/phone.svg" alt=""> 8 (800) 333-96-86</a>
-            <a data-toggle="modal"  data-target="#call-request" class="call-btn">Заказать звонок</a>
+            <a data-toggle="modal" data-target="#call-request" class="call-btn">Заказать звонок</a>
         </div>
         <div class="header-btn">
             <button class="header-btn__menu"></button>
@@ -174,10 +191,11 @@
                 <div class="col-lg-6 order-lg-1 order-xl-0 order-1 mt-sm">
                     <div class="block-content">
                         <div class="block-title">Увеличиваем продажи</div>
-                        <div class="block-text">При помощи всплывающих баннеров <br>
-                            и переадресации, гости узнают <br>
+                        <div class="block-text"><span class="br">При помощи всплывающих баннеров</span>  
+                           <span class="br"> и переадресации, гости узнают</span>
+                           <span class="br">
                             о специальных
-                            предложениях и акциях <br>
+                            предложениях и акциях</span>
 
                             средний чек увеличивается от 5 до 32%</div>
                         <a href="ad-banners.html" class="block-btn">Подробнее</a>
@@ -209,10 +227,11 @@
                 <div class="col-xl-5 col-lg-6 offset-xl-0 order-xl-1 mt-sm">
                     <div class="block-content ">
                         <div class="block-title">Собираем клиентскую базу</div>
-                        <div class="block-text">Наличие собственной клиентской базы <br>
+                        <div class="block-text"><span class="br"> Наличие собственной клиентской базы</span> 
+                            <span class="br">
                             на сегодняшний день один из ценнейших
-                            ресурсов для маркетинга и рекламы.
-                            <br>
+                            ресурсов для маркетинга и рекламы.</span>
+                           
                             Телефоны, соцсети, e-mail.</div>
                         <a href="statistics.html" class="block-btn">Подробнее</a>
                     </div>
@@ -226,8 +245,7 @@
                 <div class="col-lg-6  order-lg-0 order-1 mt-sm">
                     <div class="block-content">
                         <div class="block-title">Увеличиваем количество постоянных клиентов</div>
-                        <div class="block-text">Комплекс решений помогающий регулярно привлекать гостей в заведение,
-                            делая их постоянными посетителями</div>
+                        <div class="block-text">Комплекс решений помогающий регулярно привлекать гостей в заведение, делая их постоянными посетителями</div>
                         <a href="wifitarget.html" class="block-btn">Подробнее</a>
                     </div>
                 </div>
@@ -256,8 +274,8 @@
                 <div class="col-xl-6 col-lg-6 offset-xl-1 order-2 mt-sm">
                     <div class="block-content">
                         <div class="block-title">Привлекаем клиентов через социальные сети </div>
-                        <div class="block-text">Социальные сети - один из лучших инструментов <br>
-                            для привлечения клиентов. Сервис помогает привлекать <br> подписчиков в группы.</div>
+                        <div class="block-text"><span class="br">Социальные сети - один из лучших инструментов</span><span class="br">
+                            для привлечения клиентов. Сервис помогает привлекать</span> подписчиков в группы.</div>
                         <a href="social-networks.html" class="block-btn">Подробнее</a>
                     </div>
                 </div>
@@ -461,14 +479,14 @@
                 <div class="col-xl-7 col-lg-7 col-md-6 footer-menu-wrapper">
                     <ul class="footer-menu ">
                         <li class="footer-menu__title"><a href="index.html">Главная</a></li>
-                        <li class="footer-menu__item"><a class="active" href="#">О компании</a></li>
-                        <li class="footer-menu__item"><a href="#">Блог</a></li>
-                        <li class="footer-menu__item"><a href="#">Контакты</a></li>
+                        <li class="footer-menu__item"><a class="active" href="about.html">О компании</a></li>
+                        <li class="footer-menu__item"><a href="blog.html">Блог</a></li>
+                        <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
                     </ul>
                     <ul class="footer-menu ">
                         <li class="footer-menu__title"><a href="#">Продукты</a></li>
                         <li class="footer-menu__item"><a href="authorization.html">Wi-Fi Авторизация</a></li>
-                        <li class="footer-menu__item"><a href="wifi-target.html">Wi-Fi Таrget</a></li>
+                        <li class="footer-menu__item"><a href="wifitarget.html">Wi-Fi Таrget</a></li>
                         <li class="footer-menu__item"><a href="wifi-transport.html">Wi-Fi в Транспорте</a></li>
                         <li class="footer-menu__item"><a href="commerce-wifi.html">Коммерческий Wi-Fi</a></li>
                     </ul>
@@ -483,7 +501,8 @@
                             <a class="footer-contacts-link" href="tel:88003339686">8 (800) 333-96-86</a>
                             <p class="footer-contacts-text">Звонок бесплатный</p>
                         </div>
-                        <button class="footer-contacts-btn" data-toggle="modal" data-target="#call-request">Заказать звонок</button>
+                        <button class="footer-contacts-btn" data-toggle="modal" data-target="#call-request">Заказать
+                            звонок</button>
                     </div>
                     <div class="footer-contacts">
                         <div class="footer-contacts-content">

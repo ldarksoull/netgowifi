@@ -21,6 +21,30 @@
   width: 100px !important;
 }
 
+@media (max-width: 460px) {
+  .solution-items {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 460px) {
+  .solution-item-wrap {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 .solution-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,7 +102,7 @@ table td, table th {
 
 @media (max-width: 767px) {
   .tables .container {
-    width: 100%;
+    min-width: 100%;
   }
 }
 
@@ -114,6 +138,18 @@ table td, table th {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .table-cost {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 767px) {
+  .table-cost table {
+    min-width: 650px !important;
+  }
 }
 
 .table-cost table td, .table-cost table th {

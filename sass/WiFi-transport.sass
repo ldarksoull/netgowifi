@@ -6,6 +6,15 @@
 
 .width-100px
     width: 100px!important
+.solution-items
+    @media (max-width: 460px)
+        justify-content: center!important
+        flex-direction: row-reverse
+.solution-item-wrap
+    @media (max-width: 460px)
+        width: 50%
+        display: flex
+        justify-content: center
 .solution-item
     display: flex
     flex-direction: column
@@ -38,7 +47,8 @@ table
     margin-top: 75px
     .container
         @media (max-width: 767px)
-            width: 100%
+            min-width: 100%
+            
 .table__title
     display: flex
     justify-content: center
@@ -55,8 +65,11 @@ table
     justify-content: center
     align-items: center
     margin-bottom: 60px
-
+    @media (max-width: 767px)
+        overflow: scroll
     table
+        @media (max-width: 767px)
+            min-width: 650px!important
         td,th
             color: #000000
             font-family: $font

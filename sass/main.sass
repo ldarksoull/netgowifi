@@ -16,27 +16,6 @@
         right: 15px
     @media (max-width: 460px)
         right: 10px
-.mobile-menu
-    display: none
-    transform-origin: 100% 0
-    transform: scale(0)
-    transition: 0.2s
-    z-index: -1
-    opacity: 0
-    position: absolute
-    top: 80px
-    left: 0
-    width: 100%
-    background: #fff
-.mobile-dropdown
-    display: none
-.mobile-dropdown.active
-    display: flex
-.mobile-menu.active
-    transform: scale(1)
-    z-index: 1
-    opacity: 1
-    display: flex
 /// основные стили ////
 .header
     padding: 10px 15px
@@ -226,6 +205,72 @@
 .gradient-strip
     height: 5px
     background: linear-gradient(90deg, #FF9927 0%, #FF7018 20.99%, #D23738 39.23%, #931646 60.22%, #6A0D4B 79.56%, #4E0950 100%)
+//// mobile menu////
+.mobile-menu
+    padding-top: 30px
+    background: #fff
+    transition: 0.5s
+    transform: scaleY(0)
+    transform-origin: 0 0
+    opacity: 0
+    z-index: -1
+    position: absolute
+    top: 79px
+    width: 100%
+    left: 0
+.mobile-menu.active
+    z-index: 100000
+    transform: scaleY(1)
+    transition: 0.5s
+    @media (max-width: 900px)
+        opacity: 1
+.mobile-menu-item
+    background: #fff
+    padding: 0 15px
+.mobile-menu-header
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    cursor: pointer
+    & > .fa-angle-down
+        font-size: 30px
+// .mobile-menu-header > .fa-angle-down
+//     transform: rotate(0deg)
+// .mobile-menu-header .collapse.show + .fa-angle-down
+//     transform: rotate(180deg)
+.panel-heading .fa-angle-down
+    transition: 0.2s
+.panel-heading.active .fa-angle-down
+    transform: rotate(180deg)
+.collapsible-link,.mobile-menu-link
+    font-family: $title-font
+    font-size: 20px
+    background: #fff
+.mobile-menu-link
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    &:hover
+        color: #000
+.mobile-dropdown-list-item
+    height: 50px
+    width: 100%
+    display: flex
+    align-items: center
+.mobile-dropdown-list-item-link
+    display: block
+    width: 100%
+    height: 100%
+    font-size: 16px
+    line-height: 34px
+    font-family: $title-font
+.mobile-call-request
+    padding-top: 100px
+    padding-bottom: 20px
+    .call-btn
+        height: 50px
 ////
 .main-banner
     height: 751px
@@ -269,6 +314,7 @@
     font-size: 60px
     line-height: 63px
     margin-bottom: 70px
+    max-width: 100%
     @media(max-width: 991px)
         text-align: center
         font-size: 40px
@@ -329,6 +375,10 @@
     line-height: 42px
     @media( max-width: 767px)
         padding-top: 50px
+        font-size: 42px
+    @media (max-width: 460px)
+        font-size: 24px
+        line-height: 26px
 .block__title-1
     padding-top: 80px
     padding-bottom: 60px
@@ -336,6 +386,9 @@
     font-size: 36px
     font-weight: 700
     line-height: 42px
+    @media (max-width: 460px)
+        font-size: 24px
+        line-height: 26px
 .block__title-2
     padding-top: 100px
     padding-bottom: 80px
@@ -346,6 +399,9 @@
     @media( max-width:767px)
         padding-top: 50px
         padding-bottom: 10px
+    @media (max-width: 460px)
+        font-size: 24px
+        line-height: 26px
 .client-card
     border-radius: 15px
     height: 417px
@@ -413,6 +469,9 @@
     font-size: 40px
     line-height: 45px
     margin-bottom: 20px
+    @media (max-width: 460px)
+        font-size: 24px
+        line-height: 26px
 .block-text
     color: #000000
     font-family: $font
@@ -438,6 +497,8 @@
     transition: 0.2s
     &:hover
         background: #FF9E3D
+    @media (max-width: 460px)
+        width: 100%
 .service-for
     background-color: #efefef
     padding-bottom: 100px
@@ -460,6 +521,12 @@
         width: 75%
     @media (max-width: 570px)
         width: 100%
+.br
+    @media (min-width: 460px)
+        display: block
+.br-xs
+    @media (max-width: 460px)
+        display: block
 .d-sm-none
     @media (max-width: 767px)
         display: none!important
@@ -534,6 +601,9 @@
     font-family: $title-font-bold
     font-size: 36px
     line-height: 42px
+    @media (max-width: 460px)
+        font-size: 24px
+        line-height: 26px
 .feedback-block__subtitle
     color: #000000
     font-family: $font
@@ -719,6 +789,9 @@ button
     align-items: center
 .text-center
     text-align: center
+.m-xs-0
+    @media (max-width: 460px)
+        margin: 0!important
 .mb-sm
     margin-bottom: 10px
 .mb-md
@@ -767,6 +840,8 @@ button
 
 /////////// modal //////////////
 ////
+.modal
+    z-index: 999999
 .modal-header,.modal-footer
     border: none
 .modal_form
@@ -957,10 +1032,13 @@ button
     color: #155724
 /// authorization ////
 .howitwork-link
+    transition: 0.2s
     color: #ff9927!important
     line-height: 20px
     font-family: $font
     border-bottom: 1px solid #ff9927
+    &:hover
+        border-bottom: 1px solid transparent
 .breadcrumb
   background-color: transparent
   font-family: $font
@@ -1057,7 +1135,7 @@ button
     position: fixed
     top: 0
     left: 0
-    z-index: 1000
+    z-index: 1020
 .sidebar
     padding-top: 10px
     padding-right: 0
@@ -1172,7 +1250,6 @@ button
     @media (max-width: 575px)
         font-size: 18px
         line-height: 20px
-        text-align: center
 .content-item
     display: flex
     align-items: center
@@ -1230,6 +1307,7 @@ button
     font-family: $font
     font-size: 16px
     line-height: 32px
+    max-width: 100%
 .first-letter:first-letter
     margin-left: 5px
 .lh-19
@@ -1306,9 +1384,15 @@ button
     top: 75px
 .blog-menu-list
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
 .blog-menu-list-item
+    display: flex
+    justify-content: center
+    align-items: center
 .blog-menu-list-item-link
+    display: flex
+    text-align: center
     transition: 0.2s
     color: #000000
     font-family: $title-font
@@ -1319,6 +1403,9 @@ button
     &:hover
         color: #4e0950
         border-bottom: 2px solid #4e0950
+.blog-menu-list-item-link.active  
+    color: #4e0950
+    border-bottom: 2px solid #4e0950
 .blog-content-subtitle
     color: #000000
     font-family: $title-font-bold
@@ -1345,6 +1432,12 @@ button
     font-size: 26px
     line-height: 30px
     margin-bottom: 10px
+    @media (max-width: 767px)
+        font-size: 24px
+        line-height: 28px
+    @media (max-width: 575px)
+        font-size: 20px
+        line-height: 22px
 .article-info
     display: flex
     align-items: center
@@ -1387,6 +1480,11 @@ button
         color: #ff9927
 .article-tag__hashtag
     color: #ff9927
+.article-image
+    width: 100%
+    img
+        max-width: 100%
+        height: auto
 .read-more
     transition: 0.2s
     display: inline-block
@@ -1396,7 +1494,8 @@ button
     font-family: $title-font-bold
     border-bottom: 1px solid #ff9927
     &:hover
-        border-bottom: 1px solid #000
+        color: #ff9927
+        border-bottom: 1px solid transparent
 .return
     display: block
     font-size: 14px
@@ -1411,6 +1510,15 @@ button
     font-family: $title-font-bold
     font-size: 42px
     line-height: 49px
+    @media (max-width: 767px)
+        font-size: 24px
+        line-height: 28px
+    @media (max-width: 575px)
+        font-size: 20px
+        line-height: 22px
+.blog-social-icons
+    @media (max-width: 767px)
+        display: flex
 .blog-social-icon
     margin-top: 27px
     transition: 0.2s
@@ -1422,6 +1530,7 @@ button
     justify-content: center
     border-radius: 50%
     font-size: 100%
+    margin-right: 20px
     &:hover
         color: #ffffff
 .tw
@@ -1443,6 +1552,10 @@ button
 .contacts
     width: 100%
     height: 900px
+    @media (max-width: 767px)
+        height: 1000px
+    @media (max-width: 460px)
+        height: 1100px
 .contacts-content
     position: absolute
     z-index: 1000
@@ -1451,20 +1564,48 @@ button
     padding-top: 110px
     padding-left: 50px
     background: rgba(255, 255, 255, 0.85)
+    width: 650px
+    @media (max-width: 1400px)
+        width: 550px
+    @media (max-width: 991px)
+        background: rgba(255, 255, 255, 1)
+        width: 100%
     @media (max-width: 767px)
         padding-top: 50px
+        padding-right: 50px
+        height: 1000px
+    @media (max-width: 460px)
+        padding: 30px 15px
 .contacts-title
     color: #000000
     font-family: $title-font-bold
     font-size: 48px
     line-height: 56px
+    @media (max-width: 460px)
+      font-size: 24px
+      line-height: 26px
 .contacts-row
     display: flex
     margin-bottom: 20px
     @media (max-width: 767px)
         flex-wrap: wrap
+    @media (max-width: 460px)
+        justify-content: space-between
 .contacts-block
     margin-right: 60px
+    @media (max-width: 460px)
+        margin-right: 0
+.m-sm-0
+    @media (max-width: 575px)
+        margin: 0
+.width-xs-50
+    @media (max-width: 460px)
+        width: 50%
+        margin-bottom: 20px
+.width-xs-100
+    @media (max-width: 460px)
+        width: 100%
+        margin-bottom: 20px
 .contacts-block-title
     color: #454545
     font-family: $font
@@ -1474,7 +1615,7 @@ button
     margin-bottom: 5px
 .contacts-text
     color: #000000
-    font-family: $title-font
+    font-family: $font
     font-size: 16px
     font-weight: 300
     line-height: 23px
@@ -1483,6 +1624,9 @@ button
     font-family: $title-font-bold
     font-size: 30px
     line-height: 35px
+    @media (max-width: 460px)
+        font-size: 20px
+        line-height: 22px
 .company-name
     color: #000000
     font-family: $font
@@ -1490,8 +1634,9 @@ button
     font-weight: 400
     line-height: 19px
     margin-left: 10px
-    @media (max-width: 767px)
-        display: block
+.contacts-mobile-btn
+    @media (min-width: 992px)
+        display: none
 @import wifi-transport.sass
 @import wifi-target.sass
 @import partners.sass
