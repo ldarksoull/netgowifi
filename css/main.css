@@ -3173,6 +3173,10 @@ button {
   }
 }
 
+.privacy {
+  padding-top: 75px;
+}
+
 @font-face {
   font-family: "AvenirNextCyr-Bold";
   src: url("../fonts/AvenirNextCyr-Bold.ttf");
