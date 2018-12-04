@@ -1242,6 +1242,10 @@
   border-radius: 4px;
 }
 
+.feedback__input.error {
+  border: 1px solid red;
+}
+
 .feedback__input-placeholder {
   height: 100%;
   background-color: #ffffff;
