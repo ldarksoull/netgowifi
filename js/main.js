@@ -36,7 +36,10 @@ $('.header-btn').on('click',function(){
 	$(this).toggleClass('active')
 	$('.mobile-menu, .header-btn__menu').toggleClass('active')
 })
-
+$('.products-btn').on('click', function(){
+	$('.sidebar').toggleClass('active')
+	$('.sidebar').slideToggle('slow')
+})
 
 	
 

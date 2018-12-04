@@ -1076,13 +1076,29 @@ button
     transform: translate(-50%)
     @media (max-width: 1199px)
         display: flex
-    @media (max-width: 460px)
-        width: 35px
-        height: 35px
+    @media (max-width: 768px)
+        display: none
 .sidebar-btn.active
     transform: translate(-100%)
     @media (max-width: 460px)
         transform: translate(-110%)
+.products-btn
+    font-family: $title-font
+    color: #FF7018
+    font-size: 16px
+    line-height: 20px
+    height: 50px
+    position: absolute
+    top: -50px
+    width: 160px
+    display: none
+    justify-content: space-between
+    align-items: center
+    cursor: pointer
+    .fa-angle-down
+        margin-top: 3px
+    @media (max-width: 768px)
+        display: flex
 .hamburger
     z-index: 1
     display: block
@@ -1153,14 +1169,24 @@ button
         left: 0
         z-index: 19999
         transform: translate(-100%)
-        @media (max-width: 460px)
-            width: 100%
+    @media (max-width: 768px)
+        padding-top: 0
+        transition: none
+        display: none
+        transform: translate(0)
+        width: 100%
+        height: auto
+        background: #fff
+        position: static
+        margin-bottom: 30px
 .sidebar.active
     transition: 0.5s
     @media (max-width: 1199px)
         background: #fff
         z-index: 20000
-        transform: translate(0%)
+        transform: translate(0)
+    @media (max-width: 768px)
+        transition: none
 .content
     padding-left: 0
     @media (max-width: 1199px)
@@ -1172,6 +1198,8 @@ button
     top: 55px
     @media (max-width: 1199px)
         position: absolute
+    @media (max-width: 768px)
+        position: static
 .sidebar-menu__item
   transition: 0.2s
   display: flex
@@ -1185,15 +1213,10 @@ button
     height: 8px
     background: #e7e7e7
     transition: 0.2s
-
+    @media (max-width: 768px)
+        display: none
 .sidebar-menu__item-link:hover::before
     background: #ff9927
-.sidebar-menu__item-link
-    display: flex
-    align-items: center
-    transition: 0.2s
-    &:hover
-        color: #ff9927
 .sidebar-menu__item-link.active
     color: #4e0950
     font-family: $font
@@ -1207,12 +1230,24 @@ button
         height: 8px
         border-radius: 8px
         background: #4e0950
+        @media (max-width: 768px)
+            display: none
 .sidebar-menu__item-link
     color: #000000
     font-family: $font
     font-size: 18px
     font-weight: 500
     margin-bottom: 35px
+    display: flex
+    align-items: center
+    transition: 0.2s
+    &:hover
+        color: #ff9927
+    @media (max-width: 768px)
+        line-height: 47px
+        width: 100%
+        font-size: 16px
+        margin: 0
 .item-image
     width: 100%
 .item-text,.item-icon
