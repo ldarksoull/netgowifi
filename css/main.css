@@ -2062,6 +2062,18 @@ button {
   }
 }
 
+.products-btn-wrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .products-btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .products-btn {
   font-family: "Avenir Next Cyr";
   color: #FF7018;
