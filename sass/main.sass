@@ -453,10 +453,9 @@
 .block
     display: flex
     align-items: center
-
 .block-1
     padding: 100px 0
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         padding: 50px 0
 .block-3-img
     width: 90%
@@ -1075,7 +1074,7 @@ button
     transform: translate(-50%)
     @media (max-width: 1199px)
         display: flex
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         display: none
 .sidebar-btn.active
     transform: translate(-100%)
@@ -1083,7 +1082,7 @@ button
         transform: translate(-110%)
 .products-btn-wrapper
     display: none
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         display: flex
 .products-btn
     font-family: $title-font
@@ -1101,7 +1100,7 @@ button
     .fa-angle-down
         transition: 0.2s
         margin-top: 3px
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         display: flex
 .products-btn.active .fa-angle-down
     transform: rotate(180deg)
@@ -1150,6 +1149,8 @@ button
     opacity: 0
     position: relative
     z-index: -10
+    @media (max-width: 767px)
+        display: none
 .overlay.active
     transition: 0.5s
     display: block
@@ -1161,6 +1162,8 @@ button
     top: 0
     left: 0
     z-index: 1020
+    @media (max-width: 767px)
+        display: none
 .sidebar
     padding-top: 10px
     padding-right: 0
@@ -1175,7 +1178,7 @@ button
         left: 0
         z-index: 19999
         transform: translate(-100%)
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         padding-top: 0
         transition: none
         display: none
@@ -1191,7 +1194,7 @@ button
         background: #fff
         z-index: 20000
         transform: translate(0)
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         transition: none
 .content
     padding-left: 0
@@ -1204,7 +1207,7 @@ button
     top: 55px
     @media (max-width: 1199px)
         position: absolute
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         position: static
 .sidebar-menu__item
   transition: 0.2s
@@ -1219,7 +1222,7 @@ button
     height: 8px
     background: #e7e7e7
     transition: 0.2s
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         display: none
 .sidebar-menu__item-link:hover::before
     background: #ff9927
@@ -1236,7 +1239,7 @@ button
         height: 8px
         border-radius: 8px
         background: #4e0950
-        @media (max-width: 768px)
+        @media (max-width: 767px)
             display: none
 .sidebar-menu__item-link
     color: #000000
@@ -1249,7 +1252,7 @@ button
     transition: 0.2s
     &:hover
         color: #ff9927
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         line-height: 47px
         width: 100%
         font-size: 16px
@@ -1526,6 +1529,9 @@ button
     img
         max-width: 100%
         height: auto
+.weekly-best
+    @media (max-width: 991px)
+        display: none
 .read-more
     transition: 0.2s
     display: inline-block

@@ -923,7 +923,7 @@
   padding: 100px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .block-1 {
     padding: 50px 0;
   }
@@ -2042,7 +2042,7 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .sidebar-btn {
     display: none;
   }
@@ -2066,7 +2066,7 @@ button {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .products-btn-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2100,7 +2100,7 @@ button {
   margin-top: 3px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .products-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2210,6 +2210,12 @@ button {
   z-index: -10;
 }
 
+@media (max-width: 767px) {
+  .overlay {
+    display: none;
+  }
+}
+
 .overlay.active {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -2223,6 +2229,12 @@ button {
   top: 0;
   left: 0;
   z-index: 1020;
+}
+
+@media (max-width: 767px) {
+  .overlay.active {
+    display: none;
+  }
 }
 
 .sidebar {
@@ -2249,7 +2261,7 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .sidebar {
     padding-top: 0;
     -webkit-transition: none;
@@ -2283,7 +2295,7 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .sidebar.active {
     -webkit-transition: none;
     -o-transition: none;
@@ -2317,7 +2329,7 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .sidebar-menu {
     position: static;
   }
@@ -2348,7 +2360,7 @@ button {
   transition: 0.2s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .sidebar-menu__item-link::before {
     display: none;
   }
@@ -2375,7 +2387,7 @@ button {
   background: #4e0950;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .sidebar-menu__item-link.active:before {
     display: none;
   }
@@ -2402,7 +2414,7 @@ button {
   color: #ff9927;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .sidebar-menu__item-link {
     line-height: 47px;
     width: 100%;
@@ -2886,6 +2898,12 @@ button {
 .article-image img {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 991px) {
+  .weekly-best {
+    display: none;
+  }
 }
 
 .read-more {
