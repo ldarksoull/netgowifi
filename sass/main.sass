@@ -158,6 +158,8 @@
         color: #ff9225
 .dropdown-list-item-link.active
     color: #ff9225
+.mobile-dropdown-list-item-link.active
+    color: #ff9225
 .header-menu-list-item:hover > .dropdown-list
     opacity: 1
     transform: scaleY(1)
@@ -237,8 +239,6 @@
     cursor: pointer
     & > .fa-angle-down
         font-size: 30px
-.mobile-menu-header.active
-    border: 1px solid #FF9927
 .panel-head .fa-angle-down
     transition: 0.2s
 .panel-head.active .fa-angle-down
@@ -254,6 +254,8 @@
     align-items: center
     &:hover
         color: #000
+.mobile-menu-link.active
+    color: #ff9927
 .mobile-dropdown-list-item
     height: 50px
     width: 100%
@@ -719,6 +721,9 @@
         @media(max-width: 460px)
             font-size: 16px
             line-height: 35px
+.footer-menu__title
+    a.active
+        color: rgb(255, 153, 39)
 .footer-menu__item
     a.active
         color: rgb(255, 153, 39)

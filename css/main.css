@@ -330,6 +330,10 @@
   color: #ff9225;
 }
 
+.mobile-dropdown-list-item-link.active {
+  color: #ff9225;
+}
+
 .header-menu-list-item:hover > .dropdown-list {
   opacity: 1;
   -webkit-transform: scaleY(1);
@@ -488,10 +492,6 @@
   font-size: 30px;
 }
 
-.mobile-menu-header.active {
-  border: 1px solid #FF9927;
-}
-
 .panel-head .fa-angle-down {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
@@ -523,6 +523,10 @@
 
 .mobile-menu-link:hover {
   color: #000;
+}
+
+.mobile-menu-link.active {
+  color: #ff9927;
 }
 
 .mobile-dropdown-list-item {
@@ -1436,6 +1440,10 @@
     font-size: 16px;
     line-height: 35px;
   }
+}
+
+.footer-menu__title a.active {
+  color: #ff9927;
 }
 
 .footer-menu__item a.active {

@@ -71,17 +71,18 @@
                     <i class="fa fa-angle-down"></i>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <ul class="mobile-dropdown-list">
-                            <li class="mobile-dropdown-list-item">
-                                <a class="mobile-dropdown-list-item-link" href="about.html">О компании</a>
-                            </li>
-                            <li class="mobile-dropdown-list-item">
-                                <a class="mobile-dropdown-list-item-link" href="blog.html">Блог</a>
-                            </li>
-                            <li class="mobile-dropdown-list-item">
-                                <a class="mobile-dropdown-list-item-link" href="contacts.html">Контакты</a>
-                            </li>
-                        </ul>
+                    <ul class="mobile-dropdown-list">
+                        <li class="mobile-dropdown-list-item">
+                            <!-- активный пункт меню с классом active -->
+                            <a class="mobile-dropdown-list-item-link active" href="about.html">О компании</a>
+                        </li>
+                        <li class="mobile-dropdown-list-item">
+                            <a class="mobile-dropdown-list-item-link" href="blog.html">Блог</a>
+                        </li>
+                        <li class="mobile-dropdown-list-item">
+                            <a class="mobile-dropdown-list-item-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="mobile-menu-item">
@@ -112,6 +113,7 @@
             <div class="mobile-menu-item" data-toggle="collapse" data-target="#collapseThree"
             aria-expanded="false" aria-controls="collapseThree">
                 <div class="mobile-menu-header">
+                    <!-- тут тоже .mobile-menu-link.active color: #ff9927-->
                     <a class="mobile-menu-link" href="partners.html">Стать партнером</a>
                 </div>
             </div>
@@ -191,12 +193,12 @@
                 <div class="col-lg-6 order-lg-1 order-xl-0 order-1 mt-sm">
                     <div class="block-content">
                         <div class="block-title">Увеличиваем продажи</div>
+                        <!-- убери br и расставь спаны во всех блоках -->
                         <div class="block-text"><span class="br">При помощи всплывающих баннеров</span>  
                            <span class="br"> и переадресации, гости узнают</span>
                            <span class="br">
                             о специальных
                             предложениях и акциях</span>
-
                             средний чек увеличивается от 5 до 32%</div>
                         <a href="ad-banners.html" class="block-btn">Подробнее</a>
                     </div>
@@ -270,7 +272,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-xl-6 col-lg-6 offset-xl-1 order-2 mt-sm">
                     <div class="block-content">
                         <div class="block-title">Привлекаем клиентов через социальные сети </div>
@@ -370,7 +371,9 @@
         </div>
     </section>
     <section class="partners">
+        <!-- у контейнера лишний закрываюший тег был  -->
         <div class="container">
+            
             <div class="row">
                 <h2 class="col block__title-2">Этот инструмент уже выбрали:</h2>
             </div>
@@ -478,20 +481,22 @@
             <div class="row">
                 <div class="col-xl-7 col-lg-7 col-md-6 footer-menu-wrapper">
                     <ul class="footer-menu ">
-                        <li class="footer-menu__title"><a href="index.html">Главная</a></li>
-                        <li class="footer-menu__item"><a class="active" href="about.html">О компании</a></li>
+                        <li class="footer-menu__title"><a class="active" href="index.html">Главная</a></li>
+                        <!-- у активной ссылки класс active -->
+                        <li class="footer-menu__item"><a href="about.html">О компании</a></li>
                         <li class="footer-menu__item"><a href="blog.html">Блог</a></li>
                         <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
                     </ul>
                     <ul class="footer-menu ">
-                        <li class="footer-menu__title"><a href="#">Продукты</a></li>
+                        
+                        <li class="footer-menu__title">Продукты</li><!-- убрал ссылку -->
                         <li class="footer-menu__item"><a href="authorization.html">Wi-Fi Авторизация</a></li>
                         <li class="footer-menu__item"><a href="wifitarget.html">Wi-Fi Таrget</a></li>
                         <li class="footer-menu__item"><a href="wifi-transport.html">Wi-Fi в Транспорте</a></li>
                         <li class="footer-menu__item"><a href="commerce-wifi.html">Коммерческий Wi-Fi</a></li>
                     </ul>
                     <ul class="footer-menu ">
-                        <li class="footer-menu__title"><a href="#">Сотрудничество </a></li>
+                        <li class="footer-menu__title">Сотрудничество</li><!-- убрал ссылку -->
                         <li class="footer-menu__item"><a href="partners.html">Стать партнером</a></li>
                     </ul>
                 </div>
@@ -510,6 +515,7 @@
                         </div>
                         <button data-toggle="modal" data-target="#text-us" class="footer-contacts-btn">Написать нам</button>
                     </div>
+                    <!-- добавил инстаграмм и ссылки -->
                     <div class="footer-contacts">
                         <a href="https://twitter.com/netgowifi" class="social-icon"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/netgowifi.com.ru/" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -520,7 +526,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 politic-conf">Политика конфиденциальности и обработки персональных данных </div>
+                <div class="col-12 politic-conf">
+                    <!-- ссылка на политику -->
+                    <a href="privacy-policy.html">Политика конфиденциальности и обработки персональных данных</a>
+                </div>
                 <div class="col-12 copyright">2018 NETGO. Все права защищены.</div>
             </div>
         </div>
@@ -627,10 +636,8 @@
         </div>
     </footer>
 </body>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
-
 </html>
