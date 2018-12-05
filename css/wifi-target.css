@@ -173,6 +173,7 @@
 }
 
 .target-cost-item-wrap {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +224,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3px;
-  width: 90%;
+  width: 100%;
   height: 50px;
 }
 
