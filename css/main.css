@@ -2094,6 +2094,9 @@ button {
 }
 
 .products-btn .fa-angle-down {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   margin-top: 3px;
 }
 
@@ -2103,6 +2106,12 @@ button {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.products-btn.active .fa-angle-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .hamburger {

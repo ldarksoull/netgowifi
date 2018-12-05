@@ -38,6 +38,7 @@ $('.header-btn').on('click',function(){
 })
 $('.products-btn').on('click', function(){
 	$('.sidebar').toggleClass('active')
+	$('.products-btn').toggleClass('active')
 	$('.sidebar').slideToggle('slow')
 })
 

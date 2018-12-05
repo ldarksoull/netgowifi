@@ -235,10 +235,7 @@
     cursor: pointer
     & > .fa-angle-down
         font-size: 30px
-// .mobile-menu-header > .fa-angle-down
-//     transform: rotate(0deg)
-// .mobile-menu-header .collapse.show + .fa-angle-down
-//     transform: rotate(180deg)
+
 .panel-head .fa-angle-down
     transition: 0.2s
 .panel-head.active .fa-angle-down
@@ -1102,9 +1099,12 @@ button
     align-items: center
     cursor: pointer
     .fa-angle-down
+        transition: 0.2s
         margin-top: 3px
     @media (max-width: 768px)
         display: flex
+.products-btn.active .fa-angle-down
+    transform: rotate(180deg)
 .hamburger
     z-index: 1
     display: block
