@@ -228,12 +228,6 @@
   height: 50px;
 }
 
-@media (max-width: 1199px) {
-  .target-cost-item {
-    width: 100%;
-  }
-}
-
 @media (max-width: 480px) {
   .target-cost-item {
     height: 80px;

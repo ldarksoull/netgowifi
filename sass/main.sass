@@ -156,6 +156,8 @@
     line-height: 18px
     &:hover
         color: #ff9225
+.dropdown-list-item-link.active
+    color: #ff9225
 .header-menu-list-item:hover > .dropdown-list
     opacity: 1
     transform: scaleY(1)
@@ -717,8 +719,9 @@
         @media(max-width: 460px)
             font-size: 16px
             line-height: 35px
-.footer-menu__item.active
-    color: #000000
+.footer-menu__item
+    a.active
+        color: rgb(255, 153, 39)
 .footer-contacts-wrapper
 .footer-contacts
     display: flex

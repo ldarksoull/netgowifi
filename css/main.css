@@ -326,6 +326,10 @@
   color: #ff9225;
 }
 
+.dropdown-list-item-link.active {
+  color: #ff9225;
+}
+
 .header-menu-list-item:hover > .dropdown-list {
   opacity: 1;
   -webkit-transform: scaleY(1);
@@ -420,8 +424,8 @@
 
 .gradient-strip {
   height: 5px;
-  background: -o-linear-gradient(left, #FF9927 0%, #FF7018 20.99%, #D23738 39.23%, #931646 60.22%, #6A0D4B 79.56%, #4E0950 100%);
   background: -webkit-gradient(linear, left top, right top, from(#FF9927), color-stop(20.99%, #FF7018), color-stop(39.23%, #D23738), color-stop(60.22%, #931646), color-stop(79.56%, #6A0D4B), to(#4E0950));
+  background: -o-linear-gradient(left, #FF9927 0%, #FF7018 20.99%, #D23738 39.23%, #931646 60.22%, #6A0D4B 79.56%, #4E0950 100%);
   background: linear-gradient(90deg, #FF9927 0%, #FF7018 20.99%, #D23738 39.23%, #931646 60.22%, #6A0D4B 79.56%, #4E0950 100%);
 }
 
@@ -1434,8 +1438,8 @@
   }
 }
 
-.footer-menu__item.active {
-  color: #000000;
+.footer-menu__item a.active {
+  color: #ff9927;
 }
 
 .footer-contacts {
@@ -1513,8 +1517,8 @@
   width: 170px;
   height: 30px;
   border-radius: 6px;
-  background-image: -o-linear-gradient(left, #ff9927 0%, #ff7018 21%, #d23738 39%, #931646 60%, #6a0d4b 80%, #4e0950 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#ff9927), color-stop(21%, #ff7018), color-stop(39%, #d23738), color-stop(60%, #931646), color-stop(80%, #6a0d4b), to(#4e0950));
+  background-image: -o-linear-gradient(left, #ff9927 0%, #ff7018 21%, #d23738 39%, #931646 60%, #6a0d4b 80%, #4e0950 100%);
   background-image: linear-gradient(to right, #ff9927 0%, #ff7018 21%, #d23738 39%, #931646 60%, #6a0d4b 80%, #4e0950 100%);
 }
 
@@ -3696,12 +3700,6 @@ table td, table th {
   height: 50px;
 }
 
-@media (max-width: 1199px) {
-  .target-cost-item {
-    width: 100%;
-  }
-}
-
 @media (max-width: 480px) {
   .target-cost-item {
     height: 80px;
@@ -4201,8 +4199,8 @@ table td, table th {
   position: relative;
   padding: 30px 20px;
   background-color: #d23738;
-  background-image: -o-linear-gradient(right, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
   background-image: -webkit-gradient(linear, right top, left top, from(#680450), color-stop(35%, #80044a), color-stop(66%, #df2537), to(#ff7b00));
+  background-image: -o-linear-gradient(right, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
   background-image: linear-gradient(to left, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
 }
 
