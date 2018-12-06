@@ -428,8 +428,8 @@
 
 .gradient-strip {
   height: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#FF9927), color-stop(20.99%, #FF7018), color-stop(39.23%, #D23738), color-stop(60.22%, #931646), color-stop(79.56%, #6A0D4B), to(#4E0950));
   background: -o-linear-gradient(left, #FF9927 0%, #FF7018 20.99%, #D23738 39.23%, #931646 60.22%, #6A0D4B 79.56%, #4E0950 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#FF9927), color-stop(20.99%, #FF7018), color-stop(39.23%, #D23738), color-stop(60.22%, #931646), color-stop(79.56%, #6A0D4B), to(#4E0950));
   background: linear-gradient(90deg, #FF9927 0%, #FF7018 20.99%, #D23738 39.23%, #931646 60.22%, #6A0D4B 79.56%, #4E0950 100%);
 }
 
@@ -573,7 +573,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: url("../img/mainpage/Main header.jpg") no-repeat;
+  background: url("../img/mainpage/Main header (1).jpg") no-repeat;
   background-position: right center;
   background-size: cover;
 }
@@ -850,19 +850,19 @@
 }
 
 .neste {
-  background: url("../img/mainpage/Group 16.png") no-repeat;
+  background: url("../img/mainpage/Group 16.jpg") no-repeat;
 }
 
 .vkusno {
-  background: url("../img/mainpage/Group 18.png") no-repeat;
+  background: url("../img/mainpage/Group 18.jpg") no-repeat;
 }
 
 .maxpower {
-  background: url("../img/mainpage/Group 2.png") no-repeat;
+  background: url("../img/mainpage/Group 2.jpg") no-repeat;
 }
 
 .pirogi {
-  background: url("../img/mainpage/Group 2.1.png") no-repeat;
+  background: url("../img/mainpage/Group 2.1.jpg") no-repeat;
 }
 
 .card-inner {
@@ -1525,8 +1525,8 @@
   width: 170px;
   height: 30px;
   border-radius: 6px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff9927), color-stop(21%, #ff7018), color-stop(39%, #d23738), color-stop(60%, #931646), color-stop(80%, #6a0d4b), to(#4e0950));
   background-image: -o-linear-gradient(left, #ff9927 0%, #ff7018 21%, #d23738 39%, #931646 60%, #6a0d4b 80%, #4e0950 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff9927), color-stop(21%, #ff7018), color-stop(39%, #d23738), color-stop(60%, #931646), color-stop(80%, #6a0d4b), to(#4e0950));
   background-image: linear-gradient(to right, #ff9927 0%, #ff7018 21%, #d23738 39%, #931646 60%, #6a0d4b 80%, #4e0950 100%);
 }
 
@@ -1985,7 +1985,7 @@ button {
   color: #fff;
 }
 
-.feedback-btn__submit.success {
+.feedback__modal-btn.success, .feedback-btn__submit.success {
   background-color: #d4edda !important;
   color: #155724;
 }
@@ -3310,7 +3310,7 @@ button {
 
 table {
   width: 100%;
-  border-collapse: separate;
+  border-collapse: separate !important;
 }
 
 table td, table th {
@@ -4207,8 +4207,8 @@ table td, table th {
   position: relative;
   padding: 30px 20px;
   background-color: #d23738;
-  background-image: -webkit-gradient(linear, right top, left top, from(#680450), color-stop(35%, #80044a), color-stop(66%, #df2537), to(#ff7b00));
   background-image: -o-linear-gradient(right, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#680450), color-stop(35%, #80044a), color-stop(66%, #df2537), to(#ff7b00));
   background-image: linear-gradient(to left, #680450 0%, #80044a 35%, #df2537 66%, #ff7b00 100%);
 }
 
