@@ -1985,7 +1985,7 @@ button {
   color: #fff;
 }
 
-.feedback__modal-btn.success {
+.feedback-btn__submit.success {
   background-color: #d4edda !important;
   color: #155724;
 }

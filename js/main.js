@@ -42,7 +42,6 @@ $('.products-btn').on('click', function(){
 	$('.sidebar').slideToggle('slow')
 })
 
-	
 
 $('.panel-collapse').on('show.bs.collapse', function () {
 	$(this).siblings('.panel-head').addClass('active');
