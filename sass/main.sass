@@ -22,7 +22,9 @@
     display: flex
     background: #fff
     justify-content: space-around
+    height: 8vh
     @media(max-width: 991px)
+        height: 80px
         justify-content: space-between
     @media( max-width: 900px)
         position: relative
@@ -275,7 +277,7 @@
         height: 50px
 ////
 .main-banner
-    height: 751px
+    height: 92vh
     display: flex
     flex-direction: column
     justify-content: center
@@ -283,6 +285,9 @@
     background: url('../img/mainpage/4kHeader.jpg') no-repeat
     background-position: center 30%
     background-size: cover
+    position: relative
+    @media (max-width: 991px)
+        height: 600px
     @media (max-width: 767px)
         justify-content: center
         height: 500px
@@ -291,13 +296,24 @@
     .row
         display: flex
         justify-content: center
+.main-banner:after 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0,.5)
+    z-index: 2
 .pagetitle
+    position: relative
     text-align: center
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     justify-content: space-between
+    z-index: 3
     @media(max-width: 991px)
         max-width: 100%
         min-height: 100%

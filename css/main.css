@@ -60,10 +60,12 @@
   background: #fff;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  height: 8vh;
 }
 
 @media (max-width: 991px) {
   .header {
+    height: 80px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -562,7 +564,7 @@
 }
 
 .main-banner {
-  height: 751px;
+  height: 92vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,6 +581,13 @@
   background: url("../img/mainpage/4kHeader.jpg") no-repeat;
   background-position: center 30%;
   background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .main-banner {
+    height: 600px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -607,7 +616,19 @@
   justify-content: center;
 }
 
+.main-banner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
 .pagetitle {
+  position: relative;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,6 +646,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  z-index: 3;
 }
 
 @media (max-width: 991px) {
