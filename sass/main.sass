@@ -22,11 +22,11 @@
     display: flex
     background: #fff
     justify-content: space-around
-    height: 8vh
-    @media(max-width: 991px)
+    height: 74px
+    @media (max-width: 991px)
         height: 80px
         justify-content: space-between
-    @media( max-width: 900px)
+    @media (max-width: 900px)
         position: relative
 .header-company
     display: flex
@@ -277,34 +277,28 @@
         height: 50px
 ////
 .main-banner
-    height: 92vh
+    height: 700px
+    max-height: 700px
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
-    background: url('../img/mainpage/4kHeader.jpg') no-repeat
+    background: url('../img/mainpage/Main-header.jpg') no-repeat
     background-position: center 30%
     background-size: cover
     position: relative
     @media (max-width: 991px)
         height: 600px
+        max-height: 600px
     @media (max-width: 767px)
         justify-content: center
         height: 500px
+        max-height: 500px
     @media(max-width: 460px)
         justify-content: flex-end
     .row
         display: flex
         justify-content: center
-.main-banner:after 
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    background: rgba(0,0,0,.5)
-    z-index: 2
 .pagetitle
     position: relative
     text-align: center
@@ -670,7 +664,7 @@
     font-family: $font
     font-size: 16px
     line-height: 19px
-    @media (max-width: 991px)
+    @media (max-width: 1199px)
         margin-bottom: 10px
     @media (max-width: 767px)
         margin-bottom: 30px
