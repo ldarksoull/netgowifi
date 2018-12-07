@@ -61,6 +61,8 @@
   -ms-flex-pack: distribute;
   justify-content: space-around;
   height: 74px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 @media (max-width: 991px) {
@@ -1577,6 +1579,10 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
+}
+
+.container-fluid {
+  max-width: 1920px;
 }
 
 button {
