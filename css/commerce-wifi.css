@@ -33,8 +33,6 @@ a {
   font-weight: 400;
   border-radius: 5px;
   text-transform: uppercase;
-  -webkit-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
@@ -79,33 +77,17 @@ a {
 }
 
 .com-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .com-item-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   height: 90px;
   width: 90px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -115,29 +97,15 @@ a {
 }
 
 .work-scheme-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .work-scheme-image {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -197,6 +165,63 @@ a {
 @media (max-width: 575px) {
   .system-option {
     margin-bottom: 50px !important;
+  }
+}
+
+.system-option__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.system-option__title-text {
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.system-option__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.system-option__item-icon {
+  height: 60px;
+  align-items: baseline;
+}
+
+.system-option__item-text {
+  margin-top: 20px;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  min-height: 60px;
+  text-align: center;
+}
+
+.more-info__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.more-info__item-icon {
+  margin-right: 30px;
+}
+
+.more-info__item-text {
+  color: #000000;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+ttom: 50px !important;
   }
 }
 
