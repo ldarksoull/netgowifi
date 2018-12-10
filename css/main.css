@@ -3280,6 +3280,14 @@ button {
   box-shadow: 0px 0px 5px;
 }
 
+.input-error {
+  border: 1px solid red;
+}
+
+.article-text img, .article-body img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "AvenirNextCyr-Bold";
   font-display: auto;
