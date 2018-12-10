@@ -36,6 +36,9 @@
     &__logo
         position: relative
         display: block
+        img
+            @media (max-width: 460px)
+                max-width: 80%
         &::after
             content: ""
             top: 3px
@@ -838,6 +841,8 @@ button
     padding-left: 0!important
 .pr-none
     padding-right: 0!important
+    @media (max-width: 767px)
+        padding-right: 15px!important
 .pl-sm
     padding-left: 15px!important
     @media (max-width: 575px)
@@ -1076,7 +1081,7 @@ button
   min-height: 1000px
 .about-us
     background: url('../img/Ресурс 2.png') no-repeat
-    background-position: 60% 70%
+    background-position: 60% 17%
     padding-top: 80px
 ////sidebar////
 /// burger btn ///
@@ -1720,6 +1725,9 @@ button
     padding-bottom: 2rem
     @media (max-width: 460px)
         font-size: 24px
+.image-shadow
+    padding: 15px 5px
+    box-shadow: 0px 0px 5px 
 @import wifi-transport.sass
 @import wifi-target.sass
 @import partners.sass
