@@ -49,6 +49,31 @@ $('.panel-collapse').on('show.bs.collapse', function () {
 $('.panel-collapse').on('hide.bs.collapse', function () {
 	$(this).siblings('.panel-head').removeClass('active');
 });
+
+///video-btn///
+$(document).ready(function() {
+
+	// Gets the video src from the data-src on each button
+	
+	var $videoSrc;  
+	$('.youtube-btn').click(function() {
+			$videoSrc = $(this).data( "src" );
+			console.log($videoSrc);
+	});
+	
+	// when the modal is opened autoplay it  
+	$('#youtube-modal').on('shown.bs.modal', function (e) {		
+	// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+	$("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=1&amp;modestbranding=1&amp;autoplay=1&amp;allowfullscreen"); 
+	})		
+	// stop playing the youtube video when I close the modal
+	$('#youtube-modal').on('hide.bs.modal', function (e) {
+			// a poor man's stop video
+			$("#video").attr('src',$videoSrc); 
+	}) 	
+	// document ready  
+	});
+
 /// calculator ///
 /// slider range ///
 var cost = $("#range-cost").slider({
